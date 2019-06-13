@@ -1,0 +1,53 @@
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/usr/local/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/local/rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20190613-6543-12jvdqw.rb extconf.rb
+creating Makefile
+
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+ruby_http_parser.c: 在函数‘on_message_begin’中:
+ruby_http_parser.c:108:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   VALUE ret = Qnil;
+   ^
+ruby_http_parser.c: 在函数‘on_header_value’中:
+ruby_http_parser.c:146:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   int new_field = 0;
+   ^
+ruby_http_parser.c: 在函数‘on_headers_complete’中:
+ruby_http_parser.c:192:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   VALUE ret = Qnil;
+   ^
+ruby_http_parser.c: 在函数‘on_body’中:
+ruby_http_parser.c:213:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   VALUE ret = Qnil;
+   ^
+ruby_http_parser.c: 在函数‘on_message_complete’中:
+ruby_http_parser.c:232:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   VALUE ret = Qnil;
+   ^
+ruby_http_parser.c: 在函数‘Parser_execute’中:
+ruby_http_parser.c:314:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   char *ptr = RSTRING_PTR(data);
+   ^
+ruby_http_parser.c:320:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   size_t nparsed = ryah_http_parser_execute(&wrapper->parser, &settings, ptr, len);
+   ^
+ruby_http_parser.c: 在函数‘Parser_set_header_value_type’中:
+ruby_http_parser.c:451:3: 警告：ISO C90 不允许混合使用声明和代码 [-Wdeclaration-after-statement]
+   ParserWrapper *wrapper = NULL;
+   ^
+ruby_http_parser.c: 在文件作用域：
+cc1: 警告：无法识别的命令行选项“-Wno-tautological-compare” [默认启用]
+cc1: 警告：无法识别的命令行选项“-Wno-self-assign” [默认启用]
+cc1: 警告：无法识别的命令行选项“-Wno-parentheses-equality” [默认启用]
+cc1: 警告：无法识别的命令行选项“-Wno-constant-logical-operand” [默认启用]
+cc1: 警告：无法识别的命令行选项“-Wno-cast-function-type” [默认启用]
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20190613-6543-1xibcqm

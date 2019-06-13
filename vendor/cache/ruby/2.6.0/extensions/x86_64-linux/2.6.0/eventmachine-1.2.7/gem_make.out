@@ -1,0 +1,32 @@
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/local/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/local/rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0 -r ./siteconf20190613-6543-wdedhd.rb extconf.rb
+creating Makefile
+
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+cc1plus: 警告：command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++ [默认启用]
+cc1plus: 警告：command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++ [默认启用]
+cc1plus: 警告：command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++ [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-tautological-compare” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-self-assign” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-parentheses-equality” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-constant-logical-operand” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-cast-function-type” [默认启用]
+compiling rubymain.cpp
+cc1plus: 警告：command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++ [默认启用]
+cc1plus: 警告：command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++ [默认启用]
+cc1plus: 警告：command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++ [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-tautological-compare” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-self-assign” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-parentheses-equality” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-constant-logical-operand” [默认启用]
+cc1plus: 警告：无法识别的命令行选项“-Wno-cast-function-type” [默认启用]
+linking shared-object fastfilereaderext.so
+
+current directory: /opt/blog/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20190613-6543-98kr09
