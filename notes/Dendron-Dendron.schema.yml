@@ -1,0 +1,7 @@
+version: 1
+imports: []
+schemas:
+  - id: Dendron-Dendron
+    children: []
+    title: Dendron-Dendron
+    parent: root
