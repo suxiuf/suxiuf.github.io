@@ -1,0 +1,1714 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290750,
+      "created": 1691231290750,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "root": {
+      "id": "root",
+      "title": "root",
+      "desc": "",
+      "updated": 1691107996619,
+      "created": 1595961348801,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "b84c528db7c4d788406049268f5a99fb",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "mhuw3kgnfehwkr17cv18g12",
+        "ds6ph3455vjc7l67mzntcs9",
+        "c1bs7wsjfbhb0zipaywqv1",
+        "ne0n46ryv85gh46x7s3zwqu",
+        "fzxc4lax935ogwcc4t5gzb8",
+        "9ijups7jdz7bum0n1pcgnw4"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "9ijups7jdz7bum0n1pcgnw4": {
+      "fname": "Vscode",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290148,
+      "created": 1691231290148,
+      "id": "9ijups7jdz7bum0n1pcgnw4",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "z4mvli14rdm0iwet01ao1u7"
+      ],
+      "parent": "root",
+      "data": {},
+      "title": "Vscode"
+    },
+    "z4mvli14rdm0iwet01ao1u7": {
+      "id": "z4mvli14rdm0iwet01ao1u7",
+      "title": "手记",
+      "desc": "",
+      "updated": 1691113947851,
+      "created": 1691077376435,
+      "custom": {},
+      "fname": "Vscode.手记",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "61fffb7ab523a51d561845573cad810b",
+      "links": [],
+      "anchors": {
+        "找回删除文件": {
+          "type": "header",
+          "text": "找回删除文件",
+          "value": "找回删除文件",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "9ijups7jdz7bum0n1pcgnw4",
+      "data": {}
+    },
+    "fzxc4lax935ogwcc4t5gzb8": {
+      "fname": "Security",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290148,
+      "created": 1691231290148,
+      "id": "fzxc4lax935ogwcc4t5gzb8",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "5140c33r92iek34sfwgie7u"
+      ],
+      "parent": "root",
+      "data": {},
+      "title": "Security"
+    },
+    "5140c33r92iek34sfwgie7u": {
+      "id": "5140c33r92iek34sfwgie7u",
+      "title": "OSCP",
+      "desc": "",
+      "updated": 1691143402585,
+      "created": 1691075570149,
+      "custom": {},
+      "fname": "Security.OSCP",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "b77af6a59c238ce679766477c2515ad8",
+      "links": [],
+      "anchors": {
+        "kali-linux-渗透测试-一般课程信息": {
+          "type": "header",
+          "text": "Kali Linux 渗透测试 一般课程信息",
+          "value": "kali-linux-渗透测试-一般课程信息",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "isvlzihchfp0tsqlfi5f97c",
+        "594yeuwf7d0gn28td1z29dz",
+        "77tp3ycq0578u3kuitpy1vo"
+      ],
+      "parent": "fzxc4lax935ogwcc4t5gzb8",
+      "data": {}
+    },
+    "77tp3ycq0578u3kuitpy1vo": {
+      "id": "77tp3ycq0578u3kuitpy1vo",
+      "title": "方法论",
+      "desc": "",
+      "updated": 1691143408397,
+      "created": 1691143055463,
+      "custom": {},
+      "fname": "Security.OSCP.方法论",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "1e12cf8f6bf4a34ffc48ad3b75a486c9",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "5140c33r92iek34sfwgie7u",
+      "data": {}
+    },
+    "594yeuwf7d0gn28td1z29dz": {
+      "id": "594yeuwf7d0gn28td1z29dz",
+      "title": "linux命令",
+      "desc": "",
+      "updated": 1691143477805,
+      "created": 1691143432895,
+      "custom": {},
+      "fname": "Security.OSCP.linux命令",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "f839e368b9cfc374f91a5c5513252146",
+      "links": [],
+      "anchors": {
+        "身份及位置查询": {
+          "type": "header",
+          "text": "身份及位置查询",
+          "value": "身份及位置查询",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        },
+        "cd": {
+          "type": "header",
+          "text": "cd",
+          "value": "cd",
+          "line": 22,
+          "column": 0,
+          "depth": 1
+        },
+        "ls": {
+          "type": "header",
+          "text": "ls",
+          "value": "ls",
+          "line": 36,
+          "column": 0,
+          "depth": 1
+        },
+        "echo": {
+          "type": "header",
+          "text": "echo",
+          "value": "echo",
+          "line": 54,
+          "column": 0,
+          "depth": 1
+        },
+        "cat": {
+          "type": "header",
+          "text": "cat",
+          "value": "cat",
+          "line": 65,
+          "column": 0,
+          "depth": 1
+        },
+        "less": {
+          "type": "header",
+          "text": "less",
+          "value": "less",
+          "line": 72,
+          "column": 0,
+          "depth": 1
+        },
+        "mkdir": {
+          "type": "header",
+          "text": "mkdir",
+          "value": "mkdir",
+          "line": 85,
+          "column": 0,
+          "depth": 1
+        },
+        "clear": {
+          "type": "header",
+          "text": "clear",
+          "value": "clear",
+          "line": 97,
+          "column": 0,
+          "depth": 1
+        },
+        "touch": {
+          "type": "header",
+          "text": "touch",
+          "value": "touch",
+          "line": 102,
+          "column": 0,
+          "depth": 1
+        },
+        "file": {
+          "type": "header",
+          "text": "file",
+          "value": "file",
+          "line": 108,
+          "column": 0,
+          "depth": 1
+        },
+        "rm": {
+          "type": "header",
+          "text": "rm",
+          "value": "rm",
+          "line": 116,
+          "column": 0,
+          "depth": 1
+        },
+        "grep": {
+          "type": "header",
+          "text": "grep",
+          "value": "grep",
+          "line": 126,
+          "column": 0,
+          "depth": 1
+        },
+        "cp": {
+          "type": "header",
+          "text": "cp",
+          "value": "cp",
+          "line": 148,
+          "column": 0,
+          "depth": 1
+        },
+        "mv": {
+          "type": "header",
+          "text": "mv",
+          "value": "mv",
+          "line": 161,
+          "column": 0,
+          "depth": 1
+        },
+        "查找文件": {
+          "type": "header",
+          "text": "查找文件",
+          "value": "查找文件",
+          "line": 167,
+          "column": 0,
+          "depth": 1
+        },
+        "which": {
+          "type": "header",
+          "text": "which",
+          "value": "which",
+          "line": 168,
+          "column": 0,
+          "depth": 2
+        },
+        "locate": {
+          "type": "header",
+          "text": "locate",
+          "value": "locate",
+          "line": 174,
+          "column": 0,
+          "depth": 2
+        },
+        "find": {
+          "type": "header",
+          "text": "find",
+          "value": "find",
+          "line": 182,
+          "column": 0,
+          "depth": 2
+        },
+        "help": {
+          "type": "header",
+          "text": "help",
+          "value": "help",
+          "line": 209,
+          "column": 0,
+          "depth": 1
+        },
+        "man": {
+          "type": "header",
+          "text": "man",
+          "value": "man",
+          "line": 215,
+          "column": 0,
+          "depth": 1
+        },
+        "man-手册使用": {
+          "type": "header",
+          "text": "man 手册使用",
+          "value": "man-手册使用",
+          "line": 231,
+          "column": 0,
+          "depth": 3
+        },
+        "运用示例": {
+          "type": "header",
+          "text": "运用示例",
+          "value": "运用示例",
+          "line": 243,
+          "column": 0,
+          "depth": 3
+        },
+        "apropos": {
+          "type": "header",
+          "text": "apropos",
+          "value": "apropos",
+          "line": 251,
+          "column": 0,
+          "depth": 3
+        },
+        "alias": {
+          "type": "header",
+          "text": "alias",
+          "value": "alias",
+          "line": 256,
+          "column": 0,
+          "depth": 1
+        },
+        "linux服务管理": {
+          "type": "header",
+          "text": "linux服务管理",
+          "value": "linux服务管理",
+          "line": 265,
+          "column": 0,
+          "depth": 1
+        },
+        "更新与卸载工具": {
+          "type": "header",
+          "text": "更新与卸载工具",
+          "value": "更新与卸载工具",
+          "line": 284,
+          "column": 0,
+          "depth": 1
+        },
+        "查看历史命令": {
+          "type": "header",
+          "text": "查看历史命令",
+          "value": "查看历史命令",
+          "line": 321,
+          "column": 0,
+          "depth": 1
+        },
+        "history": {
+          "type": "header",
+          "text": "history",
+          "value": "history",
+          "line": 322,
+          "column": 0,
+          "depth": 2
+        },
+        "history-文件配置": {
+          "type": "header",
+          "text": "history 文件配置",
+          "value": "history-文件配置",
+          "line": 329,
+          "column": 0,
+          "depth": 2
+        },
+        "使用-ctrlr-在shell-中开启history命令搜索功能": {
+          "type": "header",
+          "text": "使用 CTRL+R 在shell 中开启history命令搜索功能",
+          "value": "使用-ctrlr-在shell-中开启history命令搜索功能",
+          "line": 333,
+          "column": 0,
+          "depth": 2
+        },
+        "管道符和重定向": {
+          "type": "header",
+          "text": "管道符和重定向",
+          "value": "管道符和重定向",
+          "line": 350,
+          "column": 0,
+          "depth": 1
+        },
+        "文件操作": {
+          "type": "header",
+          "text": "文件操作",
+          "value": "文件操作",
+          "line": 368,
+          "column": 0,
+          "depth": 1
+        },
+        "grep-1": {
+          "type": "header",
+          "text": "grep",
+          "value": "grep-1",
+          "line": 369,
+          "column": 0,
+          "depth": 2
+        },
+        "sed": {
+          "type": "header",
+          "text": "sed",
+          "value": "sed",
+          "line": 376,
+          "column": 0,
+          "depth": 2
+        },
+        "cut": {
+          "type": "header",
+          "text": "cut",
+          "value": "cut",
+          "line": 385,
+          "column": 0,
+          "depth": 2
+        },
+        "awk": {
+          "type": "header",
+          "text": "awk",
+          "value": "awk",
+          "line": 390,
+          "column": 0,
+          "depth": 2
+        },
+        "sort": {
+          "type": "header",
+          "text": "sort",
+          "value": "sort",
+          "line": 395,
+          "column": 0,
+          "depth": 2
+        },
+        "uniq": {
+          "type": "header",
+          "text": "uniq",
+          "value": "uniq",
+          "line": 405,
+          "column": 0,
+          "depth": 2
+        },
+        "文件内容比较": {
+          "type": "header",
+          "text": "文件内容比较",
+          "value": "文件内容比较",
+          "line": 409,
+          "column": 0,
+          "depth": 1
+        },
+        "comm": {
+          "type": "header",
+          "text": "comm",
+          "value": "comm",
+          "line": 410,
+          "column": 0,
+          "depth": 2
+        },
+        "diff": {
+          "type": "header",
+          "text": "diff",
+          "value": "diff",
+          "line": 423,
+          "column": 0,
+          "depth": 2
+        },
+        "vimdiff": {
+          "type": "header",
+          "text": "vimdiff",
+          "value": "vimdiff",
+          "line": 428,
+          "column": 0,
+          "depth": 2
+        },
+        "meld-图形化文件目录对比工具": {
+          "type": "header",
+          "text": "meld 图形化文件目录对比工具",
+          "value": "meld-图形化文件目录对比工具",
+          "line": 431,
+          "column": 0,
+          "depth": 2
+        },
+        "作业管理": {
+          "type": "header",
+          "text": "作业管理",
+          "value": "作业管理",
+          "line": 439,
+          "column": 0,
+          "depth": 1
+        },
+        "进程管理": {
+          "type": "header",
+          "text": "进程管理",
+          "value": "进程管理",
+          "line": 478,
+          "column": 0,
+          "depth": 1
+        },
+        "ps": {
+          "type": "header",
+          "text": "ps",
+          "value": "ps",
+          "line": 479,
+          "column": 0,
+          "depth": 2
+        },
+        "kill": {
+          "type": "header",
+          "text": "kill",
+          "value": "kill",
+          "line": 487,
+          "column": 0,
+          "depth": 2
+        },
+        "对文件和命令进行实时监控": {
+          "type": "header",
+          "text": "对文件和命令进行实时监控",
+          "value": "对文件和命令进行实时监控",
+          "line": 492,
+          "column": 0,
+          "depth": 1
+        },
+        "tail": {
+          "type": "header",
+          "text": "tail",
+          "value": "tail",
+          "line": 494,
+          "column": 0,
+          "depth": 2
+        },
+        "watch": {
+          "type": "header",
+          "text": "watch",
+          "value": "watch",
+          "line": 501,
+          "column": 0,
+          "depth": 2
+        },
+        "文件下载": {
+          "type": "header",
+          "text": "文件下载",
+          "value": "文件下载",
+          "line": 508,
+          "column": 0,
+          "depth": 1
+        },
+        "wget": {
+          "type": "header",
+          "text": "wget",
+          "value": "wget",
+          "line": 509,
+          "column": 0,
+          "depth": 2
+        },
+        "curl": {
+          "type": "header",
+          "text": "curl",
+          "value": "curl",
+          "line": 516,
+          "column": 0,
+          "depth": 2
+        },
+        "axel": {
+          "type": "header",
+          "text": "axel",
+          "value": "axel",
+          "line": 522,
+          "column": 0,
+          "depth": 2
+        },
+        "bashrc": {
+          "type": "header",
+          "text": "~/.bashrc",
+          "value": "bashrc",
+          "line": 531,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "5140c33r92iek34sfwgie7u",
+      "data": {}
+    },
+    "isvlzihchfp0tsqlfi5f97c": {
+      "id": "isvlzihchfp0tsqlfi5f97c",
+      "title": "Windows命令",
+      "desc": "",
+      "updated": 1691230987271,
+      "created": 1691144635994,
+      "custom": {},
+      "fname": "Security.OSCP.Windows命令",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "b728c2557a716a3112f6f477dbb23170",
+      "links": [],
+      "anchors": {
+        "重要的目录": {
+          "type": "header",
+          "text": "重要的目录",
+          "value": "重要的目录",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        },
+        "系统信息查询": {
+          "type": "header",
+          "text": "系统信息查询",
+          "value": "系统信息查询",
+          "line": 30,
+          "column": 0,
+          "depth": 1
+        },
+        "系统信息查询-1": {
+          "type": "header",
+          "text": "系统信息查询",
+          "value": "系统信息查询-1",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        },
+        "环境变量查询": {
+          "type": "header",
+          "text": "环境变量查询",
+          "value": "环境变量查询",
+          "line": 54,
+          "column": 0,
+          "depth": 2
+        },
+        "利用环境变量查询系统信息": {
+          "type": "header",
+          "text": "利用环境变量查询系统信息",
+          "value": "利用环境变量查询系统信息",
+          "line": 69,
+          "column": 0,
+          "depth": 2
+        },
+        "利用第三方工具包查看系统信息": {
+          "type": "header",
+          "text": "利用第三方工具包查看系统信息",
+          "value": "利用第三方工具包查看系统信息",
+          "line": 87,
+          "column": 0,
+          "depth": 2
+        },
+        "powershell-取消图形画对话框": {
+          "type": "header",
+          "text": "powershell 取消图形画对话框",
+          "value": "powershell-取消图形画对话框",
+          "line": 102,
+          "column": 0,
+          "depth": 1
+        },
+        "文件基本操作": {
+          "type": "header",
+          "text": "文件基本操作",
+          "value": "文件基本操作",
+          "line": 114,
+          "column": 0,
+          "depth": 1
+        },
+        "powershell": {
+          "type": "header",
+          "text": "Powershell",
+          "value": "powershell",
+          "line": 116,
+          "column": 0,
+          "depth": 1
+        },
+        "cmd-命令行常用": {
+          "type": "header",
+          "text": "CMD 命令行常用",
+          "value": "cmd-命令行常用",
+          "line": 129,
+          "column": 0,
+          "depth": 2
+        },
+        "列出目录内容": {
+          "type": "header",
+          "text": "列出目录内容",
+          "value": "列出目录内容",
+          "line": 148,
+          "column": 0,
+          "depth": 3
+        },
+        "创建连接快捷方式": {
+          "type": "header",
+          "text": "创建连接（快捷方式）",
+          "value": "创建连接快捷方式",
+          "line": 197,
+          "column": 0,
+          "depth": 3
+        },
+        "系统权限操作": {
+          "type": "header",
+          "text": "系统权限操作",
+          "value": "系统权限操作",
+          "line": 215,
+          "column": 0,
+          "depth": 1
+        },
+        "查看用户账号": {
+          "type": "header",
+          "text": "查看用户账号",
+          "value": "查看用户账号",
+          "line": 217,
+          "column": 0,
+          "depth": 2
+        },
+        "查看内建账号": {
+          "type": "header",
+          "text": "查看内建账号",
+          "value": "查看内建账号",
+          "line": 223,
+          "column": 0,
+          "depth": 2
+        },
+        "添加账号": {
+          "type": "header",
+          "text": "添加账号",
+          "value": "添加账号",
+          "line": 229,
+          "column": 0,
+          "depth": 2
+        },
+        "uac": {
+          "type": "header",
+          "text": "UAC",
+          "value": "uac",
+          "line": 237,
+          "column": 0,
+          "depth": 2
+        },
+        "禁用uac": {
+          "type": "header",
+          "text": "禁用UAC",
+          "value": "禁用uac",
+          "line": 264,
+          "column": 0,
+          "depth": 3
+        },
+        "以管理员权限运行某个程序": {
+          "type": "header",
+          "text": "以管理员权限运行某个程序",
+          "value": "以管理员权限运行某个程序",
+          "line": 278,
+          "column": 0,
+          "depth": 2
+        },
+        "实际应用实例": {
+          "type": "header",
+          "text": "实际应用实例：",
+          "value": "实际应用实例",
+          "line": 319,
+          "column": 0,
+          "depth": 3
+        },
+        "更改文件权限": {
+          "type": "header",
+          "text": "更改文件权限",
+          "value": "更改文件权限",
+          "line": 337,
+          "column": 0,
+          "depth": 2
+        },
+        "命令行进行文件权限操作": {
+          "type": "header",
+          "text": "命令行进行文件权限操作",
+          "value": "命令行进行文件权限操作",
+          "line": 342,
+          "column": 0,
+          "depth": 3
+        },
+        "进程管理": {
+          "type": "header",
+          "text": "进程管理",
+          "value": "进程管理",
+          "line": 365,
+          "column": 0,
+          "depth": 1
+        },
+        "进程查看": {
+          "type": "header",
+          "text": "进程查看",
+          "value": "进程查看",
+          "line": 366,
+          "column": 0,
+          "depth": 2
+        },
+        "杀死进程": {
+          "type": "header",
+          "text": "杀死进程",
+          "value": "杀死进程",
+          "line": 371,
+          "column": 0,
+          "depth": 2
+        },
+        "查看进程加载的动态连接库": {
+          "type": "header",
+          "text": "查看进程加载的动态连接库",
+          "value": "查看进程加载的动态连接库",
+          "line": 387,
+          "column": 0,
+          "depth": 2
+        },
+        "注册表": {
+          "type": "header",
+          "text": "注册表",
+          "value": "注册表",
+          "line": 403,
+          "column": 0,
+          "depth": 1
+        },
+        "命令行操作注册表": {
+          "type": "header",
+          "text": "命令行操作注册表",
+          "value": "命令行操作注册表",
+          "line": 414,
+          "column": 0,
+          "depth": 2
+        },
+        "例通过注册表添加键值来禁用任务管理器需要先获取管理员权限": {
+          "type": "header",
+          "text": "例：通过注册表添加键值来禁用任务管理器(需要先获取管理员权限)",
+          "value": "例通过注册表添加键值来禁用任务管理器需要先获取管理员权限",
+          "line": 445,
+          "column": 0,
+          "depth": 3
+        },
+        "bits-job": {
+          "type": "header",
+          "text": "BITS Job",
+          "value": "bits-job",
+          "line": 454,
+          "column": 0,
+          "depth": 1
+        },
+        "关闭系统提示": {
+          "type": "header",
+          "text": "关闭系统提示",
+          "value": "关闭系统提示",
+          "line": 467,
+          "column": 0,
+          "depth": 2
+        },
+        "设置周期执行": {
+          "type": "header",
+          "text": "设置周期执行",
+          "value": "设置周期执行",
+          "line": 475,
+          "column": 0,
+          "depth": 2
+        },
+        "启用-bits-job": {
+          "type": "header",
+          "text": "启用 BITS Job",
+          "value": "启用-bits-job",
+          "line": 483,
+          "column": 0,
+          "depth": 2
+        },
+        "查看-bits-job": {
+          "type": "header",
+          "text": "查看 BITS Job",
+          "value": "查看-bits-job",
+          "line": 491,
+          "column": 0,
+          "depth": 2
+        },
+        "计划任务": {
+          "type": "header",
+          "text": "计划任务",
+          "value": "计划任务",
+          "line": 503,
+          "column": 0,
+          "depth": 1
+        },
+        "ads-可选数据流": {
+          "type": "header",
+          "text": "ADS-可选数据流",
+          "value": "ads-可选数据流",
+          "line": 528,
+          "column": 0,
+          "depth": 1
+        },
+        "防火墙": {
+          "type": "header",
+          "text": "防火墙",
+          "value": "防火墙",
+          "line": 554,
+          "column": 0,
+          "depth": 1
+        },
+        "服务控制": {
+          "type": "header",
+          "text": "服务控制",
+          "value": "服务控制",
+          "line": 574,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "5140c33r92iek34sfwgie7u",
+      "data": {}
+    },
+    "ne0n46ryv85gh46x7s3zwqu": {
+      "fname": "Daily",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290147,
+      "created": 1691231290147,
+      "id": "ne0n46ryv85gh46x7s3zwqu",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "6ajfwjqzbjjo507q5apnuch",
+        "vctaplcw9jwkxxe4apcihwj",
+        "o6w8z2qyxjqvyee2urbzypp"
+      ],
+      "parent": "root",
+      "data": {},
+      "title": "Daily"
+    },
+    "o6w8z2qyxjqvyee2urbzypp": {
+      "fname": "Daily.y",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290152,
+      "created": 1691231290152,
+      "id": "o6w8z2qyxjqvyee2urbzypp",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "y392qdis7uqbfbdhkairv6z"
+      ],
+      "parent": "ne0n46ryv85gh46x7s3zwqu",
+      "data": {},
+      "title": "y"
+    },
+    "y392qdis7uqbfbdhkairv6z": {
+      "fname": "Daily.y.journal",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290152,
+      "created": 1691231290152,
+      "id": "y392qdis7uqbfbdhkairv6z",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "1fg54pm9mqey0n32f7mxggx"
+      ],
+      "parent": "o6w8z2qyxjqvyee2urbzypp",
+      "data": {},
+      "title": "journal"
+    },
+    "1fg54pm9mqey0n32f7mxggx": {
+      "fname": "Daily.y.journal.2023",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290152,
+      "created": 1691231290152,
+      "id": "1fg54pm9mqey0n32f7mxggx",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "pem0kfyrh2tr9h4ibzi4m6z"
+      ],
+      "parent": "y392qdis7uqbfbdhkairv6z",
+      "data": {},
+      "title": "2023"
+    },
+    "pem0kfyrh2tr9h4ibzi4m6z": {
+      "fname": "Daily.y.journal.2023.08",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1691231290152,
+      "created": 1691231290152,
+      "id": "pem0kfyrh2tr9h4ibzi4m6z",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "5bflkhx1afmtktinglt79r3"
+      ],
+      "parent": "1fg54pm9mqey0n32f7mxggx",
+      "data": {},
+      "title": "08"
+    },
+    "5bflkhx1afmtktinglt79r3": {
+      "id": "5bflkhx1afmtktinglt79r3",
+      "title": "2023-08-03",
+      "desc": "",
+      "updated": 1691142281895,
+      "created": 1691142281895,
+      "traitIds": [
+        "journalNote"
+      ],
+      "custom": {},
+      "fname": "daily.journal.2023.08.03",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "c42e01dd8e9c08f1de864c46f041172d",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "pem0kfyrh2tr9h4ibzi4m6z",
+      "data": {}
+    },
+    "vctaplcw9jwkxxe4apcihwj": {
+      "id": "vctaplcw9jwkxxe4apcihwj",
+      "title": "Install-KVM-QEMU",
+      "desc": "",
+      "updated": 1691142619744,
+      "created": 1691142501689,
+      "custom": {},
+      "fname": "daily.Install-KVM-QEMU",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "f75b88307a18042c36049d658d0de7c3",
+      "links": [],
+      "anchors": {
+        "安装kvm包": {
+          "type": "header",
+          "text": "安装KVM包",
+          "value": "安装kvm包",
+          "line": 18,
+          "column": 0,
+          "depth": 1
+        },
+        "安装其他工具": {
+          "type": "header",
+          "text": "安装其他工具",
+          "value": "安装其他工具",
+          "line": 32,
+          "column": 0,
+          "depth": 1
+        },
+        "启动kvm-libvirt服务": {
+          "type": "header",
+          "text": "启动KVM libvirt服务",
+          "value": "启动kvm-libvirt服务",
+          "line": 47,
+          "column": 0,
+          "depth": 1
+        },
+        "配置普通用户可以使用kvm": {
+          "type": "header",
+          "text": "配置普通用户可以使用KVM",
+          "value": "配置普通用户可以使用kvm",
+          "line": 58,
+          "column": 0,
+          "depth": 1
+        },
+        "启用嵌套虚拟化可选": {
+          "type": "header",
+          "text": "启用嵌套虚拟化（可选）",
+          "value": "启用嵌套虚拟化可选",
+          "line": 88,
+          "column": 0,
+          "depth": 1
+        },
+        "在arch-linux-上使用kvm": {
+          "type": "header",
+          "text": "在Arch Linux 上使用KVM",
+          "value": "在arch-linux-上使用kvm",
+          "line": 129,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "ne0n46ryv85gh46x7s3zwqu",
+      "data": {}
+    },
+    "6ajfwjqzbjjo507q5apnuch": {
+      "id": "6ajfwjqzbjjo507q5apnuch",
+      "title": "EndeavourOS-i3",
+      "desc": "",
+      "updated": 1691142745497,
+      "created": 1691142710941,
+      "custom": {},
+      "fname": "Daily.EndeavourOS-i3",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "59f7154e240621f85b1b1c0f939f521b",
+      "links": [],
+      "anchors": {
+        "系统安装": {
+          "type": "header",
+          "text": "系统安装",
+          "value": "系统安装",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "常用软件安装": {
+          "type": "header",
+          "text": "常用软件安装",
+          "value": "常用软件安装",
+          "line": 65,
+          "column": 0,
+          "depth": 2
+        },
+        "terminal-主题配置": {
+          "type": "header",
+          "text": "Terminal 主题配置",
+          "value": "terminal-主题配置",
+          "line": 104,
+          "column": 0,
+          "depth": 2
+        },
+        "terminal-背景及字体设置": {
+          "type": "header",
+          "text": "Terminal 背景及字体设置",
+          "value": "terminal-背景及字体设置",
+          "line": 145,
+          "column": 0,
+          "depth": 2
+        },
+        "参考文档": {
+          "type": "header",
+          "text": "参考文档",
+          "value": "参考文档",
+          "line": 158,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ne0n46ryv85gh46x7s3zwqu",
+      "data": {}
+    },
+    "c1bs7wsjfbhb0zipaywqv1": {
+      "id": "c1bs7wsjfbhb0zipaywqv1",
+      "title": "Tutorial",
+      "desc": "",
+      "updated": 1658931733078,
+      "created": 1654223767390,
+      "currentStep": 0,
+      "totalSteps": 0,
+      "custom": {
+        "currentStep": 0,
+        "totalSteps": 0
+      },
+      "fname": "tutorial",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "35465334039ba0d581fd2b0984e19c5a",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "tutorial",
+            "id": "c1bs7wsjfbhb0zipaywqv1",
+            "vaultName": "Dendron"
+          },
+          "value": "tutorial.one",
+          "position": {
+            "start": {
+              "line": 61,
+              "column": 9,
+              "offset": 2424
+            },
+            "end": {
+              "line": 61,
+              "column": 25,
+              "offset": 2440
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "tutorial.one"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "tutorial",
+            "id": "c1bs7wsjfbhb0zipaywqv1",
+            "vaultName": "Dendron"
+          },
+          "value": "tutorial",
+          "position": {
+            "start": {
+              "line": 65,
+              "column": 134,
+              "offset": 2762
+            },
+            "end": {
+              "line": 65,
+              "column": 146,
+              "offset": 2774
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "tutorial"
+          }
+        },
+        {
+          "from": {
+            "fname": "tutorial",
+            "id": "c1bs7wsjfbhb0zipaywqv1",
+            "vaultName": "Dendron"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 65,
+              "column": 134,
+              "offset": 2762
+            },
+            "end": {
+              "line": 65,
+              "column": 146,
+              "offset": 2774
+            },
+            "indent": []
+          },
+          "value": "tutorial"
+        }
+      ],
+      "anchors": {
+        "create-a-note": {
+          "type": "header",
+          "text": "Create a Note",
+          "value": "create-a-note",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "find-a-note": {
+          "type": "header",
+          "text": "Find a Note",
+          "value": "find-a-note",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "organize-your-notes": {
+          "type": "header",
+          "text": "Organize your Notes",
+          "value": "organize-your-notes",
+          "line": 36,
+          "column": 0,
+          "depth": 2
+        },
+        "create-a-link": {
+          "type": "header",
+          "text": "Create a link",
+          "value": "create-a-link",
+          "line": 47,
+          "column": 0,
+          "depth": 2
+        },
+        "navigate-a-link": {
+          "type": "header",
+          "text": "Navigate a link",
+          "value": "navigate-a-link",
+          "line": 59,
+          "column": 0,
+          "depth": 2
+        },
+        "refactor-a-note": {
+          "type": "header",
+          "text": "Refactor a Note",
+          "value": "refactor-a-note",
+          "line": 67,
+          "column": 0,
+          "depth": 2
+        },
+        "conclusion": {
+          "type": "header",
+          "text": "Conclusion",
+          "value": "conclusion",
+          "line": 76,
+          "column": 0,
+          "depth": 2
+        },
+        "next-steps": {
+          "type": "header",
+          "text": "Next Steps",
+          "value": "next-steps",
+          "line": 82,
+          "column": 0,
+          "depth": 2
+        },
+        "community": {
+          "type": "header",
+          "text": "Community",
+          "value": "community",
+          "line": 104,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "root",
+      "data": {}
+    },
+    "ds6ph3455vjc7l67mzntcs9": {
+      "id": "ds6ph3455vjc7l67mzntcs9",
+      "title": "dendron: Launch",
+      "desc": "",
+      "updated": 1691070675424,
+      "created": 1691070675424,
+      "custom": {},
+      "fname": "dendron: Launch",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "3147259ffbb635aa0bb5199682ae047d",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "root",
+      "data": {}
+    },
+    "mhuw3kgnfehwkr17cv18g12": {
+      "id": "mhuw3kgnfehwkr17cv18g12",
+      "title": "Dendron",
+      "desc": "",
+      "updated": 1691141214199,
+      "created": 1691141214199,
+      "custom": {},
+      "fname": "dendron",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "f4cdc040ce68586a305a0f2ddcf510bb",
+      "links": [],
+      "anchors": {
+        "简历": {
+          "type": "header",
+          "text": "简历",
+          "value": "简历",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "5g0yl94kqalfosv0cceu95z",
+        "lddt9unfhup1ewzugrh0wbr"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "lddt9unfhup1ewzugrh0wbr": {
+      "id": "lddt9unfhup1ewzugrh0wbr",
+      "title": "Stert",
+      "desc": "",
+      "updated": 1691114152849,
+      "created": 1691075767723,
+      "custom": {},
+      "fname": "Dendron.started",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "9f2b161c7f7266e2c003b748f50fdf46",
+      "links": [],
+      "anchors": {
+        "安装": {
+          "type": "header",
+          "text": "安装",
+          "value": "安装",
+          "line": 12,
+          "column": 0,
+          "depth": 1
+        },
+        "初始化一个工作区": {
+          "type": "header",
+          "text": "初始化一个工作区",
+          "value": "初始化一个工作区",
+          "line": 16,
+          "column": 0,
+          "depth": 1
+        },
+        "添加一个新的markdown文件": {
+          "type": "header",
+          "text": "添加一个新的markdown文件",
+          "value": "添加一个新的markdown文件",
+          "line": 24,
+          "column": 0,
+          "depth": 1
+        },
+        "日历笔记": {
+          "type": "header",
+          "text": "日历笔记",
+          "value": "日历笔记",
+          "line": 39,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "mhuw3kgnfehwkr17cv18g12",
+      "data": {}
+    },
+    "5g0yl94kqalfosv0cceu95z": {
+      "id": "5g0yl94kqalfosv0cceu95z",
+      "title": "Github-Pages",
+      "desc": "",
+      "updated": 1691085647825,
+      "created": 1691077491350,
+      "custom": {},
+      "fname": "Dendron.Github-Pages",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "bd9219fa31318129b7ebbcf35a03aa27",
+      "links": [],
+      "anchors": {
+        "github发布静态网站": {
+          "type": "header",
+          "text": "Github发布静态网站",
+          "value": "github发布静态网站",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "先决条件": {
+          "type": "header",
+          "text": "先决条件",
+          "value": "先决条件",
+          "line": 17,
+          "column": 0,
+          "depth": 1
+        },
+        "创建github仓库": {
+          "type": "header",
+          "text": "创建GitHub仓库",
+          "value": "创建github仓库",
+          "line": 35,
+          "column": 0,
+          "depth": 1
+        },
+        "设置发布": {
+          "type": "header",
+          "text": "设置发布",
+          "value": "设置发布",
+          "line": 50,
+          "column": 0,
+          "depth": 1
+        },
+        "构建和预览": {
+          "type": "header",
+          "text": "构建和预览",
+          "value": "构建和预览",
+          "line": 63,
+          "column": 0,
+          "depth": 2
+        },
+        "配置url": {
+          "type": "header",
+          "text": "配置URL",
+          "value": "配置url",
+          "line": 74,
+          "column": 0,
+          "depth": 2
+        },
+        "发布笔记": {
+          "type": "header",
+          "text": "发布笔记",
+          "value": "发布笔记",
+          "line": 92,
+          "column": 0,
+          "depth": 3
+        },
+        "部署更改": {
+          "type": "header",
+          "text": "部署更改",
+          "value": "部署更改",
+          "line": 100,
+          "column": 0,
+          "depth": 3
+        },
+        "设置github-page": {
+          "type": "header",
+          "text": "设置GitHub page",
+          "value": "设置github-page",
+          "line": 109,
+          "column": 0,
+          "depth": 1
+        },
+        "设置github操作": {
+          "type": "header",
+          "text": "设置GitHub操作",
+          "value": "设置github操作",
+          "line": 124,
+          "column": 0,
+          "depth": 1
+        },
+        "首次推送笔记": {
+          "type": "header",
+          "text": "首次推送笔记",
+          "value": "首次推送笔记",
+          "line": 213,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [],
+      "parent": "mhuw3kgnfehwkr17cv18g12",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "root",
+      "title": "root",
+      "desc": "",
+      "updated": 1691107996619,
+      "created": 1595961348801,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "Dendron"
+      },
+      "contentHash": "b84c528db7c4d788406049268f5a99fb",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "mhuw3kgnfehwkr17cv18g12",
+        "ds6ph3455vjc7l67mzntcs9",
+        "c1bs7wsjfbhb0zipaywqv1",
+        "ne0n46ryv85gh46x7s3zwqu",
+        "fzxc4lax935ogwcc4t5gzb8",
+        "9ijups7jdz7bum0n1pcgnw4"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "This is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n"
+    }
+  ],
+  "noteIndex": {
+    "id": "root",
+    "title": "root",
+    "desc": "",
+    "updated": 1691107996619,
+    "created": 1595961348801,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "Dendron"
+    },
+    "contentHash": "b84c528db7c4d788406049268f5a99fb",
+    "links": [],
+    "anchors": {},
+    "children": [
+      "mhuw3kgnfehwkr17cv18g12",
+      "ds6ph3455vjc7l67mzntcs9",
+      "c1bs7wsjfbhb0zipaywqv1",
+      "ne0n46ryv85gh46x7s3zwqu",
+      "fzxc4lax935ogwcc4t5gzb8",
+      "9ijups7jdz7bum0n1pcgnw4"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "This is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "Dendron"
+    }
+  ]
+}

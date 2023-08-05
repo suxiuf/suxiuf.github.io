@@ -1,0 +1,217 @@
+{
+  "roots": [
+    {
+      "key": "ne0n46ryv85gh46x7s3zwqu",
+      "title": "Daily",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": [
+        {
+          "key": "6ajfwjqzbjjo507q5apnuch",
+          "title": "EndeavourOS-i3",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "o6w8z2qyxjqvyee2urbzypp",
+          "title": "y",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": [
+            {
+              "key": "y392qdis7uqbfbdhkairv6z",
+              "title": "journal",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": [
+                {
+                  "key": "1fg54pm9mqey0n32f7mxggx",
+                  "title": "2023",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "Dendron",
+                  "children": [
+                    {
+                      "key": "pem0kfyrh2tr9h4ibzi4m6z",
+                      "title": "08",
+                      "icon": "plusOutlined",
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "Dendron",
+                      "children": [
+                        {
+                          "key": "5bflkhx1afmtktinglt79r3",
+                          "title": "2023-08-03",
+                          "icon": null,
+                          "hasTitleNumberOutlined": false,
+                          "vaultName": "Dendron",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "vctaplcw9jwkxxe4apcihwj",
+          "title": "Install-KVM-QEMU",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "fzxc4lax935ogwcc4t5gzb8",
+      "title": "Security",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": [
+        {
+          "key": "5140c33r92iek34sfwgie7u",
+          "title": "OSCP",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": [
+            {
+              "key": "isvlzihchfp0tsqlfi5f97c",
+              "title": "Windows命令",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "594yeuwf7d0gn28td1z29dz",
+              "title": "linux命令",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            },
+            {
+              "key": "77tp3ycq0578u3kuitpy1vo",
+              "title": "方法论",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "Dendron",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "9ijups7jdz7bum0n1pcgnw4",
+      "title": "Vscode",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": [
+        {
+          "key": "z4mvli14rdm0iwet01ao1u7",
+          "title": "手记",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "mhuw3kgnfehwkr17cv18g12",
+      "title": "Dendron",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": [
+        {
+          "key": "5g0yl94kqalfosv0cceu95z",
+          "title": "Github-Pages",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        },
+        {
+          "key": "lddt9unfhup1ewzugrh0wbr",
+          "title": "Stert",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "Dendron",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "ds6ph3455vjc7l67mzntcs9",
+      "title": "dendron: Launch",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": []
+    },
+    {
+      "key": "c1bs7wsjfbhb0zipaywqv1",
+      "title": "Tutorial",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "Dendron",
+      "children": []
+    }
+  ],
+  "child2parent": {
+    "ne0n46ryv85gh46x7s3zwqu": null,
+    "6ajfwjqzbjjo507q5apnuch": "ne0n46ryv85gh46x7s3zwqu",
+    "o6w8z2qyxjqvyee2urbzypp": "ne0n46ryv85gh46x7s3zwqu",
+    "y392qdis7uqbfbdhkairv6z": "o6w8z2qyxjqvyee2urbzypp",
+    "1fg54pm9mqey0n32f7mxggx": "y392qdis7uqbfbdhkairv6z",
+    "pem0kfyrh2tr9h4ibzi4m6z": "1fg54pm9mqey0n32f7mxggx",
+    "5bflkhx1afmtktinglt79r3": "pem0kfyrh2tr9h4ibzi4m6z",
+    "vctaplcw9jwkxxe4apcihwj": "ne0n46ryv85gh46x7s3zwqu",
+    "fzxc4lax935ogwcc4t5gzb8": null,
+    "5140c33r92iek34sfwgie7u": "fzxc4lax935ogwcc4t5gzb8",
+    "isvlzihchfp0tsqlfi5f97c": "5140c33r92iek34sfwgie7u",
+    "594yeuwf7d0gn28td1z29dz": "5140c33r92iek34sfwgie7u",
+    "77tp3ycq0578u3kuitpy1vo": "5140c33r92iek34sfwgie7u",
+    "9ijups7jdz7bum0n1pcgnw4": null,
+    "z4mvli14rdm0iwet01ao1u7": "9ijups7jdz7bum0n1pcgnw4",
+    "mhuw3kgnfehwkr17cv18g12": null,
+    "5g0yl94kqalfosv0cceu95z": "mhuw3kgnfehwkr17cv18g12",
+    "lddt9unfhup1ewzugrh0wbr": "mhuw3kgnfehwkr17cv18g12",
+    "ds6ph3455vjc7l67mzntcs9": null,
+    "c1bs7wsjfbhb0zipaywqv1": null
+  },
+  "notesLabelById": {
+    "ne0n46ryv85gh46x7s3zwqu": "Daily",
+    "6ajfwjqzbjjo507q5apnuch": "EndeavourOS-i3",
+    "o6w8z2qyxjqvyee2urbzypp": "y",
+    "y392qdis7uqbfbdhkairv6z": "journal",
+    "1fg54pm9mqey0n32f7mxggx": "2023",
+    "pem0kfyrh2tr9h4ibzi4m6z": "08",
+    "5bflkhx1afmtktinglt79r3": "2023-08-03",
+    "vctaplcw9jwkxxe4apcihwj": "Install-KVM-QEMU",
+    "fzxc4lax935ogwcc4t5gzb8": "Security",
+    "5140c33r92iek34sfwgie7u": "OSCP",
+    "isvlzihchfp0tsqlfi5f97c": "Windows命令",
+    "594yeuwf7d0gn28td1z29dz": "linux命令",
+    "77tp3ycq0578u3kuitpy1vo": "方法论",
+    "9ijups7jdz7bum0n1pcgnw4": "Vscode",
+    "z4mvli14rdm0iwet01ao1u7": "手记",
+    "mhuw3kgnfehwkr17cv18g12": "Dendron",
+    "5g0yl94kqalfosv0cceu95z": "Github-Pages",
+    "lddt9unfhup1ewzugrh0wbr": "Stert",
+    "ds6ph3455vjc7l67mzntcs9": "dendron: Launch",
+    "c1bs7wsjfbhb0zipaywqv1": "Tutorial"
+  }
+}

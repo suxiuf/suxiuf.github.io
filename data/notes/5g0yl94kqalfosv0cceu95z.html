@@ -1,0 +1,174 @@
+<h1 id="github-pages">Github-Pages<a aria-hidden="true" class="anchor-heading icon-link" href="#github-pages"></a></h1>
+<h1 id="github发布静态网站">Github发布静态网站<a aria-hidden="true" class="anchor-heading icon-link" href="#github发布静态网站"></a></h1>
+<p>Dendron 可以创建本地网站，也可以发布到GitHub，官方推荐使用GitHub Actions。</p>
+<hr>
+<p>GitHub Actions帮助提供一种自动发布形式，每当向GitHub存储库的main分支进行新提交时，都会发布您的笔记。生成的站点也会被写入存储库的pages分支，这会将发布的站点内容与您的main分支提交历史分开。</p>
+<p>引用 ：<a href="https://wiki.dendron.so/notes/FnK2ws6w1uaS1YzBUY3BR/#steps">https://wiki.dendron.so/notes/FnK2ws6w1uaS1YzBUY3BR/#steps</a></p>
+<h1 id="先决条件">先决条件<a aria-hidden="true" class="anchor-heading icon-link" href="#先决条件"></a></h1>
+<ul>
+<li>安装 git</li>
+<li>安装 npm</li>
+<li>在工作区的根目录（dendron.yml所在的位置）初始化npm repo</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> init -y
+</code></pre>
+<ul>
+<li>安装dendron-cli</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> @dendronhq/dendron-cli@latest
+</code></pre>
+<blockquote>
+<p>提示 ： dendron-cli 分全局工作和只工作在当前目录两种方式，推荐选择只工作在当前目录模式详见官网<a href="https://wiki.dendron.so/notes/RjBkTbGuKCXJNuE4dyV6G#setup">dendron-cl</a></p>
+</blockquote>
+<h1 id="创建github仓库">创建GitHub仓库<a aria-hidden="true" class="anchor-heading icon-link" href="#创建github仓库"></a></h1>
+<ol>
+<li>创建GitHub存储库
+见<a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">官网</a></li>
+<li>准备推送工作区到github</li>
+</ol>
+<p><img src="/image/Dendron.Github-Pages/1691078846116.png" alt="1691078846116"></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> remote <span class="token function">add</span> origin https://github.com/suxiuf/suxiuf.github.io.git 
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> 
+<span class="token function">git</span> commit -m <span class="token string">"initial commit"</span>
+</code></pre>
+<h1 id="设置发布">设置发布<a aria-hidden="true" class="anchor-heading icon-link" href="#设置发布"></a></h1>
+<p>3.1. 导航到工作区的根目录（目录dendron.yml）
+3.2. 初始化发布</p>
+<p>运行以下命令以设置Vault的发布。这将引入 <code>nextjs-template</code>，它将用于从您的笔记中生成静态网站。</p>
+<blockquote>
+<p>注意：如果您在使用powershell时遇到问题，我们建议您按照以下步骤使用<a href="https://docs.microsoft.com/en-us/windows/wsl/install">WSL</a></p>
+</blockquote>
+<pre class="language-shell"><code class="language-shell">npx dendron publish init
+</code></pre>
+<h2 id="构建和预览">构建和预览<a aria-hidden="true" class="anchor-heading icon-link" href="#构建和预览"></a></h2>
+<blockquote>
+<p>运行以下命令以查看站点的本地预览。默认情况下，Dendron将发布您给定库中的所有笔记。</p>
+</blockquote>
+<ul>
+<li>此命令启动一个开发服务器，它可以预览您发布的网站的外观。  访问http://localhost:3000以访问您的网站。</li>
+<li>在终端上输入CTRL-C退出预览</li>
+</ul>
+<pre class="language-sh"><code class="language-sh">npx dendron publish dev
+</code></pre>
+<h2 id="配置url">配置URL<a aria-hidden="true" class="anchor-heading icon-link" href="#配置url"></a></h2>
+<p>  要为构建要发布的笔记，请打开命令提示符并键入>Dendron: Configure (yaml)</p>
+<p>在publishing下进行以下修改：</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">...</span>
+<span class="token key atrule">publishing</span><span class="token punctuation">:</span>
+    <span class="token punctuation">...</span>
+    <span class="token key atrule">siteUrl</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>WEBSITE_URL<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>提示： WEBSITE_URL 一般设置为https://{GITHUB_USERNAME}.github.io
+GITHUB_USERNAME ：就是github用户名，一般配置github page的时候都会让把仓库名改为{GITHUB_USERNAME}.github.io</p>
+</blockquote>
+<h3 id="发布笔记">发布笔记<a aria-hidden="true" class="anchor-heading icon-link" href="#发布笔记"></a></h3>
+<ul>
+<li>注意：我们正在使用GitHub目标运行导出</li>
+</ul>
+<pre class="language-sh"><code class="language-sh">npx dendron publish export --target github
+</code></pre>
+<h3 id="部署更改">部署更改<a aria-hidden="true" class="anchor-heading icon-link" href="#部署更改"></a></h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"Dendron page update"</span>
+<span class="token function">git</span> push
+</code></pre>
+<h1 id="设置github-page">设置GitHub page<a aria-hidden="true" class="anchor-heading icon-link" href="#设置github-page"></a></h1>
+<ul>
+<li>创建页面分支</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> checkout -B pages
+<span class="token function">git</span> push -u origin HEAD
+</code></pre>
+<p>打开GitHub页面 pages分支，<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">选择发布源</a>：
+pages分支
+/ (root)文件夹</p>
+<p><img src="/image/Dendron.Github-Pages/1691080319436.png" alt="1691080319436"></p>
+<h1 id="设置github操作">设置GitHub操作<a aria-hidden="true" class="anchor-heading icon-link" href="#设置github操作"></a></h1>
+<ul>
+<li>切回主分支</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> checkout main
+</code></pre>
+<ul>
+<li>创建工作流</li>
+</ul>
+<p><strong>Mac和Linux</strong></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">mkdir</span> -p .github/workflow
+<span class="token function">touch</span> .github/workflows/publish.yml
+</code></pre>
+<p> <strong>windows</strong></p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">mkdir</span> -p .github/workflows
+New-Item .github/workflows/publish.yml
+</code></pre>
+<ul>
+<li>设置工作流</li>
+</ul>
+<pre class="language-yml"><code class="language-yml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Build Dendron Static Site
+
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">workflow_dispatch</span><span class="token punctuation">:</span> <span class="token comment"># Enables on-demand/manual triggering</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> main
+
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Checkout source
+      <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
+      <span class="token key atrule">with</span><span class="token punctuation">:</span>
+        <span class="token key atrule">fetch-depth</span><span class="token punctuation">:</span> <span class="token number">0</span>
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Restore Node modules cache
+      <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/cache@v2
+      <span class="token key atrule">id</span><span class="token punctuation">:</span> node<span class="token punctuation">-</span>modules<span class="token punctuation">-</span>cache
+      <span class="token key atrule">with</span><span class="token punctuation">:</span>
+        <span class="token key atrule">path</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          node_modules
+          .next/*
+          !.next/.next/cache
+          !.next/.env.*</span>
+        <span class="token key atrule">key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> runner.os <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">-</span>dendronv2<span class="token punctuation">-</span>$<span class="token punctuation">{</span><span class="token punctuation">{</span> hashFiles('<span class="token important">**/yarn.lock'</span><span class="token punctuation">,</span> '<span class="token important">**/package-lock.json')</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies
+      <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Initialize or pull nextjs template
+      <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token string">"(test -d .next) &#x26;&#x26; (echo 'updating dendron next...' &#x26;&#x26; cd .next &#x26;&#x26; git reset --hard &#x26;&#x26; git pull &#x26;&#x26; yarn &#x26;&#x26; cd ..) || (echo 'init dendron next' &#x26;&#x26; yarn dendron publish init)"</span>
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Restore Next cache
+      <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/cache@v2
+      <span class="token key atrule">with</span><span class="token punctuation">:</span>
+        <span class="token key atrule">path</span><span class="token punctuation">:</span> .next/.next/cache
+        <span class="token comment"># Generate a new cache whenever packages or source files change.</span>
+        <span class="token key atrule">key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> runner.os <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">-</span>nextjs<span class="token punctuation">-</span>$<span class="token punctuation">{</span><span class="token punctuation">{</span> hashFiles('.next/yarn.lock'<span class="token punctuation">,</span> '.next/package<span class="token punctuation">-</span>lock.json') <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">-</span>$<span class="token punctuation">{</span><span class="token punctuation">{</span> hashFiles('.next/<span class="token important">**.</span><span class="token punctuation">[</span>jt<span class="token punctuation">]</span>s'<span class="token punctuation">,</span> '.next/<span class="token important">**.</span><span class="token punctuation">[</span>jt<span class="token punctuation">]</span>sx') <span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Export notes
+      <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn dendron publish export <span class="token punctuation">-</span><span class="token punctuation">-</span>target github <span class="token punctuation">-</span><span class="token punctuation">-</span>yes
+
+    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy site
+      <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
+      <span class="token key atrule">with</span><span class="token punctuation">:</span>
+        <span class="token key atrule">github_token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITHUB_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token key atrule">publish_branch</span><span class="token punctuation">:</span> pages
+        <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> docs/
+        <span class="token key atrule">force_orphan</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+        <span class="token comment">#cname: example.com</span>
+</code></pre>
+<ul>
+<li>提交更改</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"add workflow"</span>
+<span class="token function">git</span> push
+</code></pre>
+<h1 id="首次推送笔记">首次推送笔记<a aria-hidden="true" class="anchor-heading icon-link" href="#首次推送笔记"></a></h1>
+<p>第一次推送需要一点时间，因为Next.js在初始发布时会生成一堆资产。随后的推送只会提交更改，并且会快得多。</p>
+<p>你可以通过点击GitHub存储库中的GitHub页面来查看页面的状态。</p>
+<blockquote>
+<p>由于这是您的第一次部署，可能需要一分钟才能显示页面。
+<img src="/image/Dendron.Github-Pages/1691081786682.png" alt="1691081786682"></p>
+</blockquote>

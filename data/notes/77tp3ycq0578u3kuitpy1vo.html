@@ -1,0 +1,75 @@
+<h1 id="方法论">方法论<a aria-hidden="true" class="anchor-heading icon-link" href="#方法论"></a></h1>
+<hr>
+<h2 id="什么是渗透测试">什么是渗透测试<a aria-hidden="true" class="anchor-heading icon-link" href="#什么是渗透测试"></a></h2>
+<p>渗透测试是模拟黑客，对计算机系统中的漏洞进行查找和利用。其目是识别攻击者可以利用的系统防御中的薄弱环节。
+这就像银行雇用别人假装盗匪，让他们试图闯入建筑物并进入保管库一样。如果“盗匪”成功，进入了银行或保险库，则银行将了解到他们需要如何加强安全措施的宝贵信息。</p>
+<h2 id="渗透测试学习前置知识">渗透测试学习前置知识<a aria-hidden="true" class="anchor-heading icon-link" href="#渗透测试学习前置知识"></a></h2>
+<ul>
+<li>TCP/IP 网络基础 
+<ul>
+<li>TCP/IP 寻址和子网划分：<a href="https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html">Cisco - 新用户的 IP 寻址和子网划分</a> </li>
+<li>使用 TCP/IP 的协议和服务：<a href="https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml">服务名称和传输协议端口号注册表</a> 如何传递和接收流量</li>
+</ul>
+</li>
+<li>操作系统 合理的 Windows 和 Linux 管理经验：
+<ul>
+<li><a href="https://linuxjourney.com/">Linux 之旅</a>，<a href="https://kali.training/">Kali Linux 揭晓</a> </li>
+<li>Active Directory：<a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview">Microsoft Active Directory 域服务概述</a></li>
+</ul>
+</li>
+<li>熟悉编程/脚本语言 
+<ul>
+<li>Bash：<a href="https://guide.bash.academy/">Bash 指南</a> </li>
+<li>Python：<a href="https://learnpythonthehardway.org/">以艰难的方式学习 Python</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="渗透测试方法论">渗透测试方法论<a aria-hidden="true" class="anchor-heading icon-link" href="#渗透测试方法论"></a></h2>
+<p>渗透测试是对目标或边界进行研究和攻击的一个持续循环，攻击应该进行结构化、计算，并在可能的情况下在实验室进行验证，然后才能在实际目标上实施。</p>
+<p><img src="https://img2023.cnblogs.com/blog/1689264/202308/1689264-20230802153626318-1941515121.png" alt="img"></p>
+<h2 id="渗透测试学习方法">渗透测试学习方法<a aria-hidden="true" class="anchor-heading icon-link" href="#渗透测试学习方法"></a></h2>
+<h3 id="具有更努力的心态">具有更努力的心态<a aria-hidden="true" class="anchor-heading icon-link" href="#具有更努力的心态"></a></h3>
+<ul>
+<li>更努力的心态</li>
+</ul>
+<p>信息安全在不断发展。技术和工具有保质期。在渗透测试期间遇到不熟悉的技术和环境是很常见的，同时也期望在有限的时间范围内交付结果。
+拥有适应和克服这些挑战所需的知识和性格是很重要的。 更努力的性格是永恒的，一旦你赢得它 - 它永远不会离开你。</p>
+<ul>
+<li>更努力意味着坚持</li>
+</ul>
+<p>信息安全涉及大量研究、故障排除和测试。成功没有捷径。
+错误和失败是过程的一部分。退后一步并了解方法失败的原因，将有助于确定下一步要尝试什么。
+最确定的成功方法……总是多试一次。换句话说，再试一次。</p>
+<ul>
+<li>更努力意味着要有创造力</li>
+</ul>
+<p>一遍又一遍地重复相同的失败方法不是进步。发挥创造力并在不工作时考虑不同的问题解决方法。
+您将需要利用您对信息安全概念的知识和理解来考虑各种解决方案。
+解决问题总是有不同的方法。换句话说，尝试不同的方法。</p>
+<ul>
+<li>更努力意味着要有洞察力</li>
+</ul>
+<p>安全态势的感知是任何信息安全专业人员的一项关键技能。您必须了解在给定情况下可用的技术、资源和技术。
+了解非技术方面也很重要，例如您有多少时间可用，以及如何最好地利用这些时间来获得结果。 
+换句话说，尝试更聪明。</p>
+<h3 id="不断的实践">不断的实践<a aria-hidden="true" class="anchor-heading icon-link" href="#不断的实践"></a></h3>
+<ul>
+<li><strong>PWK实验室</strong></li>
+</ul>
+<p>OSCP 开始利用实验室！为了帮助学生入门，我们创建了 <a href="https://help.offensive-security.com/hc/en-us/articles/360050473812">PWK 实验室学习路径</a><strong>。</strong></p>
+<ul>
+<li><strong>HACKTHEBOX  靶场</strong></li>
+</ul>
+<h3 id="枚举">枚举<a aria-hidden="true" class="anchor-heading icon-link" href="#枚举"></a></h3>
+<p>这个词可以说是渗透测试最重要的方面，但也可能是最难掌握的。 不要简单地运行扫描并继续前进。花时间彻底检查输出并理解其含义。 枚举是一种循环方法。每次获得新访问或新信息后，您都需要扩大搜索范围。 专业提示： 您进行正确的枚举越多，就越容易找到众所周知的“大海捞针”。</p>
+<h3 id="阅读漏洞利用文档">阅读漏洞利用文档<a aria-hidden="true" class="anchor-heading icon-link" href="#阅读漏洞利用文档"></a></h3>
+<p>在执行之前尝试了解漏洞利用的工作原理。即使在高层次上了解漏洞利用的工作原理也能帮助您调试遇到的问题。
+在运行漏洞利用之前，您是否需要设置文件或权限？您是否需要修改漏洞利用以匹配您的目标？
+专业提示： 不考虑可能发生的情况而运行未经验证的漏洞可能会导致灾难性的结果，例如丢失文件。</p>
+<h3 id="探索工具">探索工具<a aria-hidden="true" class="anchor-heading icon-link" href="#探索工具"></a></h3>
+<p>借此机会在实验室中学习各种工具（例如，nmap、nikto、sshuttle、Empire 等）。熟悉不同工具的优势，以确定哪种工具最适合特定情况。 Metasploit 在 PWK考试中的使用是有限的，不要通过在实验室中过度使用 Metasploit 来限制自己。</p>
+<h3 id="投入时间和精力">投入时间和精力<a aria-hidden="true" class="anchor-heading icon-link" href="#投入时间和精力"></a></h3>
+<p>根据您的背景，准备好投入大量时间来学习课程材料和实验室练习。 例如，在实验室环境中 >200 - 300+ 小时通常会产生最佳结果。  不要将自己局限于课程材料和实验室。花时间研究您不清楚的任何概念或先决条件。谷歌是你的朋友。</p>
+<h3 id="练习练习再练习">练习，练习，再练习！<a aria-hidden="true" class="anchor-heading icon-link" href="#练习练习再练习"></a></h3>
+<p>学习没有捷径可走。您完成的机器越多，接触环境和设置的机会就越多。
+不要仅仅依赖提示和演练。它们不能替代实际学习。至少先尝试机器。</p>

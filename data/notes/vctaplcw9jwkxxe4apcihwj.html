@@ -1,0 +1,107 @@
+<h1 id="install-kvm-qemu">Install-KVM-QEMU<a aria-hidden="true" class="anchor-heading icon-link" href="#install-kvm-qemu"></a></h1>
+<p>KVM是Linux世界中最常用的虚拟化软件之一。事实上，大多数云提供商都使用KVM作为他们的虚拟机管理程序。包括OpenStack在内的大型项目都使用KVM作为默认虚拟化工具。</p>
+<p>以下是如何在Arch Linux和Manjaro上安装KVM、QEMU和Virt Manager的完整指南。</p>
+<hr>
+<blockquote>
+<p>搬运自：<a href="https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar/">https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar/</a></p>
+</blockquote>
+<h1 id="安装kvm包">安装KVM包<a aria-hidden="true" class="anchor-heading icon-link" href="#安装kvm包"></a></h1>
+<p>第一步是安装运行KVM所需的所有软件包：</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> pacman -Syy
+<span class="token function">sudo</span> pacman -S archlinux-keyring
+<span class="token function">sudo</span> pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat dmidecode
+</code></pre>
+<p>同时安装ebtbles和iptables软件包。</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> pacman -S ebtables iptables
+</code></pre>
+<h1 id="安装其他工具">安装其他工具<a aria-hidden="true" class="anchor-heading icon-link" href="#安装其他工具"></a></h1>
+<p>libguestfs是一组用于访问和修改虚拟机（VM）磁盘映像的工具。作用如下：</p>
+<ul>
+<li>查看和编辑来宾中的文件</li>
+<li>编写对虚拟机的更改脚本</li>
+<li>监视磁盘使用/可用统计信息</li>
+<li>创建来宾</li>
+<li>P2V （物理机到虚拟机的迁移）</li>
+<li>V2V （虚拟机到虚拟机的迁移）</li>
+<li>执行备份及其他</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> pacman -S libguestfs
+</code></pre>
+<h1 id="启动kvm-libvirt服务">启动KVM libvirt服务<a aria-hidden="true" class="anchor-heading icon-link" href="#启动kvm-libvirt服务"></a></h1>
+<ul>
+<li>启用服务并设置开机自启动</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> libvirtd.service
+<span class="token function">sudo</span> systemctl start libvirtd.service
+</code></pre>
+<ul>
+<li>查看运行状态</li>
+</ul>
+<pre class="language-shell"><code class="language-shell">systemctl status libvirtd.service
+</code></pre>
+<h1 id="配置普通用户可以使用kvm">配置普通用户可以使用KVM<a aria-hidden="true" class="anchor-heading icon-link" href="#配置普通用户可以使用kvm"></a></h1>
+<ul>
+<li>打开/etc/libvirt/libvirtd.conf文件进行编辑。</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> pacman -S <span class="token function">vim</span>
+<span class="token function">sudo</span> <span class="token function">vim</span> /etc/libvirt/libvirtd.conf
+</code></pre>
+<ul>
+<li>将UNIX域套接字组所有权设置为libvirt（第85行左右）</li>
+</ul>
+<pre class="language-shell"><code class="language-shell">unix_sock_group <span class="token operator">=</span> <span class="token string">"libvirt"</span>
+</code></pre>
+<ul>
+<li>为R/W套接字设置UNIX套接字权限（第102行附近）</li>
+</ul>
+<pre class="language-shell"><code class="language-shell">unix_sock_rw_perms <span class="token operator">=</span> <span class="token string">"0770"</span>
+</code></pre>
+<ul>
+<li>将当前用户帐户添加到libvirt组</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">usermod</span> -a -G libvirt <span class="token variable"><span class="token variable">$(</span><span class="token function">whoami</span><span class="token variable">)</span></span>
+newgrp libvirt
+</code></pre>
+<ul>
+<li>重新启动libvirt守护进程。</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token function">sudo</span> systemctl restart libvirtd.service
+</code></pre>
+<h1 id="启用嵌套虚拟化可选">启用嵌套虚拟化（可选）<a aria-hidden="true" class="anchor-heading icon-link" href="#启用嵌套虚拟化可选"></a></h1>
+<ul>
+<li>嵌套虚拟化就是在虚拟机中运行虚拟机。
+如图所示，通过启用内核模块为kvm_intel / kvm_amd启用嵌套虚拟化。</li>
+</ul>
+<p>一般不会这样搞。</p>
+<pre class="language-shell"><code class="language-shell"><span class="token comment">### Intel Processor ###</span>
+<span class="token function">sudo</span> modprobe -r kvm_intel
+<span class="token function">sudo</span> modprobe kvm_intel <span class="token assign-left variable">nested</span><span class="token operator">=</span><span class="token number">1</span>
+
+<span class="token comment">### AMD Processor ###</span>
+<span class="token function">sudo</span> modprobe -r kvm_amd
+<span class="token function">sudo</span> modprobe kvm_amd <span class="token assign-left variable">nested</span><span class="token operator">=</span><span class="token number">1</span>
+</code></pre>
+<ul>
+<li>要使此配置持久化，请运行：</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">echo</span> <span class="token string">"options kvm-intel nested=1"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/modprobe.d/kvm-intel.conf
+</code></pre>
+<ul>
+<li>确认“嵌套虚拟化”设置为“yes”：</li>
+</ul>
+<pre class="language-shell"><code class="language-shell"><span class="token comment">## Intel Processor ###</span>
+$ systool -m kvm_intel -v <span class="token operator">|</span> <span class="token function">grep</span> nested
+    nested              <span class="token operator">=</span> <span class="token string">"Y"</span>
+    nested_early_check  <span class="token operator">=</span> <span class="token string">"N"</span>
+$ <span class="token function">cat</span> /sys/module/kvm_intel/parameters/nested 
+Y
+
+<span class="token comment">### AMD Processor ###</span>
+$ systool -m kvm_amd -v <span class="token operator">|</span> <span class="token function">grep</span> nested
+    nested              <span class="token operator">=</span> <span class="token string">"Y"</span>
+    nested_early_check  <span class="token operator">=</span> <span class="token string">"N"</span>
+$ <span class="token function">cat</span> /sys/module/kvm_amd/parameters/nested 
+Y
+</code></pre>
+<h1 id="在arch-linux-上使用kvm">在Arch Linux 上使用KVM<a aria-hidden="true" class="anchor-heading icon-link" href="#在arch-linux-上使用kvm"></a></h1>
+<p>至此，已经在Arch Linux上成功安装了KVM、QEMU和Virt Manager。现在就可以用了。</p>

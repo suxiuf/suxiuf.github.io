@@ -1,0 +1,125 @@
+<h1 id="endeavouros-i3">EndeavourOS-i3<a aria-hidden="true" class="anchor-heading icon-link" href="#endeavouros-i3"></a></h1>
+<hr>
+<p>> <strong>系统信息：</strong><br>
+><br>
+> NAME="EndeavourOS"<br>
+> PRETTY_NAME="EndeavourOS"<br>
+> ID="endeavouros"<br>
+> ID_LIKE="arch"<br>
+> BUILD_ID=rolling<br>
+> ANSI_COLOR="38;2;23;147;209"<br>
+> HOME_URL="<a href="https://endeavouros.com%22">https://endeavouros.com"</a><br>
+> DOCUMENTATION_URL="<a href="https://discovery.endeavouros.com%22">https://discovery.endeavouros.com"</a><br>
+> SUPPORT_URL="<a href="https://forum.endeavouros.com%22">https://forum.endeavouros.com"</a><br>
+> BUG_REPORT_URL="<a href="https://forum.endeavouros.com/c/arch-based-related-questions/bug-reports%22">https://forum.endeavouros.com/c/arch-based-related-questions/bug-reports"</a><br>
+> PRIVACY_POLICY_URL="<a href="https://endeavouros.com/privacy-policy-2%22">https://endeavouros.com/privacy-policy-2"</a><br>
+> LOGO="endeavouros"</p>
+<h2 id="系统安装">系统安装<a aria-hidden="true" class="anchor-heading icon-link" href="#系统安装"></a></h2>
+<p>官方镜像下载：<a href="/%5Bhttps://endeavouros.com/%5D()">https://endeavouros.com/</a></p>
+<p>选择安装i3桌面系统</p>
+<ul>
+<li>配置窗口透明：</li>
+</ul>
+<p>         安装 picom  ，找到i3配置文件 <code>~/.config/i3/config</code> ，在其中找到下面这行代码取消注释，重新打开窗口，可以发现已经配置成功。</p>
+<pre class="language-plaintext"><code class="language-plaintext">vexec_always --no-startup-id picom -b
+</code></pre>
+<ul>
+<li>更换壁纸<br>
+找一张好看的壁纸，放到/usr/share/endeavouros/backgrounds/ 下，然后将配置文件中的图片路径改为你想要的壁纸路径。</li>
+</ul>
+<pre class="language-plaintext"><code class="language-plaintext">exec --no-startup-id sleep 1 &#x26;amp;&#x26;amp; feh --bg-fill /usr/share/endeavouros/backgrounds/Animated.png
+</code></pre>
+<ul>
+<li>如果想配置定时更换壁纸，请参考以下配置：</li>
+</ul>
+<pre class="language-plaintext"><code class="language-plaintext">#!/bin/sh
+
+while true; do
+    find ~/图片 -type f \( -name '*.jpg' -o -name '*.png' \) -print0 |
+        shuf -n1 -z | xargs -0 feh --bg-scale
+    sleep 15m
+done
+</code></pre>
+<ul>
+<li>随机壁纸<br>
+每次重启电脑或重启i3就会随机选择文件夹里的图片当作壁纸</li>
+</ul>
+<pre class="language-plaintext"><code class="language-plaintext">exec_always --no-startup-id feh --randomize --bg-fill ~/图片/*
+</code></pre>
+<h2 id="常用软件安装">常用软件安装<a aria-hidden="true" class="anchor-heading icon-link" href="#常用软件安装"></a></h2>
+<p>请根据实际情况查找合适你系统的软件安装</p>
+<pre class="language-plaintext"><code class="language-plaintext">yay -S electronic-wechat-uos-bin
+yay -S wemeet
+yay -S bluemail
+yay -S code
+yay -S flameshot
+</code></pre>
+<ul>
+<li>字体安装</li>
+</ul>
+<pre class="language-plaintext"><code class="language-plaintext">sudo pacman -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei
+sudo pacman -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+</code></pre>
+<ul>
+<li>输入法安装</li>
+</ul>
+<pre class="language-plaintext"><code class="language-plaintext">sudo pacman -S fcitx5 fcitx5-chinese-addons  fcitx5-qt fcitx5-gtk    fcitx5-pinyin-zhwiki
+</code></pre>
+<ul>
+<li>解决开机自启动及显示问题</li>
+</ul>
+<p>在 <code>/etc/environment</code> 文件中添加以下内容</p>
+<pre class="language-plaintext"><code class="language-plaintext">GTK_IM_MODULE=fcitx5
+QT_IM_MODULE=fcitx5
+XMODIFIERS=@im=fcitx5
+</code></pre>
+<ul>
+<li>配置云拼音</li>
+</ul>
+<p>        运行<code>fcitx5-configtool</code> , 步骤略。</p>
+<h2 id="terminal-主题配置">Terminal 主题配置<a aria-hidden="true" class="anchor-heading icon-link" href="#terminal-主题配置"></a></h2>
+<ul>
+<li>zsh 及插件下载</li>
+</ul>
+<pre class="language-plaintext"><code class="language-plaintext">sudo pacman -Sy zsh
+sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k zsh-completions
+chsh -s /usr/bin/zsh
+</code></pre>
+<ul>
+<li>配置 <code>~/.zshrc</code> 文件</li>
+</ul>
+<p>在 <code>~/.zshrc</code> 中引用刚才下载的三个插件：</p>
+<pre class="language-plaintext"><code class="language-plaintext">source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+</code></pre>
+<p>重新启动terminal,会弹出设置提示，按提示设置即可。或者直接复制以下代码到<code>~/.zshrc</code> 文件：</p>
+<pre class="language-plaintext"><code class="language-plaintext">if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+alias ls='ls --color=auto'
+alias ll="ls -av --ignore=.."
+alias l="ls -lav --ignore.?*"
+
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+</code></pre>
+<h2 id="terminal-背景及字体设置">Terminal 背景及字体设置<a aria-hidden="true" class="anchor-heading icon-link" href="#terminal-背景及字体设置"></a></h2>
+<p>如果是<code>xfce4-terminal</code>，可以直接打开 xfce终端设置工具进行手动设置（背景透明），如下图：</p>
+<ul>
+<li>文字颜色
+<img src="https://img2023.cnblogs.com/blog/1689264/202307/1689264-20230727230821791-369881226.png" alt="image"></li>
+</ul>
+<ul>
+<li>背景透明度</li>
+</ul>
+<p><img src="https://img2023.cnblogs.com/blog/1689264/202307/1689264-20230727230839533-708375003.png" alt="image"></p>
+<h2 id="参考文档">参考文档<a aria-hidden="true" class="anchor-heading icon-link" href="#参考文档"></a></h2>
+<p><a href="https://blog.csdn.net/weixin_43372529/article/details/106712115">https://blog.csdn.net/weixin_43372529/article/details/106712115</a></p>
