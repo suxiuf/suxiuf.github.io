@@ -1,8 +1,8 @@
 ---
-title: 笔记
+title: PMP
 index: false
 icon: book
 category:
-  - 笔记
+  - pmp
 ---
 <Catalog />
