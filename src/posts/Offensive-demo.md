@@ -90,9 +90,20 @@ python ability-2.34-ftp-stor.py
 ```
 
 漏洞利用脚本如下：
-```python
+
+```
 脚本代码
 ```
+
+
+```python 
+ test
+```
+
+
+
+
+
 
 #### 验证截图
 

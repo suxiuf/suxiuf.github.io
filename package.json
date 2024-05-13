@@ -1,7 +1,7 @@
 {
-  "name": "miktu",
+  "name": "vuepress-theme-hope-template",
   "version": "2.0.0",
-  "description": "a note",
+  "description": "A project of vuepress-theme-hope",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -12,8 +12,9 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.9",
-    "vue": "^3.4.23",
+    "vue": "^3.4.27",
     "vuepress": "2.0.0-rc.9",
-    "vuepress-theme-hope": "2.0.0-rc.38"
-  }
+    "vuepress-theme-hope": "2.0.0-rc.41"
+  },
+  "packageManager": "pnpm@9.1.1+sha256.9551e803dcb7a1839fdf5416153a844060c7bce013218ce823410532504ac10b"
 }
