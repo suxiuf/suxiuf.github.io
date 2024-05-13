@@ -1,15 +1,19 @@
 ---
-title: "Offensive Security Certified Expert Exam Report"
-author: ["student@youremailaddress.com", "OSID: XXXX"]
-date: "2020-07-25"
-subject: "Markdown"
-keywords: [Markdown, Example]
-subtitle: "OSCE Exam Report"
-lang: "en"
+title: Offensive Security Certified Expert Exam Report
+author:
+  - "OSID: XXXX"
+  - student@youremailaddress.com
+date: 2020-07-25
+subject: Markdown
+keywords:
+  - Markdown
+  - Example
+subtitle: OSCE Exam Report
+lang: en
 titlepage: true
-titlepage-color: "483D8B"
-titlepage-text-color: "FFFAFA"
-titlepage-rule-color: "FFFAFA"
+titlepage-color: 483D8B
+titlepage-text-color: FFFAFA
+titlepage-rule-color: FFFAFA
 titlepage-rule-height: 2
 book: true
 classoption: oneside

@@ -1,0 +1,13 @@
+.admonition-right .admonition-center {
+    margin: 0;
+    padding: 0;
+}
+
+.admonition-right>div:nth-child(2) {
+    float: right;
+}
+
+.admonition-center>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}

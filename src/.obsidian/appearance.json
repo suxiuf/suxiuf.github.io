@@ -1,0 +1,17 @@
+{
+  "accentColor": "",
+  "cssTheme": "Blue Topaz",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "mycss",
+    "custom-admonitions.beb0ec"
+  ],
+  "translucency": true,
+  "baseFontSize": 16,
+  "baseFontSizeAction": false,
+  "nativeMenus": false,
+  "textFontFamily": "Source Han Sans,Helvetica Neue",
+  "interfaceFontFamily": "Source Han Sans,Helvetica Neue",
+  "monospaceFontFamily": "Monaco",
+  "showViewHeader": true
+}
