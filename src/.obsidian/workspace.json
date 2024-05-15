@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3321f445cdd64b29",
+        "id": "abd68d7ec12d10cc",
         "type": "tabs",
         "children": [
           {
-            "id": "22f57ae20d69a435",
+            "id": "8a10129593d3af6d",
             "type": "leaf",
             "state": {
               "type": "diff-view",
               "state": {
-                "file": "src/.obsidian/app.json",
+                "file": "src/.obsidian/workspace.json",
                 "staged": false
               }
             }
@@ -158,7 +158,7 @@
       "surfing:surfing-bookmark-manager": false
     }
   },
-  "active": "22f57ae20d69a435",
+  "active": "8a10129593d3af6d",
   "lastOpenFiles": [
     "template/Offensive-demo.md",
     "template/template.md",
