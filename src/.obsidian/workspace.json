@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b363ed5e4f80b2aa",
+        "id": "fd8eb41f8b749ce3",
         "type": "tabs",
         "children": [
           {
-            "id": "a62abbee0224c857",
+            "id": "8f5b133e29a62f79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/pmp/index.md",
+                "file": "template/template.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/pmp/index.md"
+                "file": "template/template.md"
               }
             }
           },
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/pmp/index.md",
+                "file": "template/template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,23 +155,25 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "a62abbee0224c857",
+  "active": "8f5b133e29a62f79",
   "lastOpenFiles": [
-    "posts/pmp/1.md",
-    "posts/pmp/index.md",
-    "posts/pmp/2.md",
     "template/Offensive-demo.md",
     "template/template.md",
-    "posts/range/defense1.md",
-    "posts/range/attack1.md",
+    "posts/Offensive-demo.md",
+    "posts/dragonfruit.md",
+    "posts/pmp/index.md",
+    "posts/pmp/2.md",
+    "posts/pmp/1.md",
     "posts/oscp/index.md",
     "posts/oscp/1.md",
+    "images/Pasted image 20240512164501.png",
+    "posts/range/index.md",
+    "posts/range/defense1.md",
+    "posts/range/attack1.md",
     "demo/README.md",
     "demo/markdown.md",
     "demo/layout.md",
     "demo/disable.md",
-    "posts/range/index.md",
-    "images/Pasted image 20240512164501.png",
     "demo/page.md",
     "intro.md",
     "README.md",
@@ -185,8 +187,6 @@
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/11_有一亿个 keys 要统计，应该用哪种集合.md",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/10_万金油的 String，为什么不好用了.md",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/09_切片集群：数据增多了，是该加内存还是加实例？.md",
-    "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/08_哨兵集群：哨兵挂了，主从库还能切换吗？.md",
-    "src/03_Resource/「极氪 001 All New」选购单.md",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/excalidraw/Redis 核心技术与实战.ex",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/excalidraw",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间",

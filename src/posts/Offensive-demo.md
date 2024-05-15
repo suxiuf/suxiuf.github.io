@@ -58,15 +58,15 @@ Exam Network(考试网)
   利用Nmap工具对发现的IP地址逐一进行服务枚举：
 ```shell
 sudo nmap 
-
 ```
 
 - Port Scan Results：
 
-|Server IP Address | Ports Open
------------------- | ----------------------------------------
-192.168.x.x       | **TCP**: 1433,3389\
-  **UDP**: 1434,161
+|Server IP Address | Ports Open       
+------------------ | ------------------
+192.168.x.x       | **TCP**: 1433,3389      |
+|**UDP**: 1434,161| 
+
 
 
 ### FTP Enumeration

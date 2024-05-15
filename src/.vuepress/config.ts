@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import obsidianPlugin from "./public/vuepress-plugin-obsidian/dist";
-import obsidianPlugin from "./public/vuepress-plugin-obsidian/src/index.ts";
 export default defineUserConfig({
   base: "/",
 
