@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "fd8eb41f8b749ce3",
+        "id": "665c3a00fe5874a6",
         "type": "tabs",
         "children": [
           {
-            "id": "8f5b133e29a62f79",
+            "id": "f1ef4b0cf971933c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "template/template.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -109,9 +104,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "template/template.md"
-              }
+              "state": {}
             }
           },
           {
@@ -120,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "template/template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,14 +147,14 @@
       "zk-prefixer:创建时间戳笔记": false
     }
   },
-  "active": "8f5b133e29a62f79",
+  "active": "f1ef4b0cf971933c",
   "lastOpenFiles": [
-    "template/Offensive-demo.md",
+    "posts/pmp/2.md",
     "template/template.md",
+    "template/Offensive-demo.md",
     "posts/Offensive-demo.md",
     "posts/dragonfruit.md",
     "posts/pmp/index.md",
-    "posts/pmp/2.md",
     "posts/pmp/1.md",
     "posts/oscp/index.md",
     "posts/oscp/1.md",
