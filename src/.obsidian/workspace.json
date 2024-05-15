@@ -4,15 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "665c3a00fe5874a6",
+        "id": "e6b68dfe7bc1f5f3",
         "type": "tabs",
         "children": [
           {
-            "id": "f1ef4b0cf971933c",
+            "id": "d21748a1e781746d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "diff-view",
+              "state": {
+                "file": "src/.obsidian/workspace.json",
+                "staged": false
+              }
             }
           }
         ]
@@ -129,25 +132,33 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "635ef2a3a145c1a2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "surfing:surfing-bookmark-manager": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "templates:插入模板": false,
+      "zk-prefixer:创建时间戳笔记": false,
       "excalidraw-cn:Create New Excalidraw File": false,
-      "zk-prefixer:创建时间戳笔记": false
+      "surfing:surfing-bookmark-manager": false
     }
   },
-  "active": "f1ef4b0cf971933c",
+  "active": "d21748a1e781746d",
   "lastOpenFiles": [
     "posts/pmp/2.md",
     "template/template.md",
