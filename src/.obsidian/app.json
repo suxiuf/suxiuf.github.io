@@ -1,5 +1,5 @@
 {
-  "attachmentFolderPath": "node_modules",
+  "attachmentFolderPath": "images",
   "promptDelete": false,
   "newFileLocation": "folder",
   "newLinkFormat": "absolute",
