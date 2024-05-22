@@ -11,10 +11,12 @@
             "id": "8a10129593d3af6d",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "src/.obsidian/workspace.json",
-                "staged": false
+                "file": "posts/pmp/2.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
@@ -107,7 +109,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/pmp/2.md"
+              }
             }
           },
           {
@@ -116,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/pmp/2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,28 +165,30 @@
   },
   "active": "8a10129593d3af6d",
   "lastOpenFiles": [
-    "template/Offensive-demo.md",
-    "template/template.md",
-    "posts/Offensive-demo.md",
-    "posts/dragonfruit.md",
-    "posts/range/index.md",
+    "images/Pasted image 20240522211101.png",
+    "images/Pasted image 20240522211030.png",
+    "demo/README.md",
+    "demo/page.md",
+    "demo/layout.md",
+    "demo/encrypt.md",
+    "demo/disable.md",
+    "demo/markdown.md",
+    "posts/oscp/1.md",
+    "images/Pasted image 20240512164501.png",
+    "posts/oscp/index.md",
+    "posts/pmp/1.md",
+    "posts/pmp/2.md",
+    "posts/pmp/index.md",
     "posts/range/attack1.md",
     "posts/range/defense1.md",
-    "posts/pmp/index.md",
-    "posts/pmp/2.md",
-    "posts/oscp/index.md",
-    "posts/oscp/1.md",
+    "posts/range/index.md",
+    "posts/Offensive-demo.md",
+    "posts/dragonfruit.md",
+    "template/Offensive-demo.md",
+    "template/template.md",
     "README.md",
     "portfolio.md",
     "intro.md",
-    "images/Pasted image 20240512164501.png",
-    "posts/pmp/1.md",
-    "demo/README.md",
-    "demo/markdown.md",
-    "demo/layout.md",
-    "demo/disable.md",
-    "demo/page.md",
-    "demo/encrypt.md",
     "Tags",
     "template",
     "未命名.md",
@@ -190,7 +197,6 @@
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/12_GEO 是什么？还可以定义新的数据类型吗？.md",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/11_有一亿个 keys 要统计，应该用哪种集合.md",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/10_万金油的 String，为什么不好用了.md",
-    "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/09_切片集群：数据增多了，是该加内存还是加实例？.md",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/excalidraw/Redis 核心技术与实战.ex",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/excalidraw",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间",
@@ -208,7 +214,6 @@
     "未命名 1.canvas",
     "node_modules/Pasted Image 20230619020653_991.png",
     "node_modules/Pasted Image 20230619020538_851.png",
-    "node_modules/Pasted Image 20230619013827_803.png",
     "src/02_program/00_todo/RocketMQ 刷盘机制流程图.canvas"
   ]
 }
