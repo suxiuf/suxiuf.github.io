@@ -2,7 +2,7 @@
   "attachmentFolderPath": "images",
   "promptDelete": false,
   "newFileLocation": "folder",
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "relative",
   "userIgnoreFilters": [
     "node_modules/"
   ],

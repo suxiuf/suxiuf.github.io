@@ -145,9 +145,19 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "69fd32c748c69c33",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "posts/pmp/2.md"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -167,6 +177,8 @@
   "lastOpenFiles": [
     "images/Pasted image 20240522211101.png",
     "images/Pasted image 20240522211030.png",
+    "posts/pmp/2.md",
+    "posts/pmp/1.md",
     "demo/README.md",
     "demo/page.md",
     "demo/layout.md",
@@ -176,8 +188,6 @@
     "posts/oscp/1.md",
     "images/Pasted image 20240512164501.png",
     "posts/oscp/index.md",
-    "posts/pmp/1.md",
-    "posts/pmp/2.md",
     "posts/pmp/index.md",
     "posts/range/attack1.md",
     "posts/range/defense1.md",
@@ -213,7 +223,6 @@
     "node_modules/pngjs/coverage/lcov-report/favicon.png",
     "未命名 1.canvas",
     "node_modules/Pasted Image 20230619020653_991.png",
-    "node_modules/Pasted Image 20230619020538_851.png",
     "src/02_program/00_todo/RocketMQ 刷盘机制流程图.canvas"
   ]
 }
