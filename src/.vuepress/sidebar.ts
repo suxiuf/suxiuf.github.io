@@ -1,8 +1,8 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar(
-  
-  {
+  '/demo/': [
+    {
     text: "如何使用",
     icon: "laptop-code",
     prefix: "/demo/",
@@ -10,11 +10,12 @@ export default sidebar(
     activeMatch: "^/demo/",
     children: "structure",
   },
-  {
-      text: "",
+  ],
+  '/': [{
+      text: "OSCP",
       icon: "book",
-      prefix: "posts/",
+      prefix: "/oscp/",
       activeMatch: "^/oscp/",
       children: "structure",
-  },
+  },],
 );
