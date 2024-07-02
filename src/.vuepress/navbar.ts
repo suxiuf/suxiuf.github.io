@@ -4,14 +4,12 @@ export default navbar([
   "/",
   "/demo/",
   {
-    text: "笔记",
+    text: "oscp",
     icon: "book",
-    prefix: "/posts/",
-    children: [
-      { text: "oscp", icon: "pen-to-square", link: "/posts/oscp/index.md" },
-      { text: "pmp", icon: "pen-to-square", link: "/posts/pmp/index.md" },
-      { text: "攻防", icon: "pen-to-square", link: "/posts/range/index.md" },
-    ],
-  }
+    prefix: "/oscp/",
+    children: [],
+  },
+  { text: "pmp", icon: "pen-to-square", link: "/posts/pmp/index.md" },
+  { text: "打靶记录", icon: "pen-to-square", link: "/posts/range/index.md" },
 
 ]);
