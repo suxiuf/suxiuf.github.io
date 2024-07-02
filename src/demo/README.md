@@ -1,7 +1,7 @@
 ---
 title: 使用指南
 index: false
-icon: laptop-code
+icon: lightbulb
 category:
   - 使用指南
 ---
