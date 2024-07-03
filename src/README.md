@@ -3,10 +3,10 @@ home: true
 icon: home
 title: 主页
 heroText: MikTu
-tagline: 不积跬步,无以致千里。
+tagline: 不积跬步，无以致千里
 
 actions:
-  - text: 入门
+  - text: 开始
     link: /oscp/
     icon: signs-post
     type: primary
