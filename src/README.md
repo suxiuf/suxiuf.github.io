@@ -13,7 +13,7 @@ actions:
 
   - text: 练习
     icon: lightbulb
-    link: /range/
+    link: /practice/
 
 features:
   - title: OSCP
@@ -24,7 +24,7 @@ features:
   - title: 打靶记录
     icon: desktop
     details: 在学习OSCP过程的练习记录
-    link: /range/
+    link: /practice/
 copyright: false
 footer: MikTu
 ---

@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "438a121a62b57f02",
+        "id": "b4899e151650a2e6",
         "type": "tabs",
         "children": [
           {
-            "id": "d3e7678a7a104702",
+            "id": "71269c96522ddb71",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "oscp/oscp-Linux.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -109,9 +104,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "oscp/oscp-Linux.md"
-              }
+              "state": {}
             }
           },
           {
@@ -120,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "oscp/oscp-Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,17 +143,14 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "oscp/oscp-Linux.md"
-              }
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 404.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,11 +163,24 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "d3e7678a7a104702",
+  "active": "71269c96522ddb71",
   "lastOpenFiles": [
-    "oscp/README.md",
+    "practice/practice_1.md",
+    "images/Pasted image 20240704000806.png",
+    "images/Pasted image 20240704000722.png",
+    "images/Pasted image 20240703234629.png",
     "oscp/oscp-Linux.md",
+    "images/Pasted image 20240703233422.png",
+    "images/Pasted image 20240703232322.png",
+    "images/Pasted image 20240703232250.png",
+    "images/Pasted image 20240703230920.png",
+    "range/practice-1.md",
+    "practice/README.md",
+    "practice",
+    "range/README.md",
     "notes/README.md",
+    "oscp/README.md",
+    "images/Pasted image 20240703205538.png",
     "README.md",
     "intro.md",
     "template/template.md",
@@ -196,15 +198,9 @@
     "posts/pmp/2.md",
     "posts/pmp/index.md",
     "images/Pasted image 20240522211101.png",
-    "images/Pasted image 20240522211030.png",
     "posts/pmp/1.md",
-    "images/Pasted image 20240512164501.png",
     "posts/range/attack1.md",
     "posts/range/defense1.md",
-    "posts/range/index.md",
-    "posts/Offensive-demo.md",
-    "posts/dragonfruit.md",
-    "portfolio.md",
     "Tags",
     "template",
     "images",
@@ -214,15 +210,8 @@
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间",
     "src/01_Project/Redis",
     "src/01_Project/Interview/Redis",
-    "src/04_Archive/计划单",
     "未命名.canvas",
     "src/01_daliy/05_终身学习体系/230202_个人信息流分享.canvas",
-    "node_modules/vuepress-theme-hope/lib/bundle/modules/blog/assets/hero.jpg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/telegram.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/skype.svg",
-    "node_modules/vuepress-theme-hope/templates/socialMediaIcons/douban.svg",
-    "node_modules/pngjs/coverage/lcov-report/sort-arrow-sprite.png",
-    "node_modules/pngjs/coverage/lcov-report/favicon.png",
     "未命名 1.canvas",
     "src/02_program/00_todo/RocketMQ 刷盘机制流程图.canvas"
   ]

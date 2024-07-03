@@ -4,6 +4,6 @@ export default navbar([
   "/",
   "/demo/",
   "/oscp/",
-  "/range/",
+  "/practice/",
   "/notes/",
 ]);

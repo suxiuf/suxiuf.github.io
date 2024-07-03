@@ -67,6 +67,8 @@ export default hopeTheme({
       imgSize: true,
       include: true,
       mark: true,
+      markmap:true,
+      flowchart: true,
       stylize: [
         {
           matcher: "Recommended",

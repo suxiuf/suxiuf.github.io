@@ -6,7 +6,7 @@ export default sidebar({
   ],
   "/demo/":  "structure",
   "/oscp/": "structure",
-  "/range/": "structure",
+  "/practice/": "structure",
   "/notes": "structure",
 });
 
