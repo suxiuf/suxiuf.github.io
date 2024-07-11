@@ -106,7 +106,7 @@ title: 注意
 ```
 
 ### 示例截图
-![[../images/Pasted image 20240703205538.png]]
+![](../images/Pasted%20image%2020240703205538.png)
 
 
 # Man手册
@@ -258,7 +258,7 @@ rmdir newdir
 ```
 
 ## file
-`file` 命令用于查看目录属性，使用方法如下：
+`file` 命令用于查看文件类型，使用方法如下：
 
 ```Bash
 file  /etc/passwd
@@ -525,8 +525,8 @@ sudo apt remove --purge <package>
 
 **示例**：
 
-![[../images/Pasted image 20240703192817.png]]
 
+![](../images/Pasted%20image%2020240703192817.png)
 
 ### 常用工具目录
 

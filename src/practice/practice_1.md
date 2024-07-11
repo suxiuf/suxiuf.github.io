@@ -15,15 +15,15 @@ copyright: MikTu
 ---
 # 练习1-日志分析
 
-````ad-question
+```ad-info
+title: question
 
 通过以下命令下载日志文件并解压，分析日志，发现攻击证据（问题： 谁在攻击，做了什么？）
 
-```shell
 wget http://www.offensive-security.com/pwk-files/access_log.txt.gz
 gunzip access_log.txt.gz
+
 ```
-````
 
 
 # 解题：
@@ -103,8 +103,8 @@ cat access.log.txt |grep "208.68.234.99" uniq -c
 
 # 结论
 
-```ad-check
+```ad-tip
 title: answer
 IP : 208.68.234.99 对 目标引用进行了密码爆破攻击，并破解成功
-
+```
 

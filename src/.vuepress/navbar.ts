@@ -6,4 +6,5 @@ export default navbar([
   "/oscp/",
   "/practice/",
   "/notes/",
+  "/TryHackMe/",
 ]);

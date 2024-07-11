@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "b4899e151650a2e6",
+        "id": "d679b9a60b40352b",
         "type": "tabs",
         "children": [
           {
-            "id": "71269c96522ddb71",
+            "id": "395c21148f1906aa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/linux-2.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           }
         ]
@@ -54,14 +59,6 @@
             }
           },
           {
-            "id": "e4a27fda7aaef96b",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
             "id": "d0dbcc4d2f0e76f2",
             "type": "leaf",
             "state": {
@@ -89,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 348.5
   },
   "right": {
     "id": "6e149d68010dd5c0",
@@ -104,7 +101,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TryHackMe/linux-2.md"
+              }
             }
           },
           {
@@ -113,6 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TryHackMe/linux-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "TryHackMe/linux-2.md"
+              }
             }
           }
         ]
@@ -163,53 +165,54 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "71269c96522ddb71",
+  "active": "63812af2222cf5be",
   "lastOpenFiles": [
-    "practice/practice_1.md",
-    "images/Pasted image 20240704000806.png",
-    "images/Pasted image 20240704000722.png",
-    "images/Pasted image 20240703234629.png",
+    "TryHackMe/TryHackMe-入门.md",
+    "TryHackMe/linux-1.md",
+    "TryHackMe/linux-2.md",
     "oscp/oscp-Linux.md",
+    "oscp/oscp-API渗透.md",
+    "oscp/oscp-英文生词本.md",
+    "template/Offensive-demo.md",
+    "template/template.md",
+    "images/Pasted image 20240711234127.png",
+    "images/Pasted image 20240711233227.png",
+    "images/Pasted image 20240711233858.png",
+    "images/Pasted image 20240711233839.png",
+    "demo/markdown.md",
+    "images/Pasted image 20240711220345.png",
+    "images/Pasted image 20240711214401.png",
+    "images/Pasted image 20240711211332.png",
+    "oscp/README.md",
+    "TryHackMe/README.md",
+    "oscp/TryHackMe/TryHackMe-2.md",
+    "TryHackMe",
+    "oscp/TryHackMe/TryHackMe-1.md",
+    "images/Pasted image 20240703234629.png",
     "images/Pasted image 20240703233422.png",
     "images/Pasted image 20240703232322.png",
-    "images/Pasted image 20240703232250.png",
-    "images/Pasted image 20240703230920.png",
+    "oscp/TryHackMe",
+    "practice/practice_1.md",
+    "intro.md",
+    "未命名",
+    "notes/README.md",
     "range/practice-1.md",
     "practice/README.md",
     "practice",
     "range/README.md",
-    "notes/README.md",
-    "oscp/README.md",
-    "images/Pasted image 20240703205538.png",
     "README.md",
-    "intro.md",
-    "template/template.md",
-    "template/Offensive-demo.md",
-    "images/Pasted image 20240703192817.png",
     "demo/page.md",
     "demo/README.md",
-    "demo/markdown.md",
     "demo/layout.md",
     "demo/disable.md",
     "oscp/Offensive-demo.md",
     "demo/encrypt.md",
-    "posts/oscp/1.md",
-    "posts/oscp/index.md",
-    "posts/pmp/2.md",
-    "posts/pmp/index.md",
-    "images/Pasted image 20240522211101.png",
-    "posts/pmp/1.md",
-    "posts/range/attack1.md",
-    "posts/range/defense1.md",
     "Tags",
     "template",
     "images",
     "excalidraw 24-05-11 08.16.24.ex",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/excalidraw/Redis 核心技术与实战.ex",
     "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间/excalidraw",
-    "src/01_Project/Redis/Redis 核心技术与实战 - 极客时间",
-    "src/01_Project/Redis",
-    "src/01_Project/Interview/Redis",
     "未命名.canvas",
     "src/01_daliy/05_终身学习体系/230202_个人信息流分享.canvas",
     "未命名 1.canvas",

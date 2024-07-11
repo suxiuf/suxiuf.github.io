@@ -8,6 +8,7 @@ export default sidebar({
   "/oscp/": "structure",
   "/practice/": "structure",
   "/notes": "structure",
+  "/TryHackMe": "structure",
 });
 
 
