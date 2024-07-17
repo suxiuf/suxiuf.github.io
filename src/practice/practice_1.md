@@ -58,7 +58,7 @@ wc -l access.log.txt
 ```
 
 **结果截图：**
-![[../images/Pasted image 20240703232322.png]]
+![](../images/Pasted%20image%2020240703232322.png)
 
 ## 过滤所有客户端IP,并统计数量
 
@@ -69,8 +69,7 @@ cat access.log.txt |cut -d  " " -f 1 | sort -u
 ```
 
 **结果截图：**
-![[../images/Pasted image 20240703233422.png]]
-
+![](../images/Pasted%20image%2020240703233422.png)
 - 统计IP访问次数,日志记录的`1173`条访问记录中，有`1038`条是由`IP：208.68.234.99` 发起;因此判断该ip可能存在异常行为。  
 
 ```shell
@@ -79,7 +78,7 @@ cat access.log.txt |cut -d  " " -f 1 | sort | uniq -c
 
 **结果截图：**
 
-![[../images/Pasted image 20240703234629.png]]
+![](../images/Pasted%20image%2020240703234629.png)
 
 ## 统计可疑IP请求资源
 再次对日志格式进行分析， 并以 `"`  作为分隔符，对可疑`IP`请求的资源进行日过滤，发现其所有访问请求资源均为`GET //admin HTTP/1.1`，可确定此IP攻击行为是“密码爆破”。
@@ -89,7 +88,7 @@ cat access.log.txt |grep "208.68.234.99"  | cut -d "\"" -f 2 | uniq -c
 ```
 
 **结果截图：**
-![[../images/Pasted image 20240704000722.png]]
+![](../images/Pasted%20image%2020240704000722.png)
 
 ## 分析攻击结果
 通过以下命令，近一步对可疑IP: `208.68.234.99`  的请求结果进行统计查看，发现其他请求返回的状态码为`401`但是有一条请求的状态码为`200`，判断密码 破解成功。
@@ -98,8 +97,8 @@ cat access.log.txt |grep "208.68.234.99" uniq -c
 ```
 
 **结果截图：**
+![](../images/Pasted%20image%2020240704000806.png)
 
-![[../images/Pasted image 20240704000806.png]]
 
 # 结论
 

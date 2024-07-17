@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d679b9a60b40352b",
+        "id": "63deb5930f3c2199",
         "type": "tabs",
         "children": [
           {
-            "id": "395c21148f1906aa",
+            "id": "994119392647bbb7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/linux-2.md",
+                "file": "TryHackMe/TryHackMe-入门.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 222.51103591918945
   },
   "right": {
     "id": "6e149d68010dd5c0",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/linux-2.md"
+                "file": "TryHackMe/TryHackMe-入门.md"
               }
             }
           },
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/linux-2.md",
+                "file": "TryHackMe/TryHackMe-入门.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,15 +144,17 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "TryHackMe/linux-2.md"
+                "file": "TryHackMe/TryHackMe-入门.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 210.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,34 +167,38 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "63812af2222cf5be",
+  "active": "994119392647bbb7",
   "lastOpenFiles": [
+    "TryHackMe/SMB服务.md",
+    "TryHackMe/README.md",
+    "TryHackMe/NetWork-1.md",
     "TryHackMe/TryHackMe-入门.md",
+    "images/Pasted image 20240716222807.png",
+    "images/Pasted image 20240716222751.png",
+    "images/Pasted image 20240716222004.png",
+    "images/Pasted image 20240716221604.png",
+    "images/Pasted image 20240716221546.png",
+    "images/Pasted image 20240715233037.png",
+    "images/Pasted image 20240715232629.png",
+    "images/Pasted image 20240715232512.png",
+    "images/Pasted image 20240715232031.png",
+    "images/Pasted image 20240715231357.png",
     "TryHackMe/linux-1.md",
+    "TryHackMe/linux-3.md",
     "TryHackMe/linux-2.md",
     "oscp/oscp-Linux.md",
-    "oscp/oscp-API渗透.md",
-    "oscp/oscp-英文生词本.md",
+    "practice/practice_1.md",
     "template/Offensive-demo.md",
+    "notes/Linux -日常.md",
+    "oscp/oscp-英文生词本.md",
+    "oscp/oscp-API渗透.md",
     "template/template.md",
-    "images/Pasted image 20240711234127.png",
-    "images/Pasted image 20240711233227.png",
-    "images/Pasted image 20240711233858.png",
-    "images/Pasted image 20240711233839.png",
     "demo/markdown.md",
-    "images/Pasted image 20240711220345.png",
-    "images/Pasted image 20240711214401.png",
-    "images/Pasted image 20240711211332.png",
     "oscp/README.md",
-    "TryHackMe/README.md",
     "oscp/TryHackMe/TryHackMe-2.md",
     "TryHackMe",
     "oscp/TryHackMe/TryHackMe-1.md",
-    "images/Pasted image 20240703234629.png",
-    "images/Pasted image 20240703233422.png",
-    "images/Pasted image 20240703232322.png",
     "oscp/TryHackMe",
-    "practice/practice_1.md",
     "intro.md",
     "未命名",
     "notes/README.md",
@@ -202,11 +208,6 @@
     "range/README.md",
     "README.md",
     "demo/page.md",
-    "demo/README.md",
-    "demo/layout.md",
-    "demo/disable.md",
-    "oscp/Offensive-demo.md",
-    "demo/encrypt.md",
     "Tags",
     "template",
     "images",

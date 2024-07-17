@@ -15,5 +15,11 @@ star: true
 copyright: MikTu
 ---
 
-- entire directory：  整个目录
-- backup: 备份
+- `entire directory`：  整个目录
+- `backup`: 备份
+- `frames`: 帧
+- `Segments`: 数据段
+- `Datagrams`：数据报
+- `de-encapsulation` ： 解封装 
+- `Registrant` : 注册
+- `detection`：检测
