@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/TryHackMe-入门.md",
+                "file": "TryHackMe/常见服务.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/TryHackMe-入门.md"
+                "file": "TryHackMe/常见服务.md"
               }
             }
           },
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/TryHackMe-入门.md",
+                "file": "TryHackMe/常见服务.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,17 +144,15 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "TryHackMe/TryHackMe-入门.md"
+                "file": "TryHackMe/常见服务.md"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 210.5,
-    "collapsed": true
+    "width": 386.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,11 +165,15 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "994119392647bbb7",
+  "active": "63812af2222cf5be",
   "lastOpenFiles": [
-    "TryHackMe/SMB服务.md",
+    "TryHackMe/Telnet 服务.md",
+    "TryHackMe/常见服务.md",
     "TryHackMe/README.md",
     "TryHackMe/NetWork-1.md",
+    "images/Pasted image 20240717215312.png",
+    "oscp/oscp-英文生词本.md",
+    "template/template.md",
     "TryHackMe/TryHackMe-入门.md",
     "images/Pasted image 20240716222807.png",
     "images/Pasted image 20240716222751.png",
@@ -182,7 +184,6 @@
     "images/Pasted image 20240715232629.png",
     "images/Pasted image 20240715232512.png",
     "images/Pasted image 20240715232031.png",
-    "images/Pasted image 20240715231357.png",
     "TryHackMe/linux-1.md",
     "TryHackMe/linux-3.md",
     "TryHackMe/linux-2.md",
@@ -190,9 +191,7 @@
     "practice/practice_1.md",
     "template/Offensive-demo.md",
     "notes/Linux -日常.md",
-    "oscp/oscp-英文生词本.md",
     "oscp/oscp-API渗透.md",
-    "template/template.md",
     "demo/markdown.md",
     "oscp/README.md",
     "oscp/TryHackMe/TryHackMe-2.md",
@@ -207,7 +206,6 @@
     "practice",
     "range/README.md",
     "README.md",
-    "demo/page.md",
     "Tags",
     "template",
     "images",

@@ -23,3 +23,4 @@ copyright: MikTu
 - `de-encapsulation` ： 解封装 
 - `Registrant` : 注册
 - `detection`：检测
+- `application protocol` : 应用协议
