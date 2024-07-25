@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8f5bdb88c1842cc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/常见服务.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -165,26 +179,27 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "63812af2222cf5be",
+  "active": "8f5bdb88c1842cc8",
   "lastOpenFiles": [
-    "TryHackMe/Telnet 服务.md",
+    "images/Pasted image 20240725222225.png",
+    "images/Pasted image 20240725222208.png",
+    "images/Pasted image 20240725212559.png",
+    "images/Pasted image 20240723233158.png",
+    "images/Pasted image 20240723232134.png",
+    "images/Pasted image 20240723225201.png",
+    "images/Pasted image 20240723225139.png",
+    "images/Pasted image 20240723224314.png",
+    "TryHackMe/linux-1.md",
     "TryHackMe/常见服务.md",
-    "TryHackMe/README.md",
     "TryHackMe/NetWork-1.md",
+    "TryHackMe/README.md",
+    "TryHackMe/Telnet 服务.md",
     "images/Pasted image 20240717215312.png",
     "oscp/oscp-英文生词本.md",
     "template/template.md",
     "TryHackMe/TryHackMe-入门.md",
     "images/Pasted image 20240716222807.png",
     "images/Pasted image 20240716222751.png",
-    "images/Pasted image 20240716222004.png",
-    "images/Pasted image 20240716221604.png",
-    "images/Pasted image 20240716221546.png",
-    "images/Pasted image 20240715233037.png",
-    "images/Pasted image 20240715232629.png",
-    "images/Pasted image 20240715232512.png",
-    "images/Pasted image 20240715232031.png",
-    "TryHackMe/linux-1.md",
     "TryHackMe/linux-3.md",
     "TryHackMe/linux-2.md",
     "oscp/oscp-Linux.md",
