@@ -4,37 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "63deb5930f3c2199",
+        "id": "980d5dbd1e794ecc",
         "type": "tabs",
         "children": [
           {
-            "id": "994119392647bbb7",
+            "id": "22e2f4aa3509a17b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/常见服务.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8f5bdb88c1842cc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/常见服务.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,7 +143,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -179,8 +161,11 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "8f5bdb88c1842cc8",
+  "active": "69fd32c748c69c33",
   "lastOpenFiles": [
+    "TryHackMe/NetWork-1.md",
+    "TryHackMe/TryHackMe-入门.md",
+    "TryHackMe/常见服务.md",
     "images/Pasted image 20240725222225.png",
     "images/Pasted image 20240725222208.png",
     "images/Pasted image 20240725212559.png",
@@ -190,16 +175,12 @@
     "images/Pasted image 20240723225139.png",
     "images/Pasted image 20240723224314.png",
     "TryHackMe/linux-1.md",
-    "TryHackMe/常见服务.md",
-    "TryHackMe/NetWork-1.md",
     "TryHackMe/README.md",
     "TryHackMe/Telnet 服务.md",
     "images/Pasted image 20240717215312.png",
     "oscp/oscp-英文生词本.md",
     "template/template.md",
-    "TryHackMe/TryHackMe-入门.md",
     "images/Pasted image 20240716222807.png",
-    "images/Pasted image 20240716222751.png",
     "TryHackMe/linux-3.md",
     "TryHackMe/linux-2.md",
     "oscp/oscp-Linux.md",
