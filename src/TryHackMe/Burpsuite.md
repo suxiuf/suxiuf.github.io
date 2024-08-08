@@ -1,7 +1,6 @@
 ---
 title: burpsuite
-cover: 
-icon: file
+icon: book
 order: 2
 author: Miktu
 date: 2024-07-27
@@ -239,3 +238,31 @@ title: 注意
 
 ![](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/fb2a8717ae887eda024a7791d83cefaf.gif)
 
+## 尝试攻击
+了解了如何设置和配置代理之后，让我们看一个简化的实际示例。
+
+1. 首先，开启burpsuite代理，使用浏览器打开URL： `http://10.10.41.151/ticket/`
+![](../images/Pasted%20image%2020240728190943.png)
+
+2. 尝试在“联系电子邮件”字段中键入：`<script>alert("Succ3ssful XSS")</script>`。您应该会发现有一个客户端过滤器可以防止您添加电子邮件地址中不允许的任何特殊字符：
+![GIF demonstrating the client-side filter](https://tryhackme-images.s3.amazonaws.com/user-uploads/5d9e176315f8850e719252ed/room-content/04acd78be44400cf105c7d41b104b7fe.gif)
+
+对我们来说幸运的是，客户端过滤器非常容易绕过。我们有多种方法可以禁用脚本或首先阻止它加载。
+
+现在让我们专注于简单地绕过过滤器。
+
+首先，确保您的Burp代理处于活动状态并且拦截已打开。
+
+现在，在支持表单中输入一些合法数据。例如：“pentester@example.thm”作为电子邮件地址，“测试攻击”作为查询。
+
+提交表单-请求应被代理拦截。
+
+有了在代理中捕获的请求，我们现在可以将电子邮件字段更改为我们非常简单的有效负载，从上面开始：`<script>alert("Succ3ssful XSS")</script>`。粘贴到有效负载后，我们需要选择它，然后URL使用`Ctrl + U`快捷方式对其进行编码，以使其可以安全发送。此过程显示在下面的GIF中：
+有了在代理中捕获的请求，我们现在可以将电子邮件字段更改为我们非常简单的有效负载，从上面开始：`<script>alert("Succ3ssful XSS")</script>`。粘贴到有效负载后，我们需要选择它，然后URL使用`Ctrl + U`快捷方式对其进行编码，以使其可以安全发送。
+
+![](../images/Pasted%20image%2020240728191341.png)
+最后，按“转发”按钮发送请求。
+
+您应该会从站点中找到一个警告框，指示XSS攻击成功！
+
+![](../images/Pasted%20image%2020240728191231.png)

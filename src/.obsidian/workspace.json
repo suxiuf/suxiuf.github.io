@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "094decc4ea6b3758",
+        "id": "c8288d234785e621",
         "type": "tabs",
         "children": [
           {
-            "id": "6873feec5cce07c9",
+            "id": "1e894f1cc2c2e8f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/WebSites-2.md",
+                "file": "TryHackMe/OWASP-Juice-Shop.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sessions",
+                "query": "gobuser",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,12 +82,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 222.51103591918945
+    "width": 419.51103591918945
   },
   "right": {
     "id": "6e149d68010dd5c0",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/WebSites-2.md"
+                "file": "TryHackMe/OWASP-Juice-Shop.md"
               }
             }
           },
@@ -113,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/WebSites-2.md",
+                "file": "TryHackMe/OWASP-Juice-Shop.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,15 +144,16 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "TryHackMe/WebSites-2.md"
+                "file": "TryHackMe/OWASP-Juice-Shop.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 386.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,33 +166,36 @@
       "vscode-editor:新建代码文件": false
     }
   },
-  "active": "6873feec5cce07c9",
+  "active": "1e894f1cc2c2e8f5",
   "lastOpenFiles": [
-    "images/Pasted image 20240728182736.png",
-    "images/Pasted image 20240728182632.png",
-    "images/Pasted image 20240728182602.png",
-    "images/Pasted image 20240728144341.png",
-    "images/Pasted image 20240728144308.png",
-    "images/Pasted image 20240728142012.png",
-    "images/Pasted image 20240728141732.png",
-    "images/Pasted image 20240728141517.png",
-    "images/Pasted image 20240728141408.png",
-    "images/Pasted image 20240728141105.png",
-    "images/Pasted image 20240728140806.png",
-    "TryHackMe/WebSites-2.md",
-    "TryHackMe/WebSites-1.md",
-    "demo/markdown.md",
-    "TryHackMe/NetWork-2.md",
-    "TryHackMe/README.md",
-    "TryHackMe/linux-1.md",
+    "TryHackMe/OWASP-Top10.md",
+    "TryHackMe/OWASP-Juice-Shop.md",
+    "TryHackMe/Burpsuite.md",
+    "TryHackMe/上传漏洞.md",
+    "TryHackMe/Web服务.md",
+    "TryHackMe/常见的服务与漏洞.md",
     "TryHackMe/TryHackMe-入门.md",
+    "TryHackMe/README.md",
+    "TryHackMe/NetWork+nmap.md",
+    "TryHackMe/linux-基础.md",
+    "images/Pasted image 20240807195702.png",
+    "images/Pasted image 20240807195626.png",
+    "images/Pasted image 20240807195447.png",
+    "images/Pasted image 20240807195435.png",
+    "images/Pasted image 20240807195334.png",
+    "images/Pasted image 20240807195306.png",
+    "images/Pasted image 20240807194752.png",
+    "images/Pasted image 20240807194508.png",
+    "images/Pasted image 20240807193212.png",
+    "images/Pasted image 20240807193128.png",
     "TryHackMe/NetWork-1.md",
+    "oscp/oscp-Linux.md",
+    "demo/markdown.md",
     "TryHackMe/Telnet 服务.md",
     "oscp/oscp-英文生词本.md",
     "template/template.md",
     "TryHackMe/linux-3.md",
     "TryHackMe/linux-2.md",
-    "oscp/oscp-Linux.md",
     "practice/practice_1.md",
     "template/Offensive-demo.md",
     "notes/Linux -日常.md",
@@ -204,9 +207,6 @@
     "oscp/TryHackMe",
     "intro.md",
     "未命名",
-    "notes/README.md",
-    "range/practice-1.md",
-    "practice/README.md",
     "practice",
     "Tags",
     "template",

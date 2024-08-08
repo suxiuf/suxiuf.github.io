@@ -1,7 +1,7 @@
 ---
 title: linux基础-1
-icon: file
-order: 3
+icon: tun
+order: 2
 author: Miktu
 date: 2024-07-011
 category:

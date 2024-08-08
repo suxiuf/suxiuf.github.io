@@ -1,6 +1,6 @@
 ---
 title: TryHackMe-入门
-icon: file
+icon: book
 order: 1
 author: Miktu
 date: 2024-07-10
