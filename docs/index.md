@@ -1,0 +1,64 @@
+---
+layout: home
+
+hero:
+  name: "MikTu"
+  text: "只是个人笔记"
+  tagline: 不积跬步，无以致千里
+  image:
+    src: /logo.png
+    alt: Auto SideBar
+  actions:
+    - theme: brand
+      text: 渗透测试
+      link: /penetration/index
+    - theme: alt
+      text: Github
+      link: https://github.com/suxiuf.github.io
+
+features:
+ 
+  - icon: 📖
+    title: 个人笔记
+    details: 本站只记录作者日常学习笔记
+  - icon: 🛡
+    title: 网络安全
+    details: 笔记内容偏向网络安全方向
+  - icon: 🤔
+    title: 小白入门
+    details: 笔记内容从最基础开始，记录了从小白开始学习网络安全的所有内容
+
+ 
+---   
+
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(220deg, #bd34fe 20%, #41d1ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-90deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+
+@keyframes ping {
+  15%,
+  to {
+    transform: scale(1.25, 2);
+    opacity: 0;
+  }
+}
+</style>
