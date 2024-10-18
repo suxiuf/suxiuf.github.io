@@ -11,15 +11,10 @@
             "id": "7148101f5ed15472",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "type": "pkmer-downloader",
+              "state": {},
+              "icon": "bookmark",
+              "title": "Pkmer Market"
             }
           }
         ]
@@ -171,7 +166,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -183,11 +177,16 @@
       "pkmer:Open Pkmer Market": false,
       "i18n:I18N": false,
       "media-sync:Media sync": false,
-      "excalidraw-cn:Create New Excalidraw File": false
+      "excalidraw-cn:Create New Excalidraw File": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "7148101f5ed15472",
   "lastOpenFiles": [
+    "guide/guide.md",
+    "guide/template.md",
+    "penetration/index.md",
+    "index.md",
     "public/icons/SimpleIconsKalilinux.svg",
     "public/icons/image.svg",
     "public/icons/DeviconPlainKalilinuxWordmark.svg",
@@ -200,19 +199,14 @@
     "public/SimpleIconsHackthebox-1.svg",
     "public/SimpleIconsTryhackme.svg",
     "public/SimpleIconsTryhackme.vue",
-    "penetration/index.md",
     "penetration/oscp/index.md",
     "penetration/oscp/1.network.md",
     "penetration/oscp/2.markmind.md",
     "penetration/oscp/2.test.md",
-    "public/logo.png",
-    "index.md",
     "penetration/public/index",
     "penetration/public",
     "public/penetration/oscp/1.network",
     "public/penetration/oscp",
-    "guide/template.md",
-    "guide/guide.md",
     "public/penetration/index",
     "public/penetration",
     "_media-sync_resources",

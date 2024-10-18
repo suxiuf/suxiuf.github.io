@@ -1,12 +1,10 @@
 ---
 titel: 本站配置
 ---
+# 配置
+
 
 本站基于[vitepress](https://vitepress.dev/zh/),使用自动生成侧边栏的插件[VitePress Auto SideBar Plugin](https://vitepress-auto-sidebar-plugin.netlify.app/),以及自动生成代码块图标的插件(https://vp.yuy1n.io/getting-started.html)
-
-
-
-# 配置
 
 ## 搜索
 vitepress 默认主题自带搜索功能，只需按[官方文档](https://vitepress.dev/zh/reference/default-theme-search#search)配置即可：
