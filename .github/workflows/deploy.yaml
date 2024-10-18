@@ -43,8 +43,7 @@ jobs:
         env:
             NODE OPTIONS: --max old space zize=8192
         run:  
-          pnpm add -D @vuepress/plugin-search@next
-          pnpm run docs:build
+          pnpm add -D @vuepress/plugin-search@next && pnpm run docs:build
 
       # 部署到GitHub Pages - 也就是将打包内容发布到GitHub Pages
       - name: Deploy
