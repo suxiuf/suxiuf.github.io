@@ -28,7 +28,6 @@ features:
     title: 小白入门
     details: 笔记内容从最基础开始，记录了从小白开始学习网络安全的所有内容
 
-
   - icon: <Icon icon="simple-icons:tryhackme" />
     title: Tryhackme
     details: TryHackMe是一个在线网络安全学习平台平台，可以通过浏览器进行动手练习和实验。
