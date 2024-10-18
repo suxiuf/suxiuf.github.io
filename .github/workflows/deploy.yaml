@@ -17,23 +17,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
+      # 设置node的版本
 
       # 安装 pnpm
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 9
-
-      # 设置node的版本
+       
       - name: Use Node.js
         # 使用 actions/setup-node@v3 库安装 nodejs，with 提供了一个参数 node-version 表示要安装的 nodejs 版本
         uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: pnpm
-
-       
+          cache: pnpm 
+      
       # 安装依赖
       # Install dependencies
       - name: Install Dependencies
@@ -47,9 +45,9 @@ jobs:
         env:
             NODE OPTIONS: --max old space zize=8192
         run:  
-            pnpm add vitepress-auto-sidebar-plugin --save-dev
-            pnpm run docs:build
-            > docs/.vitepress/dist/.nojekyll
+          pnpm add -D @vuepress/plugin-search@next
+          pnpm run docs:build
+          > docs/.vuepress/dist/.nojekyll
 
       # 部署到GitHub Pages - 也就是将打包内容发布到GitHub Pages
       - name: Deploy
