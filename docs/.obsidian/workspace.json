@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8076e30f9b7f59b0",
+        "id": "4de289535c9761b6",
         "type": "tabs",
         "children": [
           {
-            "id": "7148101f5ed15472",
+            "id": "23f00991e796a7ed",
             "type": "leaf",
             "state": {
-              "type": "pkmer-downloader",
-              "state": {},
-              "icon": "bookmark",
-              "title": "Pkmer Market"
+              "type": "markdown",
+              "state": {
+                "file": "guide/template.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "template"
             }
           }
         ]
@@ -181,11 +186,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7148101f5ed15472",
+  "active": "23f00991e796a7ed",
   "lastOpenFiles": [
     "guide/guide.md",
     "guide/template.md",
     "penetration/index.md",
+    "未命名.canvas",
     "index.md",
     "public/icons/SimpleIconsKalilinux.svg",
     "public/icons/image.svg",

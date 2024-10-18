@@ -1,6 +1,5 @@
 [
   "vscode-editor",
-  "surfing",
   "pkmer",
   "i18n",
   "obsidian-style-settings",
@@ -12,5 +11,6 @@
   "obsidian-git",
   "obsidian-paste-image-rename",
   "git-file-explorer",
-  "obsidian-mindmap-nextgen"
+  "obsidian-mindmap-nextgen",
+  "surfing"
 ]

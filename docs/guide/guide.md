@@ -1,7 +1,7 @@
 ---
 titel: 本站配置
 ---
-# 配置
+# 本站配置
 
 
 本站基于[vitepress](https://vitepress.dev/zh/),使用自动生成侧边栏的插件[VitePress Auto SideBar Plugin](https://vitepress-auto-sidebar-plugin.netlify.app/),以及自动生成代码块图标的插件(https://vp.yuy1n.io/getting-started.html)

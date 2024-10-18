@@ -4,10 +4,6 @@
     {
       "name": "duckduckgo",
       "url": "https://duckduckgo.com/?q="
-    },
-    {
-      "name": "bing",
-      "url": "https://www.bing.com/?q="
     }
   ],
   "hoverPopover": true,
@@ -19,22 +15,22 @@
   "showOtherSearchEngines": false,
   "showSearchBarInPage": true,
   "markdownPath": "/",
-  "customHighlightFormat": true,
+  "customHighlightFormat": false,
   "highlightFormat": "[{CONTENT}]({URL})",
-  "highlightInSameTab": true,
-  "openInSameTab": true,
+  "highlightInSameTab": false,
+  "openInSameTab": false,
   "showRefreshButton": true,
   "openInObsidianWeb": false,
   "useCustomIcons": false,
   "useWebview": false,
   "useIconList": true,
-  "darkMode": true,
+  "darkMode": false,
   "randomBackground": false,
-  "lastOpenedFiles": true,
+  "lastOpenedFiles": false,
   "bookmarkManager": {
     "openBookMark": true,
-    "saveBookMark": false,
-    "sendToReadWise": false,
+    "saveBookMark": true,
+    "sendToReadWise": true,
     "pagination": "12",
     "category": "- Computer\n    - 算法\n    - 数据结构\n- obsidian\n    - surfing\n    - dataview\n",
     "defaultCategory": "ROOT",
@@ -52,6 +48,6 @@
   },
   "treeData": [],
   "enableHtmlPreview": true,
-  "supportLivePreviewInlineUrl": false,
+  "supportLivePreviewInlineUrl": true,
   "enableTreeView": false
 }
