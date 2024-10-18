@@ -1,0 +1,39 @@
+{
+    "manifest": {
+        "id": "media-sync",
+        "author": "",
+        "version": "1.0.0",
+        "pluginVersion": "0.0.15"
+    },
+    "description": {
+        "original": "Downloads media files(eg. images, PDFs) from the URLs in documents and displays the content.",
+        "translation": "Downloads media files(eg. images, PDFs) from the URLs in documents and displays the content."
+    },
+    "dict": {
+        "Notice(\n      `${PROCESS_MESSAGE} (${currentCount}/${totalCount})": "Notice(\n      `${PROCESS_MESSAGE} (${currentCount}/${totalCount})",
+        "Notice(START_MESSAGE, 2e3)": "Notice(START_MESSAGE, 2e3)",
+        "Notice(PROCESS_MESSAGE, 2e3)": "Notice(PROCESS_MESSAGE, 2e3)",
+        "Notice(ERROR_MESSAGE, 0)": "Notice(ERROR_MESSAGE, 0)",
+        "Notice(END_MESSAGE, 0)": "Notice(END_MESSAGE, 0)",
+        "Notice(\"Media sync does not support folders.\")": "Notice(\"Media sync does not support folders.\")",
+        ".log(\"access url error: \" + urlMatche)": ".log(\"access url error: \" + urlMatche)",
+        ".log(error)": ".log(error)",
+        ".log(START_MESSAGE)": ".log(START_MESSAGE)",
+        ".log(PROCESS_MESSAGE)": ".log(PROCESS_MESSAGE)",
+        ".log(\"load data error\")": ".log(\"load data error\")",
+        ".log(\"save data error\")": ".log(\"save data error\")",
+        ".log(END_MESSAGE)": ".log(END_MESSAGE)",
+        ".log(this.settings)": ".log(this.settings)",
+        ".error(\"load data error\")": ".error(\"load data error\")",
+        ".error(error)": ".error(error)",
+        ".error(\"parse data error\")": ".error(\"parse data error\")",
+        ".error(\"save data error\")": ".error(\"save data error\")",
+        "name: \"Sync This File\"": "name: \"Sync This File\"",
+        ".setName(\"Folder to store images\")": ".setName(\"Folder to store images\")",
+        ".setName(\"Custom folder name\")": ".setName(\"Custom folder name\")",
+        ".setDesc(\"Specify a folder to store media files.\")": ".setDesc(\"Specify a folder to store media files.\")",
+        ".setDesc(\"Specify folder name  where the media files will be stored.\")": ".setDesc(\"Specify folder name  where the media files will be stored.\")",
+        ".setPlaceholder(\"Custom folder name\")": ".setPlaceholder(\"Custom folder name\")",
+        ".setTitle(\"Media sync\")": ".setTitle(\"Media sync\")"
+    }
+}

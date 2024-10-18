@@ -1,0 +1,13 @@
+{
+    "manifest": {
+        "id": "obsidian-code-tab",
+        "author": "",
+        "version": "1.0.0",
+        "pluginVersion": "0.0.1"
+    },
+    "description": {
+        "original": "1.0",
+        "translation": "1.0"
+    },
+    "dict": {}
+}
