@@ -39,11 +39,13 @@ jobs:
       - name: Install Dependencies
         run: 
             corepack enable
-            pnpm install --frozen-lockfile 
+            pnpm install  
 
       # 运行构建脚本
       # Run the build script
       - name: Build VuePress site
+        env:
+            NODE OPTIONS: --max old space zize=8192
         run:  
             pnpm add vitepress-auto-sidebar-plugin --save-dev
             pnpm run docs:build
