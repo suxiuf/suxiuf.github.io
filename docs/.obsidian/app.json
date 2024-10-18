@@ -1,4 +1,8 @@
 {
   "attachmentFolderPath": "public",
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
 }

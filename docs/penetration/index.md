@@ -28,4 +28,3 @@ title: 开始
 ## 必要条件
 
 你需要对基本的计算原理有一个基本的了解， 网络安全的不同领域来完成这一途径。 如果您还不具备这些先决条件，请完成[Pre-Security Pathway预安全路径](https://tryhackme.com/path/outline/presecurity)and和[Intro To Cyber Security Pathway网络安全途径简介](https://tryhackme.com/path/outline/introtocyber).
-

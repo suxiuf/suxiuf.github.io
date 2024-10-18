@@ -4,6 +4,10 @@
     {
       "name": "duckduckgo",
       "url": "https://duckduckgo.com/?q="
+    },
+    {
+      "name": "bing",
+      "url": "https://www.bing.com/?q="
     }
   ],
   "hoverPopover": true,
@@ -20,13 +24,13 @@
   "highlightInSameTab": true,
   "openInSameTab": true,
   "showRefreshButton": true,
-  "openInObsidianWeb": true,
+  "openInObsidianWeb": false,
   "useCustomIcons": false,
   "useWebview": false,
   "useIconList": true,
   "darkMode": true,
   "randomBackground": false,
-  "lastOpenedFiles": false,
+  "lastOpenedFiles": true,
   "bookmarkManager": {
     "openBookMark": true,
     "saveBookMark": false,
@@ -48,5 +52,6 @@
   },
   "treeData": [],
   "enableHtmlPreview": true,
-  "supportLivePreviewInlineUrl": true
+  "supportLivePreviewInlineUrl": false,
+  "enableTreeView": false
 }

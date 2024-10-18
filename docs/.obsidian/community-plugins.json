@@ -4,11 +4,13 @@
   "pkmer",
   "i18n",
   "obsidian-style-settings",
-  "obsidian-mindmap-nextgen",
   "media-sync",
-  "obsidian-markmind",
   "excalidraw-cn",
   "docxer",
   "obsidian-code-tab",
-  "auto-card-link"
+  "auto-card-link",
+  "obsidian-git",
+  "obsidian-paste-image-rename",
+  "git-file-explorer",
+  "obsidian-mindmap-nextgen"
 ]

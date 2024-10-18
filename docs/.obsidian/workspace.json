@@ -4,17 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "89ef480cfd30f9d2",
+        "id": "8076e30f9b7f59b0",
         "type": "tabs",
         "children": [
           {
-            "id": "e01371331abaabfa",
+            "id": "7148101f5ed15472",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "penetration/index.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
@@ -71,6 +72,16 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
+            }
+          },
+          {
+            "id": "e2ac9a96513329d0",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ]
@@ -136,15 +147,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "penetration/index.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "5bb4ea79db86d3fa",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -152,6 +171,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -163,20 +183,37 @@
       "pkmer:Open Pkmer Market": false,
       "i18n:I18N": false,
       "media-sync:Media sync": false,
-      "excalidraw-cn:Create New Excalidraw File": false,
-      "obsidian-git:Open Git source control": false,
-      "githobs:Manage a github issue": false
+      "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "0e16466feeee7b8b",
+  "active": "7148101f5ed15472",
   "lastOpenFiles": [
-    "guide/template.md",
-    "guide/guide.md",
+    "penetration/index.md",
     "penetration/oscp/index.md",
     "penetration/oscp/1.network.md",
-    "penetration/index.md",
+    "penetration/oscp/2.markmind.md",
+    "penetration/oscp/2.test.md",
+    "public/logo.png",
+    "index.md",
+    "public/202422五-.png",
+    "public/FOR10上午T.png",
+    "public/c8e7fcbe7f7e43c4b5f491503af5b38a_MD5.jpeg",
+    "public/3dbe0689e793cf14423baa85a1b57d4c_MD5.svg",
+    "public/Pasted image 20241018091447.png",
+    "public/Pasted image 20241018091412.png",
+    "penetration/public/index/file-20241018090020764.png",
+    "penetration/public/index",
+    "penetration/public",
+    "penetration/public/index/file-20241018085844472.png",
+    "public/Pasted image 20241018085002.png",
+    "public/penetration/oscp/1.network",
+    "public/penetration/oscp",
+    "guide/template.md",
+    "guide/guide.md",
+    "public/penetration/index",
+    "public/penetration",
+    "_media-sync_resources",
     "未命名",
-    "excalidraw 24-10-18 04.42.51.ex",
-    "_media-sync_resources"
+    "excalidraw 24-10-18 04.42.51.ex"
   ]
 }
