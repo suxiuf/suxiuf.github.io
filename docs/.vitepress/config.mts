@@ -3,7 +3,7 @@ import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: './',
+  base: "/",
   lang: 'zh-CN',
   title: "MikTu",
   description: "只是一个笔记",
