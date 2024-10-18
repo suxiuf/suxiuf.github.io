@@ -1,16 +1,21 @@
 import { defineConfig } from 'vitepress'
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
-
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/",
   lang: 'zh-CN',
   title: "MikTu",
   description: "只是一个笔记",
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin)
+    },
+  },
   vite: {  
     plugins: [ 
+      groupIconVitePlugin(),
       AutoSidebarPlugin({  
-        
         srcDir: './docs', 
       }), 
     ],  

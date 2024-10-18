@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "penetration/index.md",
+                "file": "index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -188,6 +188,18 @@
   },
   "active": "7148101f5ed15472",
   "lastOpenFiles": [
+    "public/icons/SimpleIconsKalilinux.svg",
+    "public/icons/image.svg",
+    "public/icons/DeviconPlainKalilinuxWordmark.svg",
+    "public/icons/SimpleIconsHackthebox.svg",
+    "public/icons/Hackthebox.svg",
+    "public/icons/SimpleIconsTryhackme.svg",
+    "public/Hackthebox.svg",
+    "public/icons",
+    "public/SimpleIconsHackthebox.svg",
+    "public/SimpleIconsHackthebox-1.svg",
+    "public/SimpleIconsTryhackme.svg",
+    "public/SimpleIconsTryhackme.vue",
     "penetration/index.md",
     "penetration/oscp/index.md",
     "penetration/oscp/1.network.md",
@@ -195,17 +207,8 @@
     "penetration/oscp/2.test.md",
     "public/logo.png",
     "index.md",
-    "public/202422五-.png",
-    "public/FOR10上午T.png",
-    "public/c8e7fcbe7f7e43c4b5f491503af5b38a_MD5.jpeg",
-    "public/3dbe0689e793cf14423baa85a1b57d4c_MD5.svg",
-    "public/Pasted image 20241018091447.png",
-    "public/Pasted image 20241018091412.png",
-    "penetration/public/index/file-20241018090020764.png",
     "penetration/public/index",
     "penetration/public",
-    "penetration/public/index/file-20241018085844472.png",
-    "public/Pasted image 20241018085002.png",
     "public/penetration/oscp/1.network",
     "public/penetration/oscp",
     "guide/template.md",
@@ -213,7 +216,6 @@
     "public/penetration/index",
     "public/penetration",
     "_media-sync_resources",
-    "未命名",
-    "excalidraw 24-10-18 04.42.51.ex"
+    "未命名"
   ]
 }

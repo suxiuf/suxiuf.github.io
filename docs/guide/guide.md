@@ -2,7 +2,9 @@
 titel: 本站配置
 ---
 
-本站基于[vitepress](https://vitepress.dev/zh/),使用自动生成侧边栏的插件[VitePress Auto SideBar Plugin](https://vitepress-auto-sidebar-plugin.netlify.app/).
+本站基于[vitepress](https://vitepress.dev/zh/),使用自动生成侧边栏的插件[VitePress Auto SideBar Plugin](https://vitepress-auto-sidebar-plugin.netlify.app/),以及自动生成代码块图标的插件(https://vp.yuy1n.io/getting-started.html)
+
+
 
 # 配置
 
@@ -68,10 +70,20 @@ export default defineConfig({
 ```
 :::
 
-### 常用功能
-文章顶部 frontmatter 配置
 
-```md
+
+
+
+# Markdown
+
+
+## 常用功能
+
+### 文章顶部 frontmatter 配置
+
+::: code-group
+
+```md [index.md]
 ---
 title: 文章名
 collapsed: false | true  折叠
@@ -82,6 +94,9 @@ sortNext: filesName 文章排序于指定文件之前
 
 ---
 ```
+::: 
+
+
 ::: code-group
 
 ```md [index.md]
@@ -95,13 +110,103 @@ collapsed: true 是否折叠文件夹，默认不显示折叠按钮
 ```
 :::
 
+### 首页 frontmatter 配置 icon
+
+免费图标库有很多，但目前最全的，最好用的免费图标库是：https://yesicon.app/
+
+::: code-group
+
+```md [index.md]
+---
+layout: home
+
+...
+
+features:
+ 
+  - icon: 📖
+    title: 个人笔记
+    details: 本站只记录作者日常学习笔记
+...
+...
+
+  - icon: <img src="/icons/SimpleIconsTryhackme.svg" width="29px" height="29.32px">
+    title: Tryhackme
+    details: TryHackMe是一个在线网络安全学习平台平台，可以通过浏览器进行动手练习和实验。
+    link: https://tryhackme.com
+...
+ 
+---  
+
+```
+:::
+
+## 代码块图标
+
+[快速开始](https://vp.yuy1n.io/getting-started.html)
+
+**源码内容**
+
+:::: code-group
+
+````md [test.md]
+
+::: code-group
+
+```sh [npm]
+npm install vitepress-plugin-group-icons
+```
+
+```sh [yarn]
+yarn add vitepress-plugin-group-icons
+```
+
+```sh [pnpm]
+pnpm add -D vitepress-plugin-group-icons
+```
+
+```sh [bun]
+bun add vitepress-plugin-group-icons
+```
+
+:::
+
+````
+::::
+
+
+**显示样式**
+
+::: code-group
+
+```sh [npm]
+npm install vitepress-plugin-group-icons
+```
+
+```sh [yarn]
+yarn add vitepress-plugin-group-icons
+```
+
+```sh [pnpm]
+pnpm add -D vitepress-plugin-group-icons
+```
+
+```sh [bun]
+bun add vitepress-plugin-group-icons
+```
+
+:::
+
+
 # Markdown代码块
 
 ## 代码行高亮
 
 **源码内容**
 
-````md
+:::: code-group
+
+````md [index.md]
 ::: code-group
 
 ```sh{1,3,5} [test.sh]
@@ -115,6 +220,7 @@ collapsed: true 是否折叠文件夹，默认不显示折叠按钮
 :::
 
 ````
+::::
 
 **显示样式**
 
@@ -136,8 +242,11 @@ echo 'this is line 6'
 
 ## 代码行删除和添加
 
-````
-```js
+:::: code-group
+
+````md [test.md]
+
+```js [*.js]
 export default {
   data () {
     return {
@@ -148,10 +257,12 @@ export default {
 }
 ```
 ````
+::::
 
 **显示样式**
+:::: code-group
 
-```js
+```js [*.js]
 export default {
   data () {
     return {
@@ -161,14 +272,17 @@ export default {
   }
 }
 ```
+:::: 
 
 
 ##  代码‘错误’和‘告警’
 
 **源码内容**
 
-````
-```js
+:::: code-group
+````md [*.md]
+
+```js [*.js]
 export default {
   data () {
     return {
@@ -179,10 +293,12 @@ export default {
 }
 ```
 ````
+:::: 
 
 **显示样式**
 
-```js
+:::: code-group
+```js [*.js]
 export default {
   data () {
     return {
@@ -192,12 +308,14 @@ export default {
   }
 }
 ```
-
+:::: 
 ## 代码组
 
 **源码内容**
 
-````
+
+:::: code-group
+````md [test.md]
 ::: code-group
 
 ```js [config.js]
@@ -224,7 +342,7 @@ export default config
 :::
 
 ````
-
+:::: 
 **显示样式**
 
 ::: code-group
@@ -256,8 +374,8 @@ export default config
 
 ### github风格容器
 **y源码内容**
-
-```md
+::: code-group
+```md [test.md]
 > [!NOTE]
 > 强调用户在快速浏览文档时也不应忽略的重要信息。
 
@@ -273,6 +391,8 @@ export default config
 > [!CAUTION]
 > 行为可能带来的负面影响。
 ```
+::: 
+
 **显示样式**
 
 > [!NOTE]
@@ -294,8 +414,9 @@ export default config
 ### 自定义容器
 
 **源码内容**
+:::: code-group
+````md [test.md]
 
-````
 ::: info
 This is an info box.
 :::
@@ -316,7 +437,7 @@ This is a dangerous warning.
 This is a details block.
 :::
 ````
-
+::::
 **显示样式**
 
 ::: info
