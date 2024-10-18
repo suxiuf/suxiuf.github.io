@@ -1,7 +1,9 @@
 ---
 titel: 请修改
 ---
-::: code-groub
+# 模板
+
+::: code-group
 ```md
 # 一级标题 是文件名
 
