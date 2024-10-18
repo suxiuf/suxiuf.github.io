@@ -45,7 +45,6 @@ jobs:
         run:  
           pnpm add -D @vuepress/plugin-search@next
           pnpm run docs:build
-          > docs/.vuepress/dist/.nojekyll
 
       # 部署到GitHub Pages - 也就是将打包内容发布到GitHub Pages
       - name: Deploy
