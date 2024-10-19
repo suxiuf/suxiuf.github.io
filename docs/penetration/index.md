@@ -3,6 +3,7 @@ groupTitle: TyrHackMe
 groupIndex: 1
 collapsed: true
 title: 开始
+index: "0"
 ---
 # 开始
 

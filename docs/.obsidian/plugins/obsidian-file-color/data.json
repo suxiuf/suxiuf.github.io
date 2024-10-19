@@ -1,0 +1,61 @@
+{
+  "cascadeColors": true,
+  "colorBackground": true,
+  "palette": [
+    {
+      "id": "7_NHT2VwdChNtPXqsdeTO",
+      "name": "绿",
+      "value": "#1ea968"
+    },
+    {
+      "id": "dVBKxO5TX9YUHpww0RwA6",
+      "name": "白",
+      "value": "#ffffff"
+    },
+    {
+      "id": "egu27E6M8Ry44rFjrgr0I",
+      "name": "红",
+      "value": "#dc0929"
+    },
+    {
+      "id": "CNfDlNDgAM938BXck58zW",
+      "name": "橙",
+      "value": "#dc8d1e"
+    },
+    {
+      "id": "kCSxQaMtDPrDkQte8ZhU0",
+      "name": "黄",
+      "value": "#f2df07"
+    },
+    {
+      "id": "EXbIU9sOrEh2c8dsRmr7b",
+      "name": "蓝",
+      "value": "#0515f0"
+    },
+    {
+      "id": "C2z8uiN6WfsjLd0ztEEPT",
+      "name": "靛",
+      "value": "#0de3df"
+    },
+    {
+      "id": "H5MQQxhN5SA3ImLWix-De",
+      "name": "紫",
+      "value": "#d504f1"
+    },
+    {
+      "id": "UzFhnZr5TtNzBk_9AUbPP",
+      "name": "黑",
+      "value": "#000000"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "penetration",
+      "color": "7_NHT2VwdChNtPXqsdeTO"
+    },
+    {
+      "path": "index.md",
+      "color": "CNfDlNDgAM938BXck58zW"
+    }
+  ]
+}

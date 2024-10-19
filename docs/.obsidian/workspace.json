@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4de289535c9761b6",
+        "id": "1873ef0410d49aa5",
         "type": "tabs",
         "children": [
           {
-            "id": "23f00991e796a7ed",
+            "id": "2e95f5aac88232c2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "guide/template.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "template"
+              "title": "新标签页"
             }
           }
         ]
@@ -75,20 +70,20 @@
             }
           },
           {
-            "id": "e2ac9a96513329d0",
+            "id": "ad9388c677bdc8f2",
             "type": "leaf",
             "state": {
               "type": "surfing-tab-tree",
               "state": {},
-              "icon": "lucide-file",
-              "title": "插件不再活动"
+              "icon": "chrome",
+              "title": "Surfing Tab Tree"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 283.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -159,7 +154,7 @@
               "type": "git-view",
               "state": {},
               "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "源代码控制"
             }
           }
         ],
@@ -183,16 +178,24 @@
       "i18n:I18N": false,
       "media-sync:Media sync": false,
       "excalidraw-cn:Create New Excalidraw File": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "excel:创建 Excel 文件": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "23f00991e796a7ed",
+  "active": "2e95f5aac88232c2",
   "lastOpenFiles": [
-    "guide/guide.md",
-    "guide/template.md",
+    "penetration/1.Tyrhackme_Part_001.md",
     "penetration/index.md",
-    "未命名.canvas",
     "index.md",
+    "guide/guide.md",
+    "Excel 2024-10-19 20.50.14.sheet.md",
+    "public/Excel 2024-10-19 20.40.52.sheet.md",
+    "guide/template.md",
+    "penetration/oscp/1.network.md",
+    "penetration/oscp/index.md",
+    "public/logo.png",
+    "未命名.canvas",
     "public/icons/SimpleIconsKalilinux.svg",
     "public/icons/image.svg",
     "public/icons/DeviconPlainKalilinuxWordmark.svg",
@@ -203,10 +206,7 @@
     "public/icons",
     "public/SimpleIconsHackthebox.svg",
     "public/SimpleIconsHackthebox-1.svg",
-    "public/SimpleIconsTryhackme.svg",
     "public/SimpleIconsTryhackme.vue",
-    "penetration/oscp/index.md",
-    "penetration/oscp/1.network.md",
     "penetration/oscp/2.markmind.md",
     "penetration/oscp/2.test.md",
     "penetration/public/index",

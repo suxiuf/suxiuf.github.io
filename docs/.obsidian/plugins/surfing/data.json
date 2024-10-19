@@ -18,13 +18,13 @@
   "customHighlightFormat": false,
   "highlightFormat": "[{CONTENT}]({URL})",
   "highlightInSameTab": false,
-  "openInSameTab": false,
+  "openInSameTab": true,
   "showRefreshButton": true,
   "openInObsidianWeb": false,
   "useCustomIcons": false,
   "useWebview": false,
   "useIconList": true,
-  "darkMode": false,
+  "darkMode": true,
   "randomBackground": false,
   "lastOpenedFiles": false,
   "bookmarkManager": {
@@ -46,8 +46,20 @@
     ],
     "defaultFilterType": "tree"
   },
-  "treeData": [],
+  "treeData": [
+    {
+      "id": "e59f207fc3ae74ff",
+      "parent": 0,
+      "droppable": true,
+      "text": "TryHackMe | TryHackMe | Dashboard",
+      "data": {
+        "fileType": "site",
+        "fileSize": "",
+        "icon": {}
+      }
+    }
+  ],
   "enableHtmlPreview": true,
   "supportLivePreviewInlineUrl": true,
-  "enableTreeView": false
+  "enableTreeView": true
 }

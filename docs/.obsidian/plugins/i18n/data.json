@@ -1,21 +1,65 @@
 {
   "I18N_AGREEMENT": true,
-  "I18N_UUID": "ee206186-a061-466e-a7ca-db7396ce66f2",
   "I18N_WIZARD": false,
+  "I18N_UUID": "ee206186-a061-466e-a7ca-db7396ce66f2",
   "I18N_LANGUAGE": "zh-cn",
-  "I18N_MODE_LDT": true,
-  "I18N_MODE_NDT": true,
-  "I18N_MODE_NIT": false,
+  "I18N_COLOR": "#409EFF",
   "I18N_AUTHOR": "",
-  "I18N_AUTOMATIC_UPDATE": false,
-  "I18N_INCREMENTAL_EXTRACTION": false,
   "I18N_EDIT_MODE": true,
   "I18N_OPEN_SETTINGS": false,
+  "I18N_SEARCH_TEXT": "",
+  "I18N_SORT": "0",
+  "I18N_TYPE": "0",
+  "I18N_MODE_LDT": true,
+  "I18N_AUTOMATIC_UPDATE": false,
+  "I18N_INCREMENTAL_EXTRACTION": false,
+  "I18N_NAME_TRANSLATION": false,
+  "I18N_NAME_TRANSLATION_PREFIX": "[",
+  "I18N_NAME_TRANSLATION_SUFFIX": "]",
+  "I18N_MODE_NDT": true,
+  "I18N_NDT_APIS_DISPLAY": false,
+  "I18N_NDT_APIS": {
+    "zh-cn": "https://gitee.com/zero--two/obsidian-i18n-translation/raw/master/zh-cn/"
+  },
+  "I18N_MODE_NIT": false,
+  "I18N_NIT_API": "BAIDU",
+  "I18N_NIT_API_INTERVAL": 500,
+  "I18N_NIT_APIS": {
+    "BAIDU": {
+      "FROM": "auto",
+      "TO": "zh",
+      "APP_ID": "",
+      "KEY": ""
+    }
+  },
+  "I18N_NIT_OPENAI_URL": "https://api.openai.com",
+  "I18N_NIT_OPENAI_KEY": "",
+  "I18N_NIT_OPENAI_MODEL": "gpt-3.5-turbo",
+  "I18N_NIT_OPENAI_TIPS": "你是一个翻译工作者，你将进行obsidian笔记软件的插件翻译，本次翻译的插件名称为: ${plugin}，请结合插件名称以及软件翻译的标准进行后续工作，因为大多数文本长度较短，请以符合中文习惯的方式翻译。接下来我会提交给你很多英文文本，请将其翻译为简体中文，并且只返回给我翻译后的内容",
+  "I18N_MODE_IMT": false,
+  "I18N_IMT_CONFIG": {
+    "selectors": [
+      "*"
+    ],
+    "excludeSelectors": [
+      ".modal .i18n__container"
+    ],
+    "excludeTags": [],
+    "additionalSelectors": [],
+    "additionalExcludeSelectors": [],
+    "additionalExcludeTags": [],
+    "stayOriginalSelectors": [],
+    "stayOriginalTags": [],
+    "atomicBlockSelectors": [],
+    "atomicBlockTags": []
+  },
   "I18N_SUBMIT_MODE": true,
   "I18N_SUBMIT_URL": "",
-  "I18N_SUBMIT_TIME": 18,
+  "I18N_SUBMIT_TIME": 19,
   "I18N_SUBMIT_HISTORY": [],
   "I18N_IGNORE": true,
+  "I18N_RE_TEMP_MODE": true,
+  "I18N_RE_TEMP": "",
   "I18N_RE_MODE": "默认",
   "I18N_RE_FLAGS": "gs",
   "I18N_RE_LENGTH": 300,
@@ -54,26 +98,5 @@
       ".renderMarkdown\\(\\s*(['\"`])(.+?)\\1\\s*\\)",
       ".innerText\\s*=\\s*(['\"`]).*?\\1"
     ]
-  },
-  "I18N_NDT_APIS_DISPLAY": false,
-  "I18N_NDT_APIS": {
-    "zh-cn": "https://gitee.com/zero--two/obsidian-i18n-translation/raw/master/zh-cn/"
-  },
-  "I18N_NIT_API": "BAIDU",
-  "I18N_NIT_API_INTERVAL": 500,
-  "I18N_NIT_APIS": {
-    "BAIDU": {
-      "FROM": "auto",
-      "TO": "zh",
-      "APP_ID": "",
-      "KEY": ""
-    }
-  },
-  "I18N_NIT_OPENAI_URL": "https://api.openai.com",
-  "I18N_NIT_OPENAI_KEY": "",
-  "I18N_NIT_OPENAI_MODEL": "gpt-3.5-turbo",
-  "I18N_NIT_OPENAI_TIPS": "你是一个翻译工作者，你将进行obsidian笔记软件的插件翻译，本次翻译的插件名称为: ${plugin}，请结合插件名称以及软件翻译的标准进行后续工作，因为大多数文本长度较短，请以符合中文习惯的方式翻译。接下来我会提交给你很多英文文本，请将其翻译为简体中文，并且只返回给我翻译后的内容",
-  "I18N_SEARCH_TEXT": "",
-  "I18N_SORT": "0",
-  "I18N_TYPE": "0"
+  }
 }

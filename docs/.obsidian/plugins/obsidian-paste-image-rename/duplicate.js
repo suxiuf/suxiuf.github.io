@@ -104,7 +104,7 @@ var import_obsidian = require("obsidian");
 // src/utils.ts
 var DEBUG = false;
 if (DEBUG)
-  console.log("调试已启用");
+  console.log("DEBUG is enabled");
 function debugLog(...args) {
   if (DEBUG) {
     console.log(new Date().toISOString().slice(11, 23), ...args);
@@ -196,8 +196,8 @@ var ImageBatchRenameModal = class extends import_obsidian.Modal {
   onOpen() {
     this.containerEl.addClass("image-rename-modal");
     const { contentEl, titleEl } = this;
-    titleEl.setText("批量重命名嵌入文件");
-    const namePatternSetting = new import_obsidian.Setting(contentEl).setName("名称模式").setDesc("请输入用于匹配文件的名称模式（正则表达式）").addText((text) => text.setValue(this.state.namePattern).onChange(
+    titleEl.setText("Batch rename embeded files");
+    const namePatternSetting = new import_obsidian.Setting(contentEl).setName("Name pattern").setDesc("Please input the name pattern to match files (regex)").addText((text) => text.setValue(this.state.namePattern).onChange(
       (value) => __async(this, null, function* () {
         this.state.namePattern = value;
       })
@@ -209,14 +209,14 @@ var ImageBatchRenameModal = class extends import_obsidian.Modal {
       if (e.key === "Enter" && !npInputState.lock) {
         e.preventDefault();
         if (!this.state.namePattern) {
-          errorEl.innerText = '错误："名称模式"不能为空';
+          errorEl.innerText = 'Error: "Name pattern" could not be empty';
           errorEl.style.display = "block";
           return;
         }
         this.matchImageNames(tbodyEl);
       }
     }));
-    const extPatternSetting = new import_obsidian.Setting(contentEl).setName("扩展名模式").setDesc("请输入用于匹配文件的扩展名模式（正则表达式）").addText((text) => text.setValue(this.state.extPattern).onChange(
+    const extPatternSetting = new import_obsidian.Setting(contentEl).setName("Extension pattern").setDesc("Please input the extension pattern to match files (regex)").addText((text) => text.setValue(this.state.extPattern).onChange(
       (value) => __async(this, null, function* () {
         this.state.extPattern = value;
       })
@@ -228,7 +228,7 @@ var ImageBatchRenameModal = class extends import_obsidian.Modal {
         this.matchImageNames(tbodyEl);
       }
     }));
-    const nameReplaceSetting = new import_obsidian.Setting(contentEl).setName("名称替换").setDesc("请输入用于替换匹配名称的字符串（使用 $1, $2 作为正则表达式组）").addText((text) => text.setValue(this.state.nameReplace).onChange(
+    const nameReplaceSetting = new import_obsidian.Setting(contentEl).setName("Name replace").setDesc("Please input the string to replace the matched name (use $1, $2 for regex groups)").addText((text) => text.setValue(this.state.nameReplace).onChange(
       (value) => __async(this, null, function* () {
         this.state.nameReplace = value;
       })
@@ -255,11 +255,11 @@ var ImageBatchRenameModal = class extends import_obsidian.Modal {
               children: [
                 {
                   tag: "td",
-                  text: "原始路径"
+                  text: "Original path"
                 },
                 {
                   tag: "td",
-                  text: "重命名后的名称"
+                  text: "Renamed Name"
                 }
               ]
             }
@@ -278,11 +278,11 @@ var ImageBatchRenameModal = class extends import_obsidian.Modal {
       }
     });
     new import_obsidian.Setting(contentEl).addButton((button) => {
-      button.setButtonText("重命名所有").setClass("mod-cta").onClick(() => {
+      button.setButtonText("Rename all").setClass("mod-cta").onClick(() => {
         new ConfirmModal(
           this.app,
-          "确认重命名所有",
-          `您确定吗？这将重命名所有匹配模式的 ${this.state.renameTasks.length} 张图像。`,
+          "Confirm rename all",
+          `Are you sure? This will rename all the ${this.state.renameTasks.length} images matched the pattern.`,
           () => {
             this.renameAll();
             this.close();
@@ -290,7 +290,7 @@ var ImageBatchRenameModal = class extends import_obsidian.Modal {
         ).open();
       });
     }).addButton((button) => {
-      button.setButtonText("取消").onClick(() => {
+      button.setButtonText("Cancel").onClick(() => {
         this.close();
       });
     });
@@ -399,12 +399,12 @@ var ConfirmModal = class extends import_obsidian.Modal {
       text: this.message
     });
     new import_obsidian.Setting(contentEl).addButton((button) => {
-      button.setButtonText("是").setClass("mod-warning").onClick(() => {
+      button.setButtonText("Yes").setClass("mod-warning").onClick(() => {
         this.onConfirm();
         this.close();
       });
     }).addButton((button) => {
-      button.setButtonText("否").onClick(() => {
+      button.setButtonText("No").onClick(() => {
         this.close();
       });
     });
@@ -462,7 +462,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
   onload() {
     return __async(this, null, function* () {
       const pkg = require_package();
-      console.log(`插件加载中: ${pkg.name} ${pkg.version} BUILD_ENV=${"production"}`);
+      console.log(`Plugin loading: ${pkg.name} ${pkg.version} BUILD_ENV=${"production"}`);
       yield this.loadSettings();
       this.registerEvent(
         this.app.vault.on("create", (file) => {
@@ -474,13 +474,13 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
           if (isMarkdownFile(file))
             return;
           if (isPastedImage(file)) {
-            debugLog("粘贴图像已创建", file);
+            debugLog("pasted image created", file);
             this.startRenameProcess(file, this.settings.autoRename);
           } else {
             if (this.settings.handleAllAttachments) {
-              debugLog("处理文件的所有附件", file);
+              debugLog("handleAllAttachments for file", file);
               if (this.testExcludeExtension(file)) {
-                debugLog("根据扩展名排除的文件", file);
+                debugLog("excluded file by ext", file);
                 return;
               }
               this.startRenameProcess(file, this.settings.autoRename);
@@ -493,7 +493,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
       };
       this.addCommand({
         id: "batch-rename-embeded-files",
-        name: "批量重命名嵌入文件（在当前文件中）",
+        name: "Batch rename embeded files (in the current file)",
         callback: startBatchRenameProcess
       });
       if (DEBUG) {
@@ -504,7 +504,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
       };
       this.addCommand({
         id: "batch-rename-all-images",
-        name: "立即批量重命名所有图像（在当前文件中）",
+        name: "Batch rename all images instantly (in the current file)",
         callback: batchRenameAllImages
       });
       if (DEBUG) {
@@ -517,11 +517,11 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
     return __async(this, null, function* () {
       const activeFile = this.getActiveFile();
       if (!activeFile) {
-        new import_obsidian2.Notice("错误：未找到活动文件。");
+        new import_obsidian2.Notice("Error: No active file found.");
         return;
       }
       const { stem, newName, isMeaningful } = this.generateNewName(file, activeFile);
-      debugLog("生成的新名称:", newName, isMeaningful);
+      debugLog("generated newName:", newName, isMeaningful);
       if (!isMeaningful || !autoRename) {
         this.openRenameModal(file, isMeaningful ? stem : "", activeFile.path);
         return;
@@ -532,30 +532,30 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
   renameFile(file, inputNewName, sourcePath, replaceCurrentLine) {
     return __async(this, null, function* () {
       const { name: newName } = yield this.deduplicateNewName(inputNewName, file);
-      debugLog("去重的新名称:", newName);
+      debugLog("deduplicated newName:", newName);
       const originName = file.name;
       const linkText = this.app.fileManager.generateMarkdownLink(file, sourcePath);
       const newPath = path.join(file.parent.path, newName);
       try {
         yield this.app.fileManager.renameFile(file, newPath);
       } catch (err) {
-        new import_obsidian2.Notice(`重命名 ${newName} 失败: ${err}`);
+        new import_obsidian2.Notice(`Failed to rename ${newName}: ${err}`);
         throw err;
       }
       if (!replaceCurrentLine) {
         return;
       }
       const newLinkText = this.app.fileManager.generateMarkdownLink(file, sourcePath);
-      debugLog("替换文本", linkText, newLinkText);
+      debugLog("replace text", linkText, newLinkText);
       const editor = this.getActiveEditor();
       if (!editor) {
-        new import_obsidian2.Notice(`重命名 ${newName} 失败: 没有活动编辑器`) ;
+        new import_obsidian2.Notice(`Failed to rename ${newName}: no active editor`);
         return;
       }
       const cursor = editor.getCursor();
       const line = editor.getLine(cursor.line);
       const replacedLine = line.replace(linkText, newLinkText);
-      debugLog("当前行 -> 替换后的行", line, replacedLine);
+      debugLog("current line -> replaced line", line, replacedLine);
       editor.transaction({
         changes: [
           {
@@ -566,7 +566,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
         ]
       });
       if (!this.settings.disableRenameNotice) {
-        new import_obsidian2.Notice(`已将 ${originName} 重命名为 ${newName}`);
+        new import_obsidian2.Notice(`Renamed ${originName} to ${newName}`);
       }
     });
   }
@@ -576,7 +576,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
       file,
       newName,
       (confirmedName) => {
-        debugLog("确认的名称:", confirmedName);
+        debugLog("confirmedName:", confirmedName);
         this.renameFile(file, confirmedName, sourcePath, true);
       },
       () => {
@@ -585,7 +585,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
     );
     this.modals.push(modal);
     modal.open();
-    debugLog("模态计数", this.modals.length);
+    debugLog("modals count", this.modals.length);
   }
   openBatchRenameModal() {
     const activeFile = this.getActiveFile();
@@ -619,9 +619,9 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
         if (!m0)
           return;
         const { newName, isMeaningful } = this.generateNewName(file, activeFile);
-        debugLog("生成的新名称:", newName, isMeaningful);
+        debugLog("generated newName:", newName, isMeaningful);
         if (!isMeaningful) {
-          new import_obsidian2.Notice("批量重命名图像失败：生成的名称没有意义");
+          new import_obsidian2.Notice("Failed to batch rename images: the generated name is not meaningful");
           break;
         }
         yield this.renameFile(file, newName, activeFile.path, false);
@@ -635,7 +635,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
     let frontmatter;
     const fileCache = this.app.metadataCache.getFileCache(activeFile);
     if (fileCache) {
-      debugLog("前言", fileCache.frontmatter);
+      debugLog("frontmatter", fileCache.frontmatter);
       frontmatter = fileCache.frontmatter;
       imageNameKey = (frontmatter == null ? void 0 : frontmatter.imageNameKey) || "";
       firstHeading = getFirstHeading(fileCache.headings);
@@ -664,7 +664,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
     return __async(this, null, function* () {
       const dir = file.parent.path;
       const listed = yield this.app.vault.adapter.list(dir);
-      debugLog("同级文件", listed);
+      debugLog("sibling files", listed);
       const newNameExt = path.extension(newName), newNameStem = newName.slice(0, newName.length - newNameExt.length - 1), newNameStemEscaped = escapeRegExp(newNameStem), delimiter = this.settings.dupNumberDelimiter, delimiterEscaped = escapeRegExp(delimiter);
       let dupNameRegex;
       if (this.settings.dupNumberAtStart) {
@@ -708,7 +708,7 @@ var PasteImageRenamePlugin = class extends import_obsidian2.Plugin {
   getActiveFile() {
     const view = this.app.workspace.getActiveViewOfType(import_obsidian2.MarkdownView);
     const file = view == null ? void 0 : view.file;
-    debugLog("活动文件", file == null ? void 0 : file.path);
+    debugLog("active file", file == null ? void 0 : file.path);
     return file;
   }
   getActiveEditor() {
@@ -772,7 +772,7 @@ var ImageRenameModal = class extends import_obsidian2.Modal {
   onOpen() {
     this.containerEl.addClass("image-rename-modal");
     const { contentEl, titleEl } = this;
-    titleEl.setText("重命名图像");
+    titleEl.setText("Rename image");
     const imageContainer = contentEl.createDiv({
       cls: "image-container"
     });
@@ -794,7 +794,7 @@ var ImageRenameModal = class extends import_obsidian2.Modal {
           children: [
             {
               tag: "span",
-              text: "源路径"
+              text: "Origin path"
             },
             {
               tag: "span",
@@ -807,7 +807,7 @@ var ImageRenameModal = class extends import_obsidian2.Modal {
           children: [
             {
               tag: "span",
-              text: "新路径"
+              text: "New path"
             },
             {
               tag: "span",
@@ -818,10 +818,10 @@ var ImageRenameModal = class extends import_obsidian2.Modal {
       ]
     });
     const doRename = () => __async(this, null, function* () {
-      debugLog("执行重命名", `stem=${stem}`);
+      debugLog("doRename", `stem=${stem}`);
       this.renameFunc(getNewName(stem));
     });
-    const nameSetting = new import_obsidian2.Setting(contentEl).setName("新名称").setDesc("请输入图像的新名称（不带扩展名）").addText((text) => text.setValue(stem).onChange(
+    const nameSetting = new import_obsidian2.Setting(contentEl).setName("New name").setDesc("Please input the new name for the image (without extension)").addText((text) => text.setValue(stem).onChange(
       (value) => __async(this, null, function* () {
         stem = sanitizer.filename(value);
         infoET.children[1].children[1].el.innerText = getNewPath(stem);
@@ -834,7 +834,7 @@ var ImageRenameModal = class extends import_obsidian2.Modal {
       if (e.key === "Enter" && !nameInputState.lock) {
         e.preventDefault();
         if (!stem) {
-          errorEl.innerText = '错误："新名称"不能为空';
+          errorEl.innerText = 'Error: "New name" could not be empty';
           errorEl.style.display = "block";
           return;
         }
@@ -849,12 +849,12 @@ var ImageRenameModal = class extends import_obsidian2.Modal {
       }
     });
     new import_obsidian2.Setting(contentEl).addButton((button) => {
-      button.setButtonText("重命名").onClick(() => {
+      button.setButtonText("Rename").onClick(() => {
         doRename();
         this.close();
       });
     }).addButton((button) => {
-      button.setButtonText("取消").onClick(() => {
+      button.setButtonText("Cancel").onClick(() => {
         this.close();
       });
     });
@@ -866,14 +866,14 @@ var ImageRenameModal = class extends import_obsidian2.Modal {
   }
 };
 var imageNamePatternDesc = `
-该模式指示新名称应如何生成。
+The pattern indicates how the new name should be generated.
 
-可用变量：
-- {{fileName}}: 活动文件的名称，不带 ".md" 扩展名。
-- {{imageNameKey}}: 此变量从markdown文件的前言部分读取，来自同一键 "imageNameKey"。
-- {{DATE:$FORMAT}}: 使用 "$FORMAT" 格式化当前日期， "$FORMAT" 必须是Moment.js格式字符串，例如 {{DATE:YYYY-MM-DD}}。
+Available variables:
+- {{fileName}}: name of the active file, without ".md" extension.
+- {{imageNameKey}}: this variable is read from the markdown file's frontmatter, from the same key "imageNameKey".
+- {{DATE:$FORMAT}}: use "$FORMAT" to format the current date, "$FORMAT" must be a Moment.js format string, e.g. {{DATE:YYYY-MM-DD}}.
 
-以下是从模式到图像名称的示例（按顺序重复），变量：fileName = "My note"，imageNameKey = "foo"：
+Here are some examples from pattern to image names (repeat in sequence), variables: fileName = "My note", imageNameKey = "foo":
 - {{fileName}}: My note, My note-1, My note-2
 - {{imageNameKey}}: foo, foo-1, foo-2
 - {{imageNameKey}}-{{DATE:YYYYMMDD}}: foo-20220408, foo-20220408-1, foo-20220408-2
@@ -886,53 +886,53 @@ var SettingTab = class extends import_obsidian2.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian2.Setting(containerEl).setName("图像名称模式").setDesc(imageNamePatternDesc).setClass("long-description-setting-item").addText((text) => text.setPlaceholder("{{imageNameKey}}").setValue(this.plugin.settings.imageNamePattern).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Image name pattern").setDesc(imageNamePatternDesc).setClass("long-description-setting-item").addText((text) => text.setPlaceholder("{{imageNameKey}}").setValue(this.plugin.settings.imageNamePattern).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.imageNamePattern = value;
         yield this.plugin.saveSettings();
       })
     ));
-    new import_obsidian2.Setting(containerEl).setName("重复数字在开头（或结尾）").setDesc(`如果启用，重复数字将作为前缀添加到图像名称的开头，否则将作为后缀添加到图像名称的结尾。`).addToggle((toggle) => toggle.setValue(this.plugin.settings.dupNumberAtStart).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Duplicate number at start (or end)").setDesc(`If enabled, duplicate number will be added at the start as prefix for the image name, otherwise it will be added at the end as suffix for the image name.`).addToggle((toggle) => toggle.setValue(this.plugin.settings.dupNumberAtStart).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.dupNumberAtStart = value;
         yield this.plugin.saveSettings();
       })
     ));
-    new import_obsidian2.Setting(containerEl).setName("重复数字分隔符").setDesc(`生成重复名称的数字前缀/后缀的分隔符。例如，如果值为"-"，后缀将类似于"-1"、"-2"、"-3"，前缀将类似于"1-"、"2-"、"3-"。仅允许文件名中有效的字符。`).addText((text) => text.setValue(this.plugin.settings.dupNumberDelimiter).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Duplicate number delimiter").setDesc(`The delimiter to generate the number prefix/suffix for duplicated names. For example, if the value is "-", the suffix will be like "-1", "-2", "-3", and the prefix will be like "1-", "2-", "3-". Only characters that are valid in file names are allowed.`).addText((text) => text.setValue(this.plugin.settings.dupNumberDelimiter).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.dupNumberDelimiter = sanitizer.delimiter(value);
         yield this.plugin.saveSettings();
       })
     ));
-    new import_obsidian2.Setting(containerEl).setName("始终添加重复数字").setDesc(`如果启用，重复数字将始终添加到图像名称。否则，只有在名称重复时才会添加。`).addToggle((toggle) => toggle.setValue(this.plugin.settings.dupNumberAlways).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Always add duplicate number").setDesc(`If enabled, duplicate number will always be added to the image name. Otherwise, it will only be added when the name is duplicated.`).addToggle((toggle) => toggle.setValue(this.plugin.settings.dupNumberAlways).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.dupNumberAlways = value;
         yield this.plugin.saveSettings();
       })
     ));
-    new import_obsidian2.Setting(containerEl).setName("自动重命名").setDesc(`默认情况下，重命名模态将始终显示以确认重命名，如果设置了此选项，图像将在粘贴后自动重命名。`).addToggle((toggle) => toggle.setValue(this.plugin.settings.autoRename).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Auto rename").setDesc(`By default, the rename modal will always be shown to confirm before renaming, if this option is set, the image will be auto renamed after pasting.`).addToggle((toggle) => toggle.setValue(this.plugin.settings.autoRename).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.autoRename = value;
         yield this.plugin.saveSettings();
       })
     ));
-    new import_obsidian2.Setting(containerEl).setName("处理所有附件").setDesc(`默认情况下，插件仅处理名称以"Pasted image "开头的图像，
-			这是Obsidian用于从粘贴内容创建图像的前缀。
-			如果设置了此选项，插件将处理在库中创建的所有附件。`).addToggle((toggle) => toggle.setValue(this.plugin.settings.handleAllAttachments).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Handle all attachments").setDesc(`By default, the plugin only handles images that starts with "Pasted image " in name,
+			which is the prefix Obsidian uses to create images from pasted content.
+			If this option is set, the plugin will handle all attachments that are created in the vault.`).addToggle((toggle) => toggle.setValue(this.plugin.settings.handleAllAttachments).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.handleAllAttachments = value;
         yield this.plugin.saveSettings();
       })
     ));
-    new import_obsidian2.Setting(containerEl).setName("排除扩展名模式").setDesc(`此选项仅在启用"处理所有附件"时有用。
-			写一个正则表达式模式以排除某些扩展名的处理。仅使用第一行。`).setClass("single-line-textarea").addTextArea((text) => text.setPlaceholder("docx?|xlsx?|pptx?|zip|rar").setValue(this.plugin.settings.excludeExtensionPattern).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Exclude extension pattern").setDesc(`This option is only useful when "Handle all attachments" is enabled.
+			Write a Regex pattern to exclude certain extensions from being handled. Only the first line will be used.`).setClass("single-line-textarea").addTextArea((text) => text.setPlaceholder("docx?|xlsx?|pptx?|zip|rar").setValue(this.plugin.settings.excludeExtensionPattern).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.excludeExtensionPattern = value;
         yield this.plugin.saveSettings();
       })
     ));
-    new import_obsidian2.Setting(containerEl).setName("禁用重命名通知").setDesc(`如果您不想在重命名图像时看到通知，请关闭此选项。
-			请注意，当链接发生更改时，Obsidian可能会显示通知，此选项无法禁用。`).addToggle((toggle) => toggle.setValue(this.plugin.settings.disableRenameNotice).onChange(
+    new import_obsidian2.Setting(containerEl).setName("Disable rename notice").setDesc(`Turn off this option if you don't want to see the notice when renaming images.
+			Note that Obsidian may display a notice when a link has changed, this option cannot disable that.`).addToggle((toggle) => toggle.setValue(this.plugin.settings.disableRenameNotice).onChange(
       (value) => __async(this, null, function* () {
         this.plugin.settings.disableRenameNotice = value;
         yield this.plugin.saveSettings();
