@@ -42,7 +42,7 @@
   "Editor@@line-hover-indicator": true,
   "Editor@@editor-grid-background-pattren": false,
   "Editor@@heading-indicator-off": false,
-  "Editor@@codeblock-style-select": "codeblock-style-customize",
+  "Editor@@codeblock-style-select": "codeblock-style-one-dark",
   "Editor@@callout-style-select": "callout-style-customize",
   "Mobile@@drawer-phone-full-width": false,
   "Plugin@@Surfing-bookmark-bar-hide": true,

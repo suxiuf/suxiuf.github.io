@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1873ef0410d49aa5",
+        "id": "f1ca1819152193cc",
         "type": "tabs",
         "children": [
           {
-            "id": "2e95f5aac88232c2",
+            "id": "875024d59c72b119",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 314.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -158,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -183,29 +183,34 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "2e95f5aac88232c2",
+  "active": "875024d59c72b119",
   "lastOpenFiles": [
+    "penetration/5.Tryhackme_Part_005.md",
+    "public/5.Tryhackme_Part_005-10.png",
+    "public/5.Tryhackme_Part_005-9.png",
+    "guide/guide.md",
+    "public/5.Tryhackme_Part_005-8.png",
+    "public/5.Tryhackme_Part_005-7.png",
+    "public/5.Tryhackme_Part_005-6.png",
+    "public/5.Tryhackme_Part_005-5.png",
+    "public/5.Tryhackme_Part_005-4.png",
+    "public/5.Tryhackme_Part_005-3.png",
+    "public/5.Tryhackme_Part_005-2.png",
+    "penetration/4.Tryhackme_Part_004.md",
+    "public/5.Tryhackme_Part_005-1.png",
     "penetration/1.Tyrhackme_Part_001.md",
+    "penetration/2.Tryhackme_Part_002.md",
+    "penetration/3.Tryhackme_Part_003.md",
+    "guide/Offensive-demo.md.md",
+    "guide/template.md",
     "penetration/index.md",
     "index.md",
-    "guide/guide.md",
     "Excel 2024-10-19 20.50.14.sheet.md",
     "public/Excel 2024-10-19 20.40.52.sheet.md",
-    "guide/template.md",
     "penetration/oscp/1.network.md",
     "penetration/oscp/index.md",
-    "public/logo.png",
     "未命名.canvas",
-    "public/icons/SimpleIconsKalilinux.svg",
-    "public/icons/image.svg",
-    "public/icons/DeviconPlainKalilinuxWordmark.svg",
-    "public/icons/SimpleIconsHackthebox.svg",
-    "public/icons/Hackthebox.svg",
-    "public/icons/SimpleIconsTryhackme.svg",
-    "public/Hackthebox.svg",
     "public/icons",
-    "public/SimpleIconsHackthebox.svg",
-    "public/SimpleIconsHackthebox-1.svg",
     "public/SimpleIconsTryhackme.vue",
     "penetration/oscp/2.markmind.md",
     "penetration/oscp/2.test.md",
