@@ -1,7 +1,7 @@
 {
-  "attachmentFolderPath": "public",
+  "attachmentFolderPath": "./5.Tryhackme_Part_005.md_Attachments",
   "newFileLocation": "current",
-  "newLinkFormat": "shortest",
+  "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true,
   "alwaysUpdateLinks": true

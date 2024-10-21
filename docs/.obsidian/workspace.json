@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f1ca1819152193cc",
+        "id": "83a9c081b1542a42",
         "type": "tabs",
         "children": [
           {
-            "id": "875024d59c72b119",
+            "id": "95967d400bb4d79d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#1：172",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -180,30 +180,35 @@
       "excalidraw-cn:Create New Excalidraw File": false,
       "obsidian-git:Open Git source control": false,
       "excel:创建 Excel 文件": false,
-      "terminal:Open terminal": false
+      "terminal:Open terminal": false,
+      "attachment-manager:切换附件文件夹的“显示/隐藏”": false
     }
   },
-  "active": "875024d59c72b119",
+  "active": "5bb4ea79db86d3fa",
   "lastOpenFiles": [
     "penetration/5.Tryhackme_Part_005.md",
-    "public/5.Tryhackme_Part_005-10.png",
-    "public/5.Tryhackme_Part_005-9.png",
-    "guide/guide.md",
-    "public/5.Tryhackme_Part_005-8.png",
-    "public/5.Tryhackme_Part_005-7.png",
-    "public/5.Tryhackme_Part_005-6.png",
-    "public/5.Tryhackme_Part_005-5.png",
-    "public/5.Tryhackme_Part_005-4.png",
-    "public/5.Tryhackme_Part_005-3.png",
-    "public/5.Tryhackme_Part_005-2.png",
     "penetration/4.Tryhackme_Part_004.md",
-    "public/5.Tryhackme_Part_005-1.png",
-    "penetration/1.Tyrhackme_Part_001.md",
-    "penetration/2.Tryhackme_Part_002.md",
     "penetration/3.Tryhackme_Part_003.md",
-    "guide/Offensive-demo.md.md",
+    "public/4.Tryhackme_Part_004-6.png",
+    "public/4.Tryhackme_Part_004-5.png",
+    "public/4.Tryhackme_Part_004-1.png",
+    "public/4.Tryhackme_Part_004-4.png",
+    "public/4.Tryhackme_Part_004-3.png",
+    "public/4.Tryhackme_Part_004-2.png",
+    "public/3.Tryhackme_Part_003-3.png",
+    "public/3.Tryhackme_Part_003-1.png",
+    "public/5.Tryhackme_Part_005-2.png",
+    "public/5.Tryhackme_Part_005-8.png",
+    "/regex-rulesets/index.txt",
+    "regex-rulesets/index.txt",
+    "/regex-rulesets",
+    "regex-rulesets",
+    "penetration/2.Tryhackme_Part_002.md",
+    "penetration/1.Tyrhackme_Part_001.md",
     "guide/template.md",
+    "guide/Offensive-demo.md.md",
     "penetration/index.md",
+    "guide/guide.md",
     "index.md",
     "Excel 2024-10-19 20.50.14.sheet.md",
     "public/Excel 2024-10-19 20.40.52.sheet.md",
@@ -217,10 +222,6 @@
     "penetration/public/index",
     "penetration/public",
     "public/penetration/oscp/1.network",
-    "public/penetration/oscp",
-    "public/penetration/index",
-    "public/penetration",
-    "_media-sync_resources",
-    "未命名"
+    "public/penetration/oscp"
   ]
 }

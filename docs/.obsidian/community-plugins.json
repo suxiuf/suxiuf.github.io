@@ -9,7 +9,6 @@
   "obsidian-code-tab",
   "auto-card-link",
   "obsidian-git",
-  "obsidian-paste-image-rename",
   "git-file-explorer",
   "obsidian-mindmap-nextgen",
   "surfing",
@@ -17,5 +16,6 @@
   "excel",
   "obsidian-file-color",
   "OA-file-hider",
-  "terminal"
+  "terminal",
+  "attachment-manager"
 ]
