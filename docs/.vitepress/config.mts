@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import { handleHeadMeta } from './utils/handleHeadMeta'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/",
@@ -42,5 +43,8 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/suxiuf/suxiuf.github.io' }
     ]
-  }
+  },
+  async transformHead(context) {
+    return handleHeadMeta(context)
+  },
 })

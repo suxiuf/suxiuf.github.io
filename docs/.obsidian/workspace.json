@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "83a9c081b1542a42",
+        "id": "ab99982716380a20",
         "type": "tabs",
         "children": [
           {
-            "id": "95967d400bb4d79d",
+            "id": "51ca504ab5c38677",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "penetration/3.Tryhackme_Part_003.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "3.Tryhackme_Part_003"
             }
           }
         ]
@@ -83,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 641.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -142,9 +147,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "penetration/5.Tryhackme_Part_005.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "5.Tryhackme_Part_005 的大纲"
             }
           },
           {
@@ -180,34 +187,40 @@
       "excalidraw-cn:Create New Excalidraw File": false,
       "obsidian-git:Open Git source control": false,
       "excel:创建 Excel 文件": false,
-      "terminal:Open terminal": false,
-      "attachment-manager:切换附件文件夹的“显示/隐藏”": false
+      "terminal:Open terminal": false
     }
   },
-  "active": "5bb4ea79db86d3fa",
+  "active": "51ca504ab5c38677",
   "lastOpenFiles": [
-    "penetration/5.Tryhackme_Part_005.md",
+    "penetration/assets/3.tryhackme_part_003/file-20241021233505.png",
+    "penetration/assets/3.tryhackme_part_003/file-20241021233312634.png",
+    "penetration/assets/3.tryhackme_part_003",
     "penetration/4.Tryhackme_Part_004.md",
+    "penetration/assets/4.tryhackme_part_004/file-20241021233237771.png",
+    "penetration/assets/4.tryhackme_part_004",
+    "penetration/5.Tryhackme_Part_005.md",
+    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-1.png",
+    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-2.png",
+    "penetration/assets/5.tryhackme_part_005/file-20241021232811106.png",
+    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-4.png",
+    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-3.png",
+    "penetration/assets/3.tryhackme_part_003/3.Tryhackme_Part_003-1.png",
+    "penetration/assets/5.tryhackme_part_005",
+    "penetration/assets",
+    "penetration/assets/4.tryhackme_part_004/4.Tryhackme_Part_004-6.png",
+    "未命名",
+    "penetration/index.md",
+    "penetration/5.Tryhackme_Part_005.md_Attachments/IMG-20241021231944994.png",
+    "penetration/5.Tryhackme_Part_005.md_Attachments",
+    "penetration/5.Tryhackme_Part_005.md_Attachments/5.Tryhackme_Part_005",
+    "penetration/penetration/4.Tryhackme_Part_004",
+    "penetration/penetration",
+    "public/5.Tryhackme_Part_005.md_Attachments",
     "penetration/3.Tryhackme_Part_003.md",
-    "public/4.Tryhackme_Part_004-6.png",
-    "public/4.Tryhackme_Part_004-5.png",
-    "public/4.Tryhackme_Part_004-1.png",
-    "public/4.Tryhackme_Part_004-4.png",
-    "public/4.Tryhackme_Part_004-3.png",
-    "public/4.Tryhackme_Part_004-2.png",
-    "public/3.Tryhackme_Part_003-3.png",
-    "public/3.Tryhackme_Part_003-1.png",
-    "public/5.Tryhackme_Part_005-2.png",
-    "public/5.Tryhackme_Part_005-8.png",
-    "/regex-rulesets/index.txt",
-    "regex-rulesets/index.txt",
-    "/regex-rulesets",
-    "regex-rulesets",
     "penetration/2.Tryhackme_Part_002.md",
     "penetration/1.Tyrhackme_Part_001.md",
     "guide/template.md",
     "guide/Offensive-demo.md.md",
-    "penetration/index.md",
     "guide/guide.md",
     "index.md",
     "Excel 2024-10-19 20.50.14.sheet.md",
@@ -215,13 +228,7 @@
     "penetration/oscp/1.network.md",
     "penetration/oscp/index.md",
     "未命名.canvas",
-    "public/icons",
-    "public/SimpleIconsTryhackme.vue",
     "penetration/oscp/2.markmind.md",
-    "penetration/oscp/2.test.md",
-    "penetration/public/index",
-    "penetration/public",
-    "public/penetration/oscp/1.network",
-    "public/penetration/oscp"
+    "penetration/oscp/2.test.md"
   ]
 }
