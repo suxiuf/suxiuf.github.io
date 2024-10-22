@@ -29,8 +29,13 @@ export default defineConfig({
           { text: 'TryHackMe', link: '/penetration/index/'},
           { text: 'OSCP', link: '/penetration/oscp/1.network.md'},
         ],
-
       },
+      { text: '安全工程师',
+        items: [
+          { text: 'Linux加固', link: '/Security_Engineer/linux_system_hardening/index/'},
+        ],
+    },
+      
       { text: '本站配置', link: '/guide/guide.md' }
     ],
     search: { // [!code ++]

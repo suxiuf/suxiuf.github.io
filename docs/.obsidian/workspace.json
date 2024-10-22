@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ab99982716380a20",
+        "id": "4e77b4feff29f67d",
         "type": "tabs",
         "children": [
           {
-            "id": "51ca504ab5c38677",
+            "id": "6bb7407faac4f83a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "penetration/3.Tryhackme_Part_003.md",
+                "file": "Security_Engineer/linux_system_hardening/7.Audit_and_log_config.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.Tryhackme_Part_003"
+              "title": "7.Audit_and_log_config"
             }
           }
         ]
@@ -80,6 +80,26 @@
             "state": {
               "type": "surfing-tab-tree",
               "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "05f2d29d85fd83db",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "16add6f7f2747a17",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
               "icon": "chrome",
               "title": "Surfing Tab Tree"
             }
@@ -88,7 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 641.5
+    "width": 200
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -169,7 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,55 +200,64 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "vscode-editor:新建代码文件": false,
-      "surfing:surfing-bookmark-manager": false,
       "pkmer:Open Pkmer Market": false,
       "i18n:I18N": false,
       "media-sync:Media sync": false,
       "excalidraw-cn:Create New Excalidraw File": false,
       "obsidian-git:Open Git source control": false,
+      "surfing:surfing-bookmark-manager": false,
       "excel:创建 Excel 文件": false,
       "terminal:Open terminal": false
     }
   },
-  "active": "51ca504ab5c38677",
+  "active": "6bb7407faac4f83a",
   "lastOpenFiles": [
-    "penetration/assets/3.tryhackme_part_003/file-20241021233505.png",
-    "penetration/assets/3.tryhackme_part_003/file-20241021233312634.png",
-    "penetration/assets/3.tryhackme_part_003",
-    "penetration/4.Tryhackme_Part_004.md",
-    "penetration/assets/4.tryhackme_part_004/file-20241021233237771.png",
-    "penetration/assets/4.tryhackme_part_004",
-    "penetration/5.Tryhackme_Part_005.md",
-    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-1.png",
-    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-2.png",
-    "penetration/assets/5.tryhackme_part_005/file-20241021232811106.png",
-    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-4.png",
-    "penetration/assets/5.tryhackme_part_005/5.Tryhackme_Part_005-3.png",
-    "penetration/assets/3.tryhackme_part_003/3.Tryhackme_Part_003-1.png",
-    "penetration/assets/5.tryhackme_part_005",
-    "penetration/assets",
-    "penetration/assets/4.tryhackme_part_004/4.Tryhackme_Part_004-6.png",
-    "未命名",
-    "penetration/index.md",
-    "penetration/5.Tryhackme_Part_005.md_Attachments/IMG-20241021231944994.png",
-    "penetration/5.Tryhackme_Part_005.md_Attachments",
-    "penetration/5.Tryhackme_Part_005.md_Attachments/5.Tryhackme_Part_005",
-    "penetration/penetration/4.Tryhackme_Part_004",
-    "penetration/penetration",
-    "public/5.Tryhackme_Part_005.md_Attachments",
-    "penetration/3.Tryhackme_Part_003.md",
-    "penetration/2.Tryhackme_Part_002.md",
-    "penetration/1.Tyrhackme_Part_001.md",
-    "guide/template.md",
-    "guide/Offensive-demo.md.md",
-    "guide/guide.md",
-    "index.md",
-    "Excel 2024-10-19 20.50.14.sheet.md",
-    "public/Excel 2024-10-19 20.40.52.sheet.md",
+    "Security_Engineer/linux_system_hardening/assets/7.audit_and_log_config/file-20241022181349.png",
+    "Security_Engineer/linux_system_hardening/assets/7.audit_and_log_config",
+    "Security_Engineer/linux_system_hardening/6.update_policies.md",
+    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180927.png",
+    "Security_Engineer/linux_system_hardening/7.Audit_and_log_config.md",
+    "Security_Engineer/linux_system_hardening/index.md",
+    "Security_Engineer/linux_system_hardening/2.Linux_firewall.md",
+    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180127.png",
+    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180056.png",
+    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022174826.png",
+    "Security_Engineer/linux_system_hardening/assets/6.update_policies",
+    "Security_Engineer/linux_system_hardening/5.Software_and_service.md",
+    "Security_Engineer/linux_system_hardening/assets/5.software_and_service/file-20241022174234.png",
+    "Security_Engineer/linux_system_hardening/assets/5.software_and_service",
+    "Security_Engineer/linux_system_hardening/4.securing_user_Accounts.md",
+    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022172824.png",
+    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022172840.png",
+    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022172938.png",
+    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022171659.png",
+    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022094628.png",
+    "Security_Engineer/linux_system_hardening/assets/4.linux_system_hardening-004",
+    "Security_Engineer/linux_system_hardening/3.remote_access.md",
+    "Security_Engineer/linux_system_hardening/assets/3.linux_system_hardening-003",
+    "Security_Engineer/linux_system_hardening/1.Physical_Security.md",
+    "Security_Engineer/linux_system_hardening/assets/2.linux_system_hardening-002",
+    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts",
+    "Security_Engineer/linux_system_hardening/assets/index",
+    "Security_Engineer/linux_system_",
+    "Security_Engineer/linux_system_/assets/5.linux_system_hardening-005",
+    "Security_Engineer/index.md",
+    "Security_Engineer/linux_system_hardening/index.md.md",
+    "penetration/3.Tryhackme_01_003.md",
+    "penetration/2.Tryhackme_01_002.md",
+    "penetration/1.Tyrhackme_01_001.md",
     "penetration/oscp/1.network.md",
     "penetration/oscp/index.md",
-    "未命名.canvas",
-    "penetration/oscp/2.markmind.md",
-    "penetration/oscp/2.test.md"
+    "Security_Engineer/Linux_system_hardenning/index.md.md",
+    "penetration/index.md",
+    "Security_Engineer/Linux_system_hardenning/1.Linux_system_hardening-001.md",
+    "index.md",
+    "Security_Engineer/Linux_system_hardenning/assets/index_1.md",
+    "Security_Engineer/Linux_system_hardenning/3.Linux_system_hardening-003.md",
+    "penetration/5.Tryhackme_01_005.md",
+    "penetration/4.Tryhackme_01_004.md",
+    "penetration/2.Tryhackme_Part_002.md",
+    "guide/template.md",
+    "未命名.canvas"
   ]
 }

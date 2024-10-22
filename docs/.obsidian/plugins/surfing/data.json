@@ -46,19 +46,7 @@
     ],
     "defaultFilterType": "tree"
   },
-  "treeData": [
-    {
-      "id": "e59f207fc3ae74ff",
-      "parent": 0,
-      "droppable": true,
-      "text": "TryHackMe | TryHackMe | Dashboard",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    }
-  ],
+  "treeData": [],
   "enableHtmlPreview": true,
   "supportLivePreviewInlineUrl": true,
   "enableTreeView": true
