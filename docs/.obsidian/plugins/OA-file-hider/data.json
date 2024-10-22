@@ -1,8 +1,8 @@
 {
-  "hidden": false,
+  "hidden": true,
   "hiddenList": [
     "penetration/assets",
-    "index.md",
-    "public"
+    "public",
+    "index.md"
   ]
 }
