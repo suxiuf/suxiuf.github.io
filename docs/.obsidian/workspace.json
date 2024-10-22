@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "31bd1dda99dd6b25",
+        "id": "391aa579d490e9a1",
         "type": "tabs",
         "children": [
           {
-            "id": "91c10fb9fe00201b",
+            "id": "fcc7d7eaac76ae00",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "penetration/oscp/1.network.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "1.network"
+              "title": "新标签页"
             }
           }
         ]
@@ -53,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#1：172",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 313.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -147,11 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "penetration/5.Tryhackme_Part_005.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "5.Tryhackme_Part_005 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -165,11 +158,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 296.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,53 +183,53 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "91c10fb9fe00201b",
+  "active": "fcc7d7eaac76ae00",
   "lastOpenFiles": [
+    "penetration/tryhackme/6.Network_SMB.md",
+    "penetration/tryhackme/assets/6.network_smb",
+    "guide/guide.md",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022220846.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022220651.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022220220.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022215957.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022215507.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022215017.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022214237.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022213838.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022213814.png",
+    "penetration/tryhackme/assets/6.network_smb/file-20241022212054.png",
+    "penetration/tryhackme/assets/6.network_server_1",
+    "penetration/tryhackme/1.Linux_001.md",
+    "penetration/tryhackme/2.Linux_002.md",
+    "penetration/tryhackme/assets/3.linux_003",
+    "penetration/tryhackme/3.Linux_003.md",
+    "penetration/tryhackme/4.Network_Introductory.md",
+    "penetration/tryhackme/assets/4.network_introductory",
+    "penetration/tryhackme/5.Network_NMAP.md",
+    "penetration/tryhackme/assets/5.network_nmap",
+    "penetration/tryhackme/assets/5.network",
+    "penetration/oscp/1.network.md",
     "penetration/oscp/index.md",
     "penetration/tryhackme/index.md",
     "penetration/index.md",
-    "penetration/oscp/1.network.md",
-    "penetration/tryhackme/1.Tyrhackme_01_001.md",
     "Security_Engineer/linux_system_hardening/index.md",
     "Security_Engineer/index.md",
-    "penetration/tryhackme/3.Tryhackme_01_003.md",
-    "penetration/tryhackme/2.Tryhackme_01_002.md",
-    "penetration/tryhackme/5.Tryhackme_01_005.md",
-    "penetration/tryhackme/4.Tryhackme_01_004.md",
     "penetration/tryhackme/assets/5.tryhackme_01_005",
     "penetration/tryhackme/assets/4.tryhackme_01_004",
     "penetration/tryhackme/assets/3.tryhackme_01_003",
     "penetration/tryhackme/assets",
-    "penetration/tryhackme",
     "index.md",
     "Security_Engineer/linux_system_hardening/4.securing_user_Accounts.md",
     "Security_Engineer/linux_system_hardening/5.Software_and_service.md",
     "Security_Engineer/linux_system_hardening/6.update_policies.md",
     "Security_Engineer/linux_system_hardening/7.Audit_and_log_config.md",
-    "Security_Engineer/linux_system_hardening/assets/7.audit_and_log_config/file-20241022181349.png",
-    "Security_Engineer/linux_system_hardening/assets/7.audit_and_log_config",
-    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180927.png",
     "Security_Engineer/linux_system_hardening/2.Linux_firewall.md",
-    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180127.png",
-    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180056.png",
-    "Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022174826.png",
-    "Security_Engineer/linux_system_hardening/assets/6.update_policies",
-    "Security_Engineer/linux_system_hardening/assets/5.software_and_service/file-20241022174234.png",
-    "Security_Engineer/linux_system_hardening/assets/5.software_and_service",
-    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022172824.png",
-    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022172840.png",
-    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022172938.png",
-    "Security_Engineer/linux_system_hardening/assets/4.securing_user_accounts/file-20241022171659.png",
-    "Security_Engineer/linux_system_hardening/assets/4.linux_system_hardening-004",
     "Security_Engineer/linux_system_hardening/3.remote_access.md",
-    "Security_Engineer/linux_system_hardening/assets/3.linux_system_hardening-003",
     "Security_Engineer/linux_system_hardening/1.Physical_Security.md",
     "Security_Engineer/linux_system_hardening/index.md.md",
     "Security_Engineer/Linux_system_hardenning/index.md.md",
     "Security_Engineer/Linux_system_hardenning/1.Linux_system_hardening-001.md",
     "Security_Engineer/Linux_system_hardenning/assets/index_1.md",
-    "Security_Engineer/Linux_system_hardenning/3.Linux_system_hardening-003.md",
-    "penetration/2.Tryhackme_Part_002.md",
     "未命名.canvas"
   ]
 }
