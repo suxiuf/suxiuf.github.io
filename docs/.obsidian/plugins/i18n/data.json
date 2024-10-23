@@ -10,13 +10,13 @@
   "I18N_SEARCH_TEXT": "",
   "I18N_SORT": "0",
   "I18N_TYPE": "0",
-  "I18N_MODE_LDT": true,
+  "I18N_MODE_LDT": false,
   "I18N_AUTOMATIC_UPDATE": false,
   "I18N_INCREMENTAL_EXTRACTION": false,
   "I18N_NAME_TRANSLATION": false,
   "I18N_NAME_TRANSLATION_PREFIX": "[",
   "I18N_NAME_TRANSLATION_SUFFIX": "]",
-  "I18N_MODE_NDT": true,
+  "I18N_MODE_NDT": false,
   "I18N_NDT_APIS_DISPLAY": false,
   "I18N_NDT_APIS": {
     "zh-cn": "https://gitee.com/zero--two/obsidian-i18n-translation/raw/master/zh-cn/"
@@ -53,9 +53,9 @@
     "atomicBlockSelectors": [],
     "atomicBlockTags": []
   },
-  "I18N_SUBMIT_MODE": true,
+  "I18N_SUBMIT_MODE": false,
   "I18N_SUBMIT_URL": "",
-  "I18N_SUBMIT_TIME": 22,
+  "I18N_SUBMIT_TIME": 23,
   "I18N_SUBMIT_HISTORY": [],
   "I18N_IGNORE": true,
   "I18N_RE_TEMP_MODE": true,
