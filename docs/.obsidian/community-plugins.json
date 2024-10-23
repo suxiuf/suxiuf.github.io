@@ -1,7 +1,6 @@
 [
   "vscode-editor",
   "pkmer",
-  "i18n",
   "obsidian-style-settings",
   "obsidian-code-tab",
   "auto-card-link",
@@ -12,5 +11,6 @@
   "OA-file-hider",
   "terminal",
   "obsidian-custom-attachment-location",
-  "canvas-mindmap"
+  "canvas-mindmap",
+  "card-board"
 ]

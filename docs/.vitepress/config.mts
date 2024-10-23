@@ -1,7 +1,17 @@
 import { defineConfig } from 'vitepress'
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
-import { handleHeadMeta } from './utils/handleHeadMeta'
+import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
+import {
+  InlineLinkPreviewElementTransform
+
+} from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
+} from "@nolebase/vitepress-plugin-git-changelog";
+
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/",
@@ -11,16 +21,38 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(groupIconMdPlugin)
+      md.use(BiDirectionalLinks())
+      md.use(InlineLinkPreviewElementTransform)
     },
   },
-  vite: {  
-    plugins: [ 
+  vite : {
+
+    optimizeDeps: {
+      exclude: [
+        '@nolebase/vitepress-plugin-inline-link-preview/client',
+        'vitepress'
+      ],
+    },
+    ssr: {
+      noExternal: [
+        // 如果还有别的依赖需要添加的话，并排填写和配置到这里即可
+        '@nolebase/vitepress-plugin-inline-link-preview',
+      ],
+    },
+    plugins: [
       groupIconVitePlugin(),
-      AutoSidebarPlugin({  
-        srcDir: './docs', 
-      }), 
-    ],  
+      AutoSidebarPlugin({
+        srcDir: './docs',
+      }),
+      GitChangelog({
+        // 填写在此处填写您的仓库链接
+        repoURL: ()=> `https://github.com/suxiuf/suxiufeng.github.io`
+      }),
+      GitChangelogMarkdownSection(),
+    ],
+
   },
+
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
@@ -49,7 +81,5 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/suxiuf/suxiuf.github.io' }
     ]
   },
-  async transformHead(context) {
-    return handleHeadMeta(context)
-  },
 })
+

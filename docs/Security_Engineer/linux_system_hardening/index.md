@@ -1,4 +1,5 @@
 ---
+hide: true
 groupTitle: Linux加固
 groupIndex: 2
 collapsed: true
