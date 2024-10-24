@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7f71ef832906a0cc",
+        "id": "50fcee58b6bd0f27",
         "type": "tabs",
         "children": [
           {
-            "id": "0839717c964c32f5",
+            "id": "7f1044ab96998927",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -181,7 +181,7 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "0839717c964c32f5",
+  "active": "7f1044ab96998927",
   "lastOpenFiles": [
     "penetration/tryhackme/Web-Pickle-Rick.md",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",

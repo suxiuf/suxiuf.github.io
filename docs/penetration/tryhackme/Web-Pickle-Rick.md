@@ -202,23 +202,6 @@ sudo bash
 
 
 
-https://complexsecurity.io/try-hack-me/pickle-rick
-
-
-
-
-```cardlink
-url: https://complexsecurity.io/try-hack-me/pickle-rick
-title: "Pickle Rick - TryHackMe Complete Walkthrough — Complex Security"
-description: "In this room, we will exploit a webserver to find 3 ingredients that will help Rick make his potion to transform himself back into a human from a pickle"
-host: complexsecurity.io
-favicon: https://images.squarespace-cdn.com/content/v1/604cef0922e44a51184bef23/bedf99dd-8d81-4ba1-b461-eb359392c045/favicon.ico?format=100w
-image: http://static1.squarespace.com/static/604cef0922e44a51184bef23/604d36b3a02885259026eb6e/6079b27589856b0a0ec2f3eb/1625529831782/header.jpg?format=1500w
-```
-
-
-
-
 
 
 
