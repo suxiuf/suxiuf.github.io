@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "21ca16705c355016",
+        "id": "e9e50cc5ccf9b4a5",
         "type": "tabs",
         "children": [
           {
-            "id": "b5f7e97f57a7ce24",
+            "id": "d5390ad314fd379e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "penetration/tryhackme/Web-Pickle-Rick.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Web-Pickle-Rick"
+              "title": "新标签页"
             }
           }
         ]
@@ -147,11 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "penetration/tryhackme/Web-Pickle-Rick.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Web-Pickle-Rick 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -165,11 +158,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 436.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,70 +178,35 @@
       "surfing:surfing-bookmark-manager": false,
       "excel:创建 Excel 文件": false,
       "terminal:Open terminal": false,
-      "obsidian42-brat:BRAT": false
+      "card-board:CardBoard": false
     }
   },
-  "floating": {
-    "id": "cad0e46ed008ed25",
-    "type": "floating",
-    "children": [
-      {
-        "id": "c386279665d34bf6",
-        "type": "window",
-        "children": [
-          {
-            "id": "fcf50ac720de6a1f",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "a6ee7100367c7e4f",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "新标签页"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 405,
-        "y": 51,
-        "width": 1110,
-        "height": 1012,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "b5f7e97f57a7ce24",
+  "active": "d5390ad314fd379e",
   "lastOpenFiles": [
+    "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "penetration/tryhackme/Web-Pickle-Rick.md",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241024231619.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241024231405.png",
+    "guide/guide.md",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241024222954.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241024214839.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241023120401.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241023102615.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241023120724.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241023104524.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241023110531.png",
+    "penetration/tryhackme/assets/web-pickle-rick/file-20241023110249.png",
     "penetration/tryhackme/index.md",
     "penetration/tryhackme/6.Network_SMB.md",
     "penetration/index.md",
-    "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "penetration/tryhackme/5.Network_NMAP.md",
     "penetration/tryhackme/4.Network_Introductory.md",
     "penetration/tryhackme/3.Linux_003.md",
     "penetration/tryhackme/2.Linux_002.md",
     "penetration/tryhackme/1.Linux_001.md",
-    "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023102615.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023104524.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023110249.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023110531.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023120401.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023120724.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023120919.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023122535.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023123436.png",
     "Pickle-Rick.canvas",
     "index.md",
     "penetration/未命名.canvas",
-    "guide/guide.md",
     "Security_Engineer/linux_system_hardening/6.update_policies.md",
     "Security_Engineer/linux_system_hardening/7.Audit_and_log_config.md",
     "Security_Engineer/linux_system_hardening/3.remote_access.md",
