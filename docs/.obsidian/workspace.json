@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e9e50cc5ccf9b4a5",
+        "id": "7f71ef832906a0cc",
         "type": "tabs",
         "children": [
           {
-            "id": "d5390ad314fd379e",
+            "id": "0839717c964c32f5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -181,10 +181,10 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "d5390ad314fd379e",
+  "active": "0839717c964c32f5",
   "lastOpenFiles": [
-    "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "penetration/tryhackme/Web-Pickle-Rick.md",
+    "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241024231619.png",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241024231405.png",
     "guide/guide.md",
