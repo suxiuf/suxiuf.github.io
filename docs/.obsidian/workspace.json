@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4b168149a3792531",
+        "id": "948577e4c1c682cd",
         "type": "tabs",
         "children": [
           {
-            "id": "c6ed376cbcb02c0f",
+            "id": "d99d990d5edde904",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "penetration/tryhackme/Web-Pickle-Rick.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Web-Pickle-Rick"
+              "title": "新标签页"
             }
           }
         ]
@@ -189,11 +184,11 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "c6ed376cbcb02c0f",
+  "active": "d99d990d5edde904",
   "lastOpenFiles": [
-    "penetration/tryhackme/index.md",
     "penetration/tryhackme/Hash与加密.md",
     "penetration/tryhackme/Web-Pickle-Rick.md",
+    "penetration/tryhackme/index.md",
     "penetration/tryhackme/6.Network_SMB.md",
     "guide/guide.md",
     "Security_Engineer/linux_system_hardening/7.Audit_and_log_config.md",
