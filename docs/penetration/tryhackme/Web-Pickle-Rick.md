@@ -20,7 +20,6 @@
 
 ## 解题思路总结
 
-[Rickle-Rick](assets/web-pickle-rick/Rickle-Rick.canvas)
 ![](assets/web-pickle-rick/file-20241024212525.png)
 ## 详细过程
 
