@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "948577e4c1c682cd",
+        "id": "b685aca15df6e725",
         "type": "tabs",
         "children": [
           {
-            "id": "d99d990d5edde904",
+            "id": "ba5761c1d3241442",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "penetration/tryhackme/Hash与加密.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Hash与加密"
             }
           }
         ]
@@ -83,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 313.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -143,10 +148,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "penetration/tryhackme/Web-Pickle-Rick.md"
+                "file": "penetration/tryhackme/8.Network_FTP.md"
               },
               "icon": "lucide-list",
-              "title": "Web-Pickle-Rick 的大纲"
+              "title": "8.Network_FTP 的大纲"
             }
           },
           {
@@ -164,7 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 296.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -184,25 +189,20 @@
       "card-board:CardBoard": false
     }
   },
-  "active": "d99d990d5edde904",
+  "active": "ba5761c1d3241442",
   "lastOpenFiles": [
-    "penetration/tryhackme/Hash与加密.md",
-    "penetration/tryhackme/Web-Pickle-Rick.md",
     "penetration/tryhackme/index.md",
+    "penetration/tryhackme/Web-Pickle-Rick.md",
+    "penetration/tryhackme/8.Network_FTP.md",
+    "penetration/tryhackme/Hash与加密.md",
+    "penetration/tryhackme/7.Network_Telnet.md",
     "penetration/tryhackme/6.Network_SMB.md",
-    "guide/guide.md",
-    "Security_Engineer/linux_system_hardening/7.Audit_and_log_config.md",
-    "Security_Engineer/linux_system_hardening/index.md",
-    "Security_Engineer/linux_system_hardening/6.update_policies.md",
-    "Security_Engineer/linux_system_hardening/5.Software_and_service.md",
-    "Security_Engineer/linux_system_hardening/4.securing_user_Accounts.md",
-    "Security_Engineer/linux_system_hardening/3.remote_access.md",
-    "Security_Engineer/linux_system_hardening/2.Linux_firewall.md",
-    "Security_Engineer/linux_system_hardening/1.Physical_Security.md",
-    "penetration/tryhackme/5.Network_NMAP.md",
+    "penetration/tryhackme/assets/7.network_telnet/file-20241025221302.png",
+    "penetration/tryhackme/assets/7.network_telnet",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241024231619.png",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241024231405.png",
+    "guide/guide.md",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241024222954.png",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241024214839.png",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241023120401.png",
@@ -210,8 +210,8 @@
     "penetration/tryhackme/assets/web-pickle-rick/file-20241023120724.png",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241023104524.png",
     "penetration/tryhackme/assets/web-pickle-rick/file-20241023110531.png",
-    "penetration/tryhackme/assets/web-pickle-rick/file-20241023110249.png",
     "penetration/index.md",
+    "penetration/tryhackme/5.Network_NMAP.md",
     "penetration/tryhackme/4.Network_Introductory.md",
     "penetration/tryhackme/3.Linux_003.md",
     "penetration/tryhackme/2.Linux_002.md",
@@ -219,9 +219,16 @@
     "Pickle-Rick.canvas",
     "index.md",
     "penetration/未命名.canvas",
+    "Security_Engineer/linux_system_hardening/6.update_policies.md",
+    "Security_Engineer/linux_system_hardening/7.Audit_and_log_config.md",
+    "Security_Engineer/linux_system_hardening/3.remote_access.md",
+    "Security_Engineer/linux_system_hardening/2.Linux_firewall.md",
+    "Security_Engineer/linux_system_hardening/4.securing_user_Accounts.md",
+    "Security_Engineer/linux_system_hardening/5.Software_and_service.md",
     "excalidraw 24-10-23 04.14.53.ex",
     "public/mindmap/20241023152950.km.md",
     "public/mindmap",
+    "Security_Engineer/linux_system_hardening/index.md",
     "penetration/Mind 2024-10-23 15.12.06.mindmap.md",
     "penetration/未命名思维导图.md",
     "excalidraw 24-10-23 02.35.46.ex",
@@ -232,8 +239,6 @@
     "_media-sync_resources/2024/10",
     "_media-sync_resources/2024",
     "_media-sync_resources",
-    "guide/template.md",
-    "penetration/tryhackme/assets/web-pickle-rick",
-    "penetration/oscp/1.network.md"
+    "guide/template.md"
   ]
 }
