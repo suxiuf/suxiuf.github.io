@@ -2,15 +2,9 @@ import { defineConfig } from 'vitepress'
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
-import {
-  InlineLinkPreviewElementTransform
-
+import { 
+  InlineLinkPreviewElementTransform 
 } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
-import {
-  GitChangelog,
-  GitChangelogMarkdownSection,
-} from "@nolebase/vitepress-plugin-git-changelog";
-
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -19,10 +13,11 @@ export default defineConfig({
   title: "MikTu",
   description: "只是一个笔记",
   markdown: {
-    config(md) {
+    config: (md) => {
+
       md.use(groupIconMdPlugin)
       md.use(BiDirectionalLinks())
-      md.use(InlineLinkPreviewElementTransform)
+      md.use(InlineLinkPreviewElementTransform) 
     },
   },
   vite : {
@@ -44,11 +39,7 @@ export default defineConfig({
       AutoSidebarPlugin({
         srcDir: './docs',
       }),
-      GitChangelog({
-        // 填写在此处填写您的仓库链接
-        repoURL: ()=> `https://github.com/suxiuf/suxiufeng.github.io`
-      }),
-      GitChangelogMarkdownSection(),
+
     ],
 
   },

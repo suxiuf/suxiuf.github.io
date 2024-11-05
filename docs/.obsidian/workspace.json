@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "penetration/tryhackme/Hash与加密.md",
+                "file": "penetration/tryhackme/8.Network_FTP.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hash与加密"
+              "title": "8.Network_FTP"
             }
           }
         ]
@@ -181,7 +181,6 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": true,
       "vscode-editor:新建代码文件": false,
-      "pkmer:Open Pkmer Market": false,
       "obsidian-git:Open Git source control": false,
       "surfing:surfing-bookmark-manager": false,
       "excel:创建 Excel 文件": false,
@@ -191,10 +190,10 @@
   },
   "active": "ba5761c1d3241442",
   "lastOpenFiles": [
+    "penetration/tryhackme/Hash与加密.md",
     "penetration/tryhackme/index.md",
     "penetration/tryhackme/Web-Pickle-Rick.md",
     "penetration/tryhackme/8.Network_FTP.md",
-    "penetration/tryhackme/Hash与加密.md",
     "penetration/tryhackme/7.Network_Telnet.md",
     "penetration/tryhackme/6.Network_SMB.md",
     "penetration/tryhackme/assets/7.network_telnet/file-20241025221302.png",
