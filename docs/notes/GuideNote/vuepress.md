@@ -5,39 +5,33 @@ permalink: /notes/GuideNote/vuepress/
 ---
 本站基于[vuepress-theme-plume](https://theme-plume.vuejs.press/)
 
-> [!NOTE]
-> 强调用户在快速浏览文档时也不应忽略的重要信息。
+## GitHub Page
 
-> [!TIP]
-> 有助于用户更顺利达成目标的建议性信息。
+### Workflow  部署
 
-> [!IMPORTANT]
-> 对用户达成目标至关重要的信息。
+项目开始选择部署方式为Github,自动生成`.github/workflows/deploy.yml`文件
 
-> [!WARNING]
-> 因为可能存在风险，所以需要用户立即关注的关键内容。
+```ad-warning
+title: 部署时`The process '/usr/bin/git' failed with exit code 128` 错误处置
+collapse: true
 
-> [!CAUTION]
-> 行为可能带来的负面影响。
+**错误信息**：
+![](assets/vuepress/file-20241117204324.png)
 
->[!danger]
-> 危险行为
-
-::: tabs
-@tab pnpm
-``` bash
-pnpm add -D vuepress vuepress-theme-plume
-```
-@tab yarn
-
-``` bash
-yarn add -D vuepress vuepress-theme-plume
+**处置步骤**
+- 在右上角点击头像，左侧菜单栏拉到最下
+	![](assets/vuepress/file-20241117204753.png)
+- 点击进入视图，配置tocken
+	![](assets/vuepress/file-20241117204908.png)
+- 回到仓库，使用刚才得到的token创建授权
+	![](assets/vuepress/file-20241117205230.png)
+- 配置**Action**  `Workflow permissions`
+	![](assets/vuepress/file-20241117205645.png)
+- 选择 `Read and write permissions`
+	![](assets/vuepress/file-20241117205819.png)
 ```
 
-@tab npm
-``` bash
-npm install -D vuepress vuepress-theme-plume
-```
-:::
+### 首页图片引用
 
+主题默认将`.vuepress/puplic/`目录作为图片根目录，并将该目录下的文件上传到`gh-page`分支根目录。因此，如果在主页或其他配置文件中引用图片，要对相对路径进行修改。
 

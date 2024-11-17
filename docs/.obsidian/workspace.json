@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4dbf172699f0b6fe",
+        "id": "302f5f1964503070",
         "type": "tabs",
         "children": [
           {
-            "id": "d2111b02fb337af3",
+            "id": "aefd40b2c46f0879",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/penetration/1.tryhackme/10.NetWork_NFS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "10.NetWork_NFS"
+              "title": "新标签页"
             }
           }
         ]
@@ -137,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "notes/penetration/1.tryhackme/10.NetWork_NFS.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "10.NetWork_NFS 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -166,11 +159,20 @@
       "i18n:I18N": false
     }
   },
-  "active": "d2111b02fb337af3",
+  "active": "aefd40b2c46f0879",
   "lastOpenFiles": [
+    "notes/GuideNote/vuepress.md",
     "notes/penetration/1.tryhackme/Hash与加密.md",
-    "notes/penetration/1.tryhackme/9.Network_FTP.md",
+    "notes/GuideNote/assets/vuepress/file-20241117205819.png",
+    "notes/GuideNote/assets/vuepress/file-20241117205645.png",
+    "notes/GuideNote/assets/vuepress/file-20241117205230.png",
+    "notes/GuideNote/assets/vuepress/file-20241117204908.png",
+    "notes/GuideNote/assets/vuepress/file-20241117204753.png",
+    "notes/GuideNote/assets/vuepress/file-20241117204324.png",
+    "notes/GuideNote/assets/vuepress",
+    "notes/GuideNote/assets",
     "notes/penetration/1.tryhackme/10.NetWork_NFS.md",
+    "notes/penetration/1.tryhackme/9.Network_FTP.md",
     "notes/penetration/1.tryhackme/8.Network_Telnet.md",
     "notes/Security_Engineer/linux_system_hardening/7.Audit_And_Log_Config.md",
     "notes/Security_Engineer/linux_system_hardening/6.Update_Policies.md",
@@ -193,30 +195,20 @@
     "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116235017.png",
     "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234946.png",
     "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234925.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234918.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234907.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234849.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234812.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234753.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234744.png",
     "notes/penetration/1.tryhackme/assets/6.network_nmap",
     "notes/penetration/1.tryhackme/assets/5.network_introductory",
     "notes/penetration/1.tryhackme/assets/4.linux_003",
     "notes/penetration/1.tryhackme/assets/4.Linux_003",
     "notes/penetration/1.tryhackme/2.Linux_001.md",
-    "notes/GuideNote/vuepress.md",
     "notes/GuideNote/vitepress.md",
     "penetration/tryhackme/Hash与加密.md",
     "penetration/tryhackme/Hash与加密_1.md",
-    "penetration/index.md",
     "未命名.canvas",
     "penetration/tryhackme/assets/9.network_nfs",
     "penetration/tryhackme/assets/7.network_telnet",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "Pickle-Rick.canvas",
     "penetration/未命名.canvas",
-    "excalidraw 24-10-23 04.14.53.ex",
-    "public/mindmap",
-    "excalidraw 24-10-23 02.35.46.ex"
+    "excalidraw 24-10-23 04.14.53.ex"
   ]
 }
