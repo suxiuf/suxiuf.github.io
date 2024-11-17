@@ -1,5 +1,6 @@
 {
   "theme": "obsidian",
   "cssTheme": "Border",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "showViewHeader": true
 }

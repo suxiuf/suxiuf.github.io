@@ -1,15 +1,17 @@
 [
-  "vscode-editor",
-  "obsidian-style-settings",
-  "obsidian-code-tab",
-  "auto-card-link",
-  "obsidian-git",
-  "surfing",
+  "obsidian-custom-attachment-location",
   "excel",
+  "obsidian-git",
+  "multi-column-markdown",
+  "obsidian-style-settings",
+  "vscode-editor",
+  "terminal",
+  "surfing",
+  "obsidian-admonition",
+  "codeblock-customizer",
+  "i18n",
+  "dictionary-translator",
   "obsidian-file-color",
   "OA-file-hider",
-  "terminal",
-  "obsidian-custom-attachment-location",
-  "canvas-mindmap",
-  "card-board"
+  "auto-card-link"
 ]

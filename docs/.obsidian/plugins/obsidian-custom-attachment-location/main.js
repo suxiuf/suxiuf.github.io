@@ -152,7 +152,7 @@ var require_implementations = __commonJS({
     }
     var InternalPluginName = {
       AudioRecorder: "audio-recorder",
-      Backlink: "backlink",
+      Backlink: "反向链接",
       Bookmarks: "bookmarks",
       Canvas: "canvas",
       CommandPalette: "command-palette",
@@ -2001,7 +2001,7 @@ var require_PluginBase = __commonJS({
        */
       onload() {
         this.register((0, import_Error3.registerAsyncErrorEventHandler)(() => {
-          this.showNotice("An unhandled error occurred. Please check the console for more information.");
+          this.showNotice("发生了一个未处理的错误。请检查控制台以获取更多信息。");
         }));
         (0, import_ChainedPromise2.chain)(this.app, async () => {
           await this.loadSettings();
@@ -2594,7 +2594,7 @@ var require_Vault = __commonJS({
         }
         if (backlinks.count() !== 0) {
           if (shouldReportUsedAttachments) {
-            new import_obsidian5.Notice(`Attachment ${file.path} is still used by other notes. It will not be deleted.`);
+            new import_obsidian5.Notice(`附件 ${file.path} 仍被其他笔记使用。它将不会被删除。`);
           }
           canDelete = false;
         }
@@ -7164,7 +7164,7 @@ var require_moment = __commonJS({
             since: "0001-01-01",
             until: Infinity,
             offset: 1,
-            name: "Anno Domini",
+            name: "公元",
             narrow: "AD",
             abbr: "AD"
           },
@@ -7172,7 +7172,7 @@ var require_moment = __commonJS({
             since: "0000-12-31",
             until: -Infinity,
             offset: 1,
-            name: "Before Christ",
+            name: "公元前",
             narrow: "BC",
             abbr: "BC"
           }
@@ -8173,7 +8173,7 @@ async function collectAttachments(plugin, note, oldPath, attachmentFilter) {
   const app = plugin.app;
   oldPath ??= note.path;
   attachmentFilter ??= () => true;
-  const notice = new import_obsidian2.Notice(`Collecting attachments for ${note.path}`);
+  const notice = new import_obsidian2.Notice(`正在收集 ${note.path} 的附件`);
   const attachmentsMap = /* @__PURE__ */ new Map();
   const isCanvas = (0, import_FileSystem.isCanvasFile)(note);
   await (0, import_Vault.applyFileChanges)(app, note, async () => {
@@ -8270,14 +8270,14 @@ async function collectAttachmentsInFolder(plugin, folder) {
     app: plugin.app,
     title: createFragment((f) => {
       (0, import_obsidian2.setIcon)(f.createSpan(), "lucide-alert-triangle");
-      f.appendText(" Collect attachments in folder");
+      f.appendText("收集文件夹中的附件");
     }),
     message: createFragment((f) => {
-      f.appendText("Do you want to collect attachments for all notes in folder: ");
+      f.appendText("您是否要收集文件夹中的所有笔记的附件：");
       (0, import_DocumentFragment.appendCodeBlock)(f, folder.path);
-      f.appendText(" and all its subfolders?");
+      f.appendText("及其所有子文件夹？");
       f.createEl("br");
-      f.appendText("This operation cannot be undone.");
+      f.appendText("此操作无法撤消。");
     })
   })) {
     return;
@@ -8385,10 +8385,10 @@ var __process7 = globalThis["process"] ?? {
 var CustomAttachmentLocationPluginSettingsTab = class extends import_PluginSettingsTabBase.PluginSettingsTabBase {
   display() {
     this.containerEl.empty();
-    new import_obsidian3.Setting(this.containerEl).setName("Location for New Attachments").setDesc(createFragment((f) => {
-      f.appendText("Start with ");
+    new import_obsidian3.Setting(this.containerEl).setName("新附件的位置").setDesc(createFragment((f) => {
+      f.appendText("从");
       (0, import_DocumentFragment2.appendCodeBlock)(f, ".");
-      f.appendText(" to use relative path. Available variables: ");
+      f.appendText("开始使用相对路径。可用变量：");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "${filename}");
       f.appendText(", ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "${foldername}");
@@ -8398,11 +8398,11 @@ var CustomAttachmentLocationPluginSettingsTab = class extends import_PluginSetti
       (0, import_DocumentFragment2.appendCodeBlock)(f, "${date:format}");
       f.appendText(".");
       f.appendChild(createEl("br"));
-      f.appendText("Dot-folders like ");
+      f.appendText("点文件夹如");
       (0, import_DocumentFragment2.appendCodeBlock)(f, ".attachments");
-      f.appendText(" are not recommended, because Obsidian doesn't track them. You might need to use ");
-      f.createEl("a", { href: "https://github.com/polyipseity/obsidian-show-hidden-files/", text: "Show Hidden Files" });
-      f.appendText(" Plugin to manage them.");
+      f.appendText("不推荐，因为 Obsidian 不跟踪它们。您可能需要使用");
+      f.createEl("a", { href: "https://github.com/polyipseity/obsidian-show-hidden-files/", text: "显示隐藏文件" });
+      f.appendText("插件来管理它们。");
     })).addText(
       (text) => (0, import_UIComponent.bindUiComponent)(this.plugin, text, "attachmentFolderPath", {
         uiValueValidator(uiValue) {
@@ -8416,8 +8416,8 @@ var CustomAttachmentLocationPluginSettingsTab = class extends import_PluginSetti
         }
       }).setPlaceholder("./assets/${filename}")
     );
-    new import_obsidian3.Setting(this.containerEl).setName("Pasted File Name").setDesc(createFragment((f) => {
-      f.appendText("Available variables: ");
+    new import_obsidian3.Setting(this.containerEl).setName("粘贴的文件名").setDesc(createFragment((f) => {
+      f.appendText("可用变量：");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "${filename}");
       f.appendText(", ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "${foldername}");
@@ -8435,63 +8435,63 @@ var CustomAttachmentLocationPluginSettingsTab = class extends import_PluginSetti
         }
       }).setPlaceholder("file-${date:YYYYMMDDHHmmssSSS}")
     );
-    new import_obsidian3.Setting(this.containerEl).setName("Automatically rename attachment folder").setDesc(createFragment((f) => {
-      f.appendText("When renaming md files, automatically rename attachment folder if folder name contains ");
+    new import_obsidian3.Setting(this.containerEl).setName("自动重命名附件文件夹").setDesc(createFragment((f) => {
+      f.appendText("重命名 md 文件时，如果文件夹名称包含，则自动重命名附件文件夹");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "${filename}");
       f.appendText(".");
     })).addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "autoRenameFolder"));
-    new import_obsidian3.Setting(this.containerEl).setName("Automatically rename attachment files").setDesc(createFragment((f) => {
-      f.appendText("When renaming md files, automatically rename attachment files if file name contains ");
+    new import_obsidian3.Setting(this.containerEl).setName("自动重命名附件文件").setDesc(createFragment((f) => {
+      f.appendText("重命名 md 文件时，如果文件名包含，则自动重命名附件文件");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "${filename}");
       f.appendText(".");
     })).addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "autoRenameFiles"));
-    new import_obsidian3.Setting(this.containerEl).setName("Replace whitespace with hyphen").setDesc("Automatically replace whitespace in attachment folder and file name with hyphens.").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "replaceWhitespace"));
-    new import_obsidian3.Setting(this.containerEl).setName("All lowercase names").setDesc("Automatically set all characters in folder name and pasted image name to be lowercase.").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "toLowerCase"));
-    new import_obsidian3.Setting(this.containerEl).setName("Convert pasted images to JPEG").setDesc("Paste images from clipboard converting them to JPEG.").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "convertImagesToJpeg"));
-    new import_obsidian3.Setting(this.containerEl).setName("JPEG Quality").setDesc("The smaller the quality, the greater the compression ratio.").addDropdown((dropDown) => {
+    new import_obsidian3.Setting(this.containerEl).setName("用连字符替换空格").setDesc("自动将附件文件夹和文件名中的空格替换为连字符。").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "replaceWhitespace"));
+    new import_obsidian3.Setting(this.containerEl).setName("全部小写名称").setDesc("自动将文件夹名称和粘贴图像名称中的所有字符设置为小写。").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "toLowerCase"));
+    new import_obsidian3.Setting(this.containerEl).setName("将粘贴的图像转换为 JPEG").setDesc("从剪贴板粘贴图像并将其转换为 JPEG。").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "convertImagesToJpeg"));
+    new import_obsidian3.Setting(this.containerEl).setName("JPEG 质量").setDesc("质量越小，压缩比越大。").addDropdown((dropDown) => {
       dropDown.addOptions(generateJpegQualityOptions());
       (0, import_UIComponent.bindUiComponent)(this.plugin, dropDown, "jpegQuality", {
         settingToUIValueConverter: (value) => value.toString(),
         uiToSettingValueConverter: (value) => Number(value)
       });
     });
-    new import_obsidian3.Setting(this.containerEl).setName("Convert images on drag&drop").setDesc(createFragment((f) => {
-      f.appendText("If enabled and ");
+    new import_obsidian3.Setting(this.containerEl).setName("拖放时转换图像").setDesc(createFragment((f) => {
+      f.appendText("如果启用并且");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "Convert pasted images to JPEG");
-      f.appendText(" setting is enabled, images drag&dropped into the editor will be converted to JPEG.");
+      f.appendText("设置已启用，拖放到编辑器中的图像将被转换为 JPEG 格式。");
     })).addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "convertImagesOnDragAndDrop"));
-    new import_obsidian3.Setting(this.containerEl).setName("Rename only images").setDesc(createFragment((f) => {
-      f.appendText("If enabled, only image files will be renamed.");
+    new import_obsidian3.Setting(this.containerEl).setName("仅重命名图像").setDesc(createFragment((f) => {
+      f.appendText("如果启用，仅图像文件将被重命名。");
       f.appendChild(createEl("br"));
-      f.appendText("If disabled, all attachment files will be renamed.");
+      f.appendText("如果禁用，所有附件文件将被重命名。");
     })).addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "renameOnlyImages"));
-    new import_obsidian3.Setting(this.containerEl).setName("Rename pasted files with known names").setDesc(createFragment((f) => {
-      f.appendText("If enabled, pasted copied files with known names will be renamed.");
+    new import_obsidian3.Setting(this.containerEl).setName("重命名具有已知名称的粘贴文件").setDesc(createFragment((f) => {
+      f.appendText("如果启用，粘贴的复制文件如果有已知名称将被重命名。");
       f.appendChild(createEl("br"));
-      f.appendText("If disabled, only clipboard image objects (e.g., screenshots) will be renamed.");
+      f.appendText("如果禁用，仅剪贴板图像对象（例如，屏幕截图）将被重命名。");
     })).addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "renamePastedFilesWithKnownNames"));
-    new import_obsidian3.Setting(this.containerEl).setName("Rename attachments on drag&drop").setDesc(createFragment((f) => {
-      f.appendText("If enabled, attachments dragged and dropped into the editor will be renamed according to the ");
+    new import_obsidian3.Setting(this.containerEl).setName("拖放时重命名附件").setDesc(createFragment((f) => {
+      f.appendText("如果启用，拖放到编辑器中的附件将根据 ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "Pasted File Name");
       f.appendText(" setting.");
     })).addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "renameAttachmentsOnDragAndDrop"));
-    new import_obsidian3.Setting(this.containerEl).setName("Rename attachments on collecting").setDesc(createFragment((f) => {
-      f.appendText("If enabled, attachments processed via ");
+    new import_obsidian3.Setting(this.containerEl).setName("收集时重命名附件").setDesc(createFragment((f) => {
+      f.appendText("如果启用，通过 ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "Collect attachments");
-      f.appendText(" commands will be renamed according to the ");
+      f.appendText("命令处理的附件将根据 ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "Pasted File Name");
       f.appendText(" setting.");
     })).addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "renameCollectedFiles"));
-    new import_obsidian3.Setting(this.containerEl).setName("Duplicate name separator").setDesc(createFragment((f) => {
-      f.appendText("When you are pasting/dragging a file with the same name as an existing file, this separator will be added to the file name.");
+    new import_obsidian3.Setting(this.containerEl).setName("重复名称分隔符").setDesc(createFragment((f) => {
+      f.appendText("当你粘贴/拖动一个与现有文件同名的文件时，这个分隔符将被添加到文件名中。");
       f.appendChild(createEl("br"));
-      f.appendText("E.g., when you are dragging file ");
+      f.appendText("例如，当你拖动文件 ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "existingFile.pdf");
-      f.appendText(", it will be renamed to ");
+      f.appendText(", 它将被重命名为 ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "existingFile 1.pdf");
       f.appendText(", ");
       (0, import_DocumentFragment2.appendCodeBlock)(f, "existingFile 2.pdf");
-      f.appendText(", etc, getting the first name available.");
+      f.appendText(", 等等，直到获得第一个可用的名称。");
     })).addText(
       (text) => (0, import_UIComponent.bindUiComponent)(this.plugin, text, "duplicateNameSeparator", {
         uiValueValidator(uiValue) {
@@ -8499,8 +8499,8 @@ var CustomAttachmentLocationPluginSettingsTab = class extends import_PluginSetti
         }
       }).setPlaceholder(" ")
     );
-    new import_obsidian3.Setting(this.containerEl).setName("Keep empty attachment folders").setDesc("If enabled, empty attachment folders will be preserved, useful for source control purposes.").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "keepEmptyAttachmentFolders"));
-    new import_obsidian3.Setting(this.containerEl).setName("Delete orphan attachments").setDesc("If enabled, when the note is deleted, its orphan attachments are deleted as well.").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "deleteOrphanAttachments"));
+    new import_obsidian3.Setting(this.containerEl).setName("保留空附件文件夹").setDesc("如果启用，将保留空附件文件夹，这对于源代码控制很有用。").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "keepEmptyAttachmentFolders"));
+    new import_obsidian3.Setting(this.containerEl).setName("删除孤立附件").setDesc("如果启用，当笔记被删除时，其孤立附件也将被删除。").addToggle((toggle) => (0, import_UIComponent.bindUiComponent)(this.plugin, toggle, "deleteOrphanAttachments"));
   }
 };
 function generateJpegQualityOptions() {
@@ -8734,17 +8734,17 @@ var CustomAttachmentLocationPlugin = class extends import_PluginBase.PluginBase 
     registerPasteDropEventHandlers(this);
     this.addCommand({
       id: "collect-attachments-current-note",
-      name: "Collect attachments in current note",
+      name: "收集当前笔记中的附件",
       checkCallback: (checking) => collectAttachmentsCurrentNote(this, checking)
     });
     this.addCommand({
       id: "collect-attachments-current-folder",
-      name: "Collect attachments in current folder",
+      name: "收集当前文件夹中的附件",
       checkCallback: (checking) => collectAttachmentsCurrentFolder(this, checking)
     });
     this.addCommand({
       id: "collect-attachments-entire-vault",
-      name: "Collect attachments in entire vault",
+      name: "收集整个保险库中的附件",
       callback: () => {
         collectAttachmentsEntireVault(this);
       }
@@ -8803,7 +8803,7 @@ var CustomAttachmentLocationPlugin = class extends import_PluginBase.PluginBase 
       return;
     }
     menu.addItem((item) => {
-      item.setTitle("Collect attachments in folder").setIcon("download").onClick(() => collectAttachmentsInFolder(this, file));
+      item.setTitle("收集文件夹中的附件").setIcon("download").onClick(() => collectAttachmentsInFolder(this, file));
     });
   }
 };

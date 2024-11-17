@@ -1,8 +1,10 @@
 {
-  "hidden": false,
+  "hidden": true,
   "hiddenList": [
     "penetration/assets",
     "public",
+    "Security_Engineer/index.md",
+    "penetration/oscp",
     "index.md"
   ]
 }
