@@ -10,15 +10,13 @@ export default defineThemeConfig({
   // your git repo url
   docsRepo: '',
   docsDir: 'docs',
-
   appearance: true,
-
   profile: {
     avatar: 'https://theme-plume.vuejs.press/plume.png',
     name: 'MikTu',
     description: '只是个人笔记',
     // circle: true,
-    // location: '',
+    //location: 'CHINA',
     // organization: '',
   },
 
