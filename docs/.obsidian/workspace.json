@@ -11,10 +11,15 @@
             "id": "aefd40b2c46f0879",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/Security_Engineer/网络入侵调查/未命名.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "未命名"
             }
           }
         ]
@@ -132,9 +137,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "notes/Security_Engineer/网络入侵调查/未命名.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "未命名 的大纲"
             }
           }
         ],
@@ -161,6 +168,8 @@
   },
   "active": "aefd40b2c46f0879",
   "lastOpenFiles": [
+    "notes/Security_Engineer/网络入侵调查/未命名.md",
+    "notes/Security_Engineer/网络入侵调查",
     "notes/GuideNote/vuepress.md",
     "notes/penetration/1.tryhackme/Hash与加密.md",
     "notes/GuideNote/assets/vuepress/file-20241117205819.png",
@@ -208,7 +217,6 @@
     "penetration/tryhackme/assets/7.network_telnet",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "Pickle-Rick.canvas",
-    "penetration/未命名.canvas",
-    "excalidraw 24-10-23 04.14.53.ex"
+    "penetration/未命名.canvas"
   ]
 }
