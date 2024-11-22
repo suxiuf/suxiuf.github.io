@@ -15,5 +15,6 @@
   "readableLineLength": true,
   "showRibbon": true,
   "showInlineTitle": true,
-  "trashOption": "local"
+  "trashOption": "local",
+  "strictLineBreaks": true
 }

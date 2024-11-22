@@ -12,13 +12,15 @@ permalink: /notes/GuideNote/vitepress/
 ## 搜索
 vitepress 默认主题自带搜索功能，只需按[官方文档](https://vitepress.dev/zh/reference/default-theme-search#search)配置即可：
 
->[!WARNING] 注意
+>[!WARNING]
 >注意代码位置不要写错!!
 
-::: code-group
-```ts [.vitepress/config.mts]
-import { defineConfig } from 'vitepress'
 
+:::tabs
+@tab vitepress/config.mts
+
+```js file:vitepress/config.mts
+import { defineConfig } from 'vitepress'
 export default defineConfig({
   themeConfig: {
     search: { // [!code ++]
@@ -35,9 +37,10 @@ export default defineConfig({
 
 ### 安装
 
-::: code-group
 
-```sh [pnpm]
+::: tabs
+@tab pnpm
+```sh fiel:pnpm
 pnpm add vitepress-auto-sidebar-plugin --save-dev
 ```
 :::
@@ -46,9 +49,10 @@ pnpm add vitepress-auto-sidebar-plugin --save-dev
 
 需要在`.vitepress/config.mts`添加配置：
 
-::: code-group
+::: tabs
 
-```ts [.vitepress/config.mts]
+@tab .vitepress/config.mts
+```js file:test
 import { defineConfig } from 'vitepress'
 import AutoSidebarPlugin from 'vitepress-auto-sidebar-plugin'
 
@@ -72,18 +76,14 @@ export default defineConfig({
 :::
 
 
-
-
-
 # Markdown
-
 
 ## 常用功能
 
 ### 文章顶部 frontmatter 配置
 
-::: code-group
-
+::: tabs
+@tab  md
 ```md [index.md]
 ---
 title: 文章名
@@ -97,9 +97,8 @@ sortNext: filesName 文章排序于指定文件之前
 ```
 :::
 
-
-::: code-group
-
+::: tabs
+@tab index.md
 ```md [index.md]
 ---
 group: true  对文件夹进行分组
@@ -115,8 +114,8 @@ collapsed: true 是否折叠文件夹，默认不显示折叠按钮
 
 免费图标库有很多，但目前最全的，最好用的免费图标库是：https://yesicon.app/
 
-::: code-group
-
+::: tabs
+@tab home
 ```md [index.md]
 ---
 layout: home
@@ -142,18 +141,14 @@ features:
 ```
 :::
 
+
 ## 代码块图标
 
 [快速开始](https://vp.yuy1n.io/getting-started.html)
 
 **源码内容**
-
-:::: code-group
-
-````md [test.md]
-
+````sh file:源码
 ::: code-group
-
 ```sh [npm]
 npm install vitepress-plugin-group-icons
 ```
@@ -169,34 +164,29 @@ pnpm add -D vitepress-plugin-group-icons
 ```sh [bun]
 bun add vitepress-plugin-group-icons
 ```
-
-:::
-
 ````
-::::
 
 
 **显示样式**
-
-::: code-group
-
+::: tabs
+@tab npm
 ```sh [npm]
 npm install vitepress-plugin-group-icons
 ```
-
+@tab yarn
 ```sh [yarn]
 yarn add vitepress-plugin-group-icons
 ```
-
+@tab pnpm
 ```sh [pnpm]
 pnpm add -D vitepress-plugin-group-icons
 ```
-
+@tab bun
 ```sh [bun]
 bun add vitepress-plugin-group-icons
 ```
-
 :::
+
 
 
 # Markdown代码块
@@ -204,9 +194,6 @@ bun add vitepress-plugin-group-icons
 ## 代码行高亮
 
 **源码内容**
-
-:::: code-group
-
 ````md [index.md]
 ::: code-group
 
@@ -219,16 +206,10 @@ bun add vitepress-plugin-group-icons
   echo 'this is line 6'
 ```
 :::
-
 ````
-::::
 
 **显示样式**
-
-
-::: code-group
-
-```sh{1,3,5} [test.sh]
+```sh  hl:1,3,5
 echo 'this is line 1'
 echo 'this is line 2'
 echo 'this is line 3'
@@ -236,33 +217,25 @@ echo 'this is line 4'
 echo 'this is line 5'
 echo 'this is line 6'
 ```
-:::
 
-
-**源码内容**
 
 ## 代码行删除和添加
 
-:::: code-group
-
-````md [test.md]
-
+**源码内容**
+````md file:*.js
 ```js [*.js]
 export default {
   data () {
     return {
-      msg: 'Removed' // [!code --]
-      msg: 'Added' // [!code ++]
+      msg: 'Removed'  // [!code --]
+      msg: 'Added'  // [!code ++]
     }
   }
 }
 ```
 ````
-::::
 
 **显示样式**
-:::: code-group
-
 ```js [*.js]
 export default {
   data () {
@@ -273,16 +246,12 @@ export default {
   }
 }
 ```
-::::
-
 
 ##  代码‘错误’和‘告警’
 
 **源码内容**
 
-:::: code-group
 ````md [*.md]
-
 ```js [*.js]
 export default {
   data () {
@@ -294,12 +263,10 @@ export default {
 }
 ```
 ````
-::::
 
 **显示样式**
 
-:::: code-group
-```js [*.js]
+```js file:*.js
 export default {
   data () {
     return {
@@ -309,16 +276,11 @@ export default {
   }
 }
 ```
-::::
+
 ## 代码组
 
 **源码内容**
-
-
-:::: code-group
-````md [test.md]
-::: code-group
-
+````md
 ```js [config.js]
 /**
  * @type {import('vitepress').UserConfig}
@@ -341,14 +303,13 @@ export default config
 ```
 
 :::
-
 ````
-::::
+
+
 **显示样式**
-
-::: code-group
-
-```js [config.js]
+::: tabs
+@tab config.js
+```js file:config.js
 /**
  * @type {import('vitepress').UserConfig}
  */
@@ -358,8 +319,8 @@ const config = {
 
 export default config
 ```
-
-```ts [config.ts]
+@tab config.ts
+```ts file:config.ts
 import type { UserConfig } from 'vitepress'
 
 const config: UserConfig = {
@@ -368,13 +329,13 @@ const config: UserConfig = {
 
 export default config
 ```
-
 :::
+
 
 ## 容器
 
 ### github风格容器
-**y源码内容**
+**源码内容**
 ::: code-group
 ```md [test.md]
 > [!NOTE]
@@ -415,9 +376,7 @@ export default config
 ### 自定义容器
 
 **源码内容**
-:::: code-group
-````md [test.md]
-
+```sh file:自定义容器
 ::: info
 This is an info box.
 :::
@@ -438,26 +397,29 @@ This is a dangerous warning.
 This is a details block.
 :::
 ````
-::::
+
 **显示样式**
 
-::: info
+```ad-info
 This is an info box.
-:::
+```
 
-::: tip
+```ad-tip
 This is a tip.
-:::
+```
 
-::: warning
+
+```ad-warning
 This is a warning.
-:::
+```
 
-::: danger
+
+```ad-danger
 This is a dangerous warning.
-:::
+```
 
-::: details
+```ad-details
+collapse: true 
 This is a details block.
-:::
+```
 

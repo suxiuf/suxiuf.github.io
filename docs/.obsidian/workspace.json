@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "302f5f1964503070",
+        "id": "3bbd43329a7484ff",
         "type": "tabs",
         "children": [
           {
-            "id": "aefd40b2c46f0879",
+            "id": "ad57ccfdcbef6dc5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/Security_Engineer/网络入侵调查/未命名.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "新标签页"
             }
           }
         ]
@@ -78,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 387.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -137,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "notes/Security_Engineer/网络入侵调查/未命名.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -163,56 +156,56 @@
       "obsidian-git:打开Git源代码管理": false,
       "vscode-editor:新建代码文件": false,
       "terminal:Open terminal": false,
-      "i18n:I18N": false
+      "i18n:I18N": false,
+      "pkmer:Open Pkmer Market": false
     }
   },
-  "active": "aefd40b2c46f0879",
+  "active": "ad57ccfdcbef6dc5",
   "lastOpenFiles": [
-    "notes/Security_Engineer/网络入侵调查/未命名.md",
-    "notes/Security_Engineer/网络入侵调查",
-    "notes/GuideNote/vuepress.md",
-    "notes/penetration/1.tryhackme/Hash与加密.md",
-    "notes/GuideNote/assets/vuepress/file-20241117205819.png",
-    "notes/GuideNote/assets/vuepress/file-20241117205645.png",
-    "notes/GuideNote/assets/vuepress/file-20241117205230.png",
-    "notes/GuideNote/assets/vuepress/file-20241117204908.png",
-    "notes/GuideNote/assets/vuepress/file-20241117204753.png",
-    "notes/GuideNote/assets/vuepress/file-20241117204324.png",
-    "notes/GuideNote/assets/vuepress",
-    "notes/GuideNote/assets",
     "notes/penetration/1.tryhackme/10.NetWork_NFS.md",
+    "notes/penetration/1.tryhackme/assets/10.network_nfs/NFS利用流程.canvas",
+    "notes/penetration/1.tryhackme/assets/10.network_nfs/file-20241122074606.png",
+    "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
+    "notes/penetration/1.tryhackme/Hash与加密.md",
     "notes/penetration/1.tryhackme/9.Network_FTP.md",
     "notes/penetration/1.tryhackme/8.Network_Telnet.md",
-    "notes/Security_Engineer/linux_system_hardening/7.Audit_And_Log_Config.md",
-    "notes/Security_Engineer/linux_system_hardening/6.Update_Policies.md",
-    "notes/Security_Engineer/linux_system_hardening/8.Linux_Hardening_Script.md",
-    "README.md",
+    "notes/penetration/1.tryhackme/7.Network_SMB.md",
+    "notes/penetration/1.tryhackme/6.Network_NMAP.md",
+    "notes/penetration/1.tryhackme/5.Network_Introductory.md",
+    "notes/penetration/1.tryhackme/4.Linux_003.md",
+    "notes/penetration/1.tryhackme/3.Linux_002.md",
+    "notes/penetration/1.tryhackme/2.Linux_001.md",
     "notes/penetration/1.tryhackme/1.introduce.md",
-    "notes/Security_Engineer/linux_system_hardening/README.md",
+    "notes/Security_Engineer/linux_system_hardening/7.Audit_And_Log_Config.md",
+    "notes/Security_Engineer/linux_system_hardening/8.Linux_Hardening_Script.md",
+    "notes/Security_Engineer/linux_system_hardening/6.Update_Policies.md",
+    "notes/Security_Engineer/linux_system_hardening/assets/7.audit_and_log_config/file-20241022181349.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022174826.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180056.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180127.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/6.update_policies/file-20241022180927.png",
     "notes/Security_Engineer/linux_system_hardening/4.Securing_User_accounts.md",
     "notes/Security_Engineer/linux_system_hardening/3.Remote_Access.md",
     "notes/Security_Engineer/linux_system_hardening/2.Linux_Firewall.md",
     "notes/Security_Engineer/linux_system_hardening/1.Linux_Security.md",
-    "notes/penetration/1.tryhackme/4.Linux_003.md",
-    "notes/penetration/1.tryhackme/3.Linux_002.md",
-    "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
-    "notes/penetration/1.tryhackme/assets/8.network_telnet/file-20241116235324.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/1.Physical_Security/file-20241022095306.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/1.Physical_Security/file-20241022095253.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/1.Physical_Security/file-20241022095143.png",
+    "notes/Security_Engineer/linux_system_hardening/assets/1.Physical_Security/file-20241022095213.png",
+    "notes/GuideNote/vitepress.md",
+    "notes/GuideNote/vuepress.md",
+    "notes/GuideNote/template.md",
+    "notes/GuideNote/Offensive-demo.md.md",
+    "README.md",
+    "notes/Security_Engineer/网络入侵调查/node_001.md",
+    "notes/Security_Engineer/网络入侵调查",
+    "notes/GuideNote/assets/vuepress",
+    "notes/GuideNote/assets",
     "notes/penetration/1.tryhackme/assets/8.network_telnet",
-    "notes/penetration/1.tryhackme/7.Network_SMB.md",
-    "notes/penetration/1.tryhackme/6.Network_NMAP.md",
-    "notes/penetration/1.tryhackme/5.Network_Introductory.md",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116235017.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234946.png",
-    "notes/penetration/1.tryhackme/assets/6.network_nmap/file-20241116234925.png",
     "notes/penetration/1.tryhackme/assets/6.network_nmap",
     "notes/penetration/1.tryhackme/assets/5.network_introductory",
     "notes/penetration/1.tryhackme/assets/4.linux_003",
     "notes/penetration/1.tryhackme/assets/4.Linux_003",
-    "notes/penetration/1.tryhackme/2.Linux_001.md",
-    "notes/GuideNote/vitepress.md",
-    "penetration/tryhackme/Hash与加密.md",
-    "penetration/tryhackme/Hash与加密_1.md",
-    "未命名.canvas",
     "penetration/tryhackme/assets/9.network_nfs",
     "penetration/tryhackme/assets/7.network_telnet",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",

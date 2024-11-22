@@ -40,9 +40,9 @@
           "codeblockLangBoldText": true,
           "codeblockLangItalicText": true,
           "alwaysDisplayCodeblockLang": false,
-          "alwaysDisplayCodeblockIcon": false,
-          "displayCodeBlockLanguage": true,
-          "displayCodeBlockIcon": false,
+          "alwaysDisplayCodeblockIcon": true,
+          "displayCodeBlockLanguage": false,
+          "displayCodeBlockIcon": true,
           "disableFoldUnlessSpecified": false
         },
         "gutter": {
@@ -68,7 +68,10 @@
             "activeLineColor": "--color-base-30",
             "backgroundColor": "--code-background",
             "highlightColor": "--text-highlight-bg",
-            "alternateHighlightColors": {},
+            "alternateHighlightColors": {
+              "error": "#E65868",
+              "warn": "#EB8D35"
+            },
             "languageBorderColors": {},
             "textColor": "#A30505",
             "bracketHighlightColorMatch": "#f33bff",
@@ -101,7 +104,10 @@
             "activeLineColor": "--color-base-30",
             "backgroundColor": "--code-background",
             "highlightColor": "--text-highlight-bg",
-            "alternateHighlightColors": {},
+            "alternateHighlightColors": {
+              "error": "#E65868",
+              "warn": "#3596EB"
+            },
             "languageBorderColors": {},
             "textColor": "#A30505",
             "bracketHighlightColorMatch": "#f33bff",
@@ -290,9 +296,9 @@
           "textSeparator": ""
         },
         "semiFold": {
-          "enableSemiFold": false,
+          "enableSemiFold": true,
           "visibleLines": 5,
-          "showAdditionalUncollapseButon": false
+          "showAdditionalUncollapseButon": true
         },
         "header": {
           "boldText": false,
@@ -302,8 +308,8 @@
           "codeblockLangBoldText": true,
           "codeblockLangItalicText": true,
           "alwaysDisplayCodeblockLang": false,
-          "alwaysDisplayCodeblockIcon": false,
-          "displayCodeBlockLanguage": true,
+          "alwaysDisplayCodeblockIcon": true,
+          "displayCodeBlockLanguage": false,
           "displayCodeBlockIcon": true,
           "disableFoldUnlessSpecified": false
         },
@@ -327,12 +333,12 @@
       "colors": {
         "dark": {
           "codeblock": {
-            "activeLineColor": "--color-base-30",
-            "backgroundColor": "--code-background",
+            "activeLineColor": "#262626",
+            "backgroundColor": "#262626",
             "highlightColor": "--text-highlight-bg",
             "alternateHighlightColors": {
-              "err": "#D21A1A",
-              "warn": "#F67C4C"
+              "error": "#E65868",
+              "warn": "#EB8D35"
             },
             "languageBorderColors": {},
             "textColor": "#A30505",
@@ -343,16 +349,16 @@
             "selectionMatchHighlightColor": "#99ff7780"
           },
           "header": {
-            "backgroundColor": "--code-background",
-            "textColor": "--text-normal",
-            "lineColor": "--color-base-30",
+            "backgroundColor": "#262626",
+            "textColor": "#DADADA",
+            "lineColor": "#262626",
             "codeBlockLangTextColor": "--code-comment",
-            "codeBlockLangBackgroundColor": "--code-background"
+            "codeBlockLangBackgroundColor": "#262626"
           },
           "gutter": {
             "textColor": "--text-faint",
-            "backgroundColor": "--code-background",
-            "activeLineNrColor": "--text-muted"
+            "backgroundColor": "#262626",
+            "activeLineNrColor": "#C1C0C0"
           },
           "inlineCode": {
             "backgroundColor": "--code-background",
@@ -367,8 +373,8 @@
             "backgroundColor": "--code-background",
             "highlightColor": "--text-highlight-bg",
             "alternateHighlightColors": {
-              "err": "#5391EA",
-              "warn": "#7F342A"
+              "error": "#E65868",
+              "warn": "#3596EB"
             },
             "languageBorderColors": {},
             "textColor": "#A30505",
@@ -407,15 +413,15 @@
       "codeblock": {
         "enableLineNumbers": true,
         "enableActiveLineHighlight": true,
-        "codeBlockBorderStylingPosition": "left",
+        "codeBlockBorderStylingPosition": "disable",
         "showIndentationLines": false,
         "enableLinks": false,
         "enableLinkUpdate": false,
         "enableBracketHighlight": true,
-        "highlightNonMatchingBrackets": false,
+        "highlightNonMatchingBrackets": true,
         "inverseFold": false,
         "enableSelectionMatching": false,
-        "unwrapcode": false,
+        "unwrapcode": true,
         "buttons": {
           "alwaysShowButtons": false,
           "alwaysShowCopyCodeButton": false,
@@ -454,12 +460,12 @@
         "enableInlineCodeStyling": false
       },
       "printing": {
-        "enablePrintToPDFStyling": true,
-        "forceCurrentColorUse": true,
+        "enablePrintToPDFStyling": false,
+        "forceCurrentColorUse": false,
         "uncollapseDuringPrint": true
       },
       "common": {
-        "enableInSourceMode": true
+        "enableInSourceMode": false
       },
       "enableEditorActiveLineHighlight": true
     },
@@ -468,10 +474,10 @@
         "codeblock": {
           "activeLineColor": "--color-base-30",
           "backgroundColor": "--code-background",
-          "highlightColor": "#F2660FDB",
+          "highlightColor": "--text-highlight-bg",
           "alternateHighlightColors": {
-            "err": "#D21A1A",
-            "warn": "#F67C4C"
+            "error": "#E65868",
+            "warn": "#EB8D35"
           },
           "languageBorderColors": {},
           "textColor": "#A30505",
@@ -506,8 +512,8 @@
           "backgroundColor": "--code-background",
           "highlightColor": "--text-highlight-bg",
           "alternateHighlightColors": {
-            "err": "#5391EA",
-            "warn": "#7F342A"
+            "error": "#E65868",
+            "warn": "#3596EB"
           },
           "languageBorderColors": {},
           "textColor": "#A30505",
@@ -538,12 +544,12 @@
       }
     }
   },
-  "ThemeName": "mytest",
+  "ThemeName": "Obsidian",
   "newThemeName": "",
   "alternateHighlightColorName": "",
   "languageBorderColorName": "",
   "foldAllCommand": false,
-  "settingsType": "header",
+  "settingsType": "codeblock",
   "langSpecificSettingsType": "header.backgroundColor",
   "languageSpecificLanguageName": ""
 }

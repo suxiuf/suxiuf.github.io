@@ -2,5 +2,6 @@
   "theme": "obsidian",
   "cssTheme": "Border",
   "baseFontSize": 16,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "nativeMenus": false
 }

