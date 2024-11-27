@@ -12,6 +12,9 @@ importers:
         specifier: ^11.4.0
         version: 11.4.0
     devDependencies:
+      '@luckrya/markdown-it-link-to-card':
+        specifier: ^0.3.3
+        version: 0.3.3
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.18
         version: 2.0.0-rc.18(@types/node@22.9.3)(sass-embedded@1.81.0)(typescript@5.7.2)
@@ -30,6 +33,9 @@ importers:
       vuepress:
         specifier: 2.0.0-rc.18
         version: 2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.9.3)(sass-embedded@1.81.0)(typescript@5.7.2))(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
+      vuepress-plugin-md-enhance:
+        specifier: 2.0.0-rc.59
+        version: 2.0.0-rc.59(markdown-it@14.1.0)(mermaid@11.4.0)(sass-embedded@1.81.0)(typescript@5.7.2)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.9.3)(sass-embedded@1.81.0)(typescript@5.7.2))(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))
       vuepress-theme-plume:
         specifier: 1.0.0-rc.118
         version: 1.0.0-rc.118(@algolia/client-search@5.15.0)(markdown-it@14.1.0)(mermaid@11.4.0)(sass-embedded@1.81.0)(search-insights@2.17.2)(typescript@5.7.2)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.9.3)(sass-embedded@1.81.0)(typescript@5.7.2))(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))
@@ -485,6 +491,12 @@ packages:
 
   '@lit/reactive-element@2.0.4':
     resolution: {integrity: sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==}
+
+  '@luckrya/markdown-it-link-to-card@0.3.3':
+    resolution: {integrity: sha512-rvNeV7x1j1TN++au10wMyzbT3GiumMVt61DiJ++jTJeAZsdBIL4ORN/o5uqF01IAlHUWVXKGUpHRaZXqxatKdg==}
+
+  '@luckrya/utility@0.1.1':
+    resolution: {integrity: sha512-TWkgqawyVdaDnPBeOGJTJfI32isrG/t4e4R0Vf2LBMvU2stSDCnJUblKJhcgL9O5EQRb5TBwWj2Pyzc209tQyA==}
 
   '@mdit-vue/plugin-component@2.1.3':
     resolution: {integrity: sha512-9AG17beCgpEw/4ldo/M6Y/1Rh4E1bqMmr/rCkWKmCAxy9tJz3lzY7HQJanyHMJufwsb3WL5Lp7Om/aPcQTZ9SA==}
@@ -3031,6 +3043,10 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
+  xmlhttprequest@1.8.0:
+    resolution: {integrity: sha512-58Im/U0mlVBLM38NdZjHyhuMtCqa61469k2YP/AaPbvCoV9aQGUpbJBj1QRm2ytRiVQBD/fsw7L2bJGDVQswBA==}
+    engines: {node: '>=0.4.0'}
+
   yoctocolors@2.1.1:
     resolution: {integrity: sha512-GQHQqAopRhwU8Kt1DDM8NjibDXHC8eoh1erhGAJPEyveY9qqVeXvVikNKrDz69sHowPMorbPUrH/mx8c50eiBQ==}
     engines: {node: '>=18'}
@@ -3387,6 +3403,13 @@ snapshots:
   '@lit/reactive-element@2.0.4':
     dependencies:
       '@lit-labs/ssr-dom-shim': 1.2.1
+
+  '@luckrya/markdown-it-link-to-card@0.3.3':
+    dependencies:
+      '@luckrya/utility': 0.1.1
+      xmlhttprequest: 1.8.0
+
+  '@luckrya/utility@0.1.1': {}
 
   '@mdit-vue/plugin-component@2.1.3':
     dependencies:
@@ -6327,6 +6350,8 @@ snapshots:
   which@2.0.2:
     dependencies:
       isexe: 2.0.0
+
+  xmlhttprequest@1.8.0: {}
 
   yoctocolors@2.1.1: {}
 

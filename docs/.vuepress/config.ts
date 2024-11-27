@@ -9,7 +9,7 @@ export default defineUserConfig(
   title: 'MikTu',
   description: '只是个人笔记',
   plugins: [
-      obsidianPlugin()
+      obsidianPlugin(),
     ],
   bundler: viteBundler(),
 
@@ -38,9 +38,11 @@ export default defineUserConfig(
 //         include: true,
 //         chart: true,
 //         echarts: true,
-         mermaid: true,
-         flowchart: true,
+        mermaid: true,
+        //flowchart: true,
       },
+
+  
 
       /**
        *  markdown power
