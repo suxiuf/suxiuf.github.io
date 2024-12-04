@@ -8,13 +8,15 @@
   "terminal",
   "surfing",
   "obsidian-admonition",
-  "codeblock-customizer",
   "i18n",
   "dictionary-translator",
   "obsidian-file-color",
   "OA-file-hider",
-  "pkmer",
   "obsidian-pandoc",
   "any-block",
-  "auto-card-link"
+  "pkmer",
+  "lovely-mindmap",
+  "obsidian-enhancing-mindmap",
+  "auto-card-link",
+  "codeblock-customizer"
 ]

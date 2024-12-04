@@ -3,7 +3,7 @@
     "name": "Auto Card Link",
     "version": "1.2.3",
     "minAppVersion": "0.12.0",
-    "description": "Automatically fetches metadata from a url and makes it as a card-styled link",
+    "description": "自动从 URL 获取元数据，并将其制作成卡片式链接",
     "author": "Nekoshita Yuki",
     "authorUrl": "https://github.com/nekoshita",
     "isDesktopOnly": false

@@ -1,0 +1,18 @@
+{
+  "autoFocus": true,
+  "hotkeys": {
+    "CreateChild": "Tab",
+    "CreateBeforeSib": "Shift + Enter",
+    "CreateAfterSib": "Enter",
+    "Focus": "F",
+    "ArrowUp": "Alt + ArrowUp",
+    "ArrowDown": "Alt + ArrowDown",
+    "ArrowLeft": "Alt + ArrowLeft",
+    "ArrowRight": "Alt + ArrowRight"
+  },
+  "ROW_GAP": 20,
+  "COLUMN_GAP": 200,
+  "EPSILON": 1,
+  "OFFSET_WEIGHT": 1.1,
+  "MACRO_TASK_DELAY": 50
+}

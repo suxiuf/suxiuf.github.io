@@ -40,9 +40,9 @@
           "codeblockLangBoldText": true,
           "codeblockLangItalicText": true,
           "alwaysDisplayCodeblockLang": false,
-          "alwaysDisplayCodeblockIcon": true,
-          "displayCodeBlockLanguage": false,
-          "displayCodeBlockIcon": true,
+          "alwaysDisplayCodeblockIcon": false,
+          "displayCodeBlockLanguage": true,
+          "displayCodeBlockIcon": false,
           "disableFoldUnlessSpecified": false
         },
         "gutter": {
@@ -68,10 +68,7 @@
             "activeLineColor": "--color-base-30",
             "backgroundColor": "--code-background",
             "highlightColor": "--text-highlight-bg",
-            "alternateHighlightColors": {
-              "error": "#E65868",
-              "warn": "#EB8D35"
-            },
+            "alternateHighlightColors": {},
             "languageBorderColors": {},
             "textColor": "#A30505",
             "bracketHighlightColorMatch": "#f33bff",
@@ -104,10 +101,7 @@
             "activeLineColor": "--color-base-30",
             "backgroundColor": "--code-background",
             "highlightColor": "--text-highlight-bg",
-            "alternateHighlightColors": {
-              "error": "#E65868",
-              "warn": "#3596EB"
-            },
+            "alternateHighlightColors": {},
             "languageBorderColors": {},
             "textColor": "#A30505",
             "bracketHighlightColorMatch": "#f33bff",
@@ -421,7 +415,7 @@
         "highlightNonMatchingBrackets": true,
         "inverseFold": false,
         "enableSelectionMatching": false,
-        "unwrapcode": true,
+        "unwrapcode": false,
         "buttons": {
           "alwaysShowButtons": false,
           "alwaysShowCopyCodeButton": false,
@@ -435,13 +429,13 @@
         "textSeparator": ""
       },
       "semiFold": {
-        "enableSemiFold": true,
+        "enableSemiFold": false,
         "visibleLines": 5,
-        "showAdditionalUncollapseButon": true
+        "showAdditionalUncollapseButon": false
       },
       "header": {
-        "boldText": false,
-        "italicText": false,
+        "boldText": true,
+        "italicText": true,
         "collapseIconPosition": "hide",
         "collapsedCodeText": "",
         "codeblockLangBoldText": true,
@@ -450,7 +444,7 @@
         "alwaysDisplayCodeblockIcon": true,
         "displayCodeBlockLanguage": false,
         "displayCodeBlockIcon": true,
-        "disableFoldUnlessSpecified": false
+        "disableFoldUnlessSpecified": true
       },
       "gutter": {
         "highlightActiveLineNr": true,
@@ -475,10 +469,7 @@
           "activeLineColor": "--color-base-30",
           "backgroundColor": "--code-background",
           "highlightColor": "--text-highlight-bg",
-          "alternateHighlightColors": {
-            "error": "#E65868",
-            "warn": "#EB8D35"
-          },
+          "alternateHighlightColors": {},
           "languageBorderColors": {},
           "textColor": "#A30505",
           "bracketHighlightColorMatch": "#f33bff",
@@ -489,7 +480,7 @@
         },
         "header": {
           "backgroundColor": "--code-background",
-          "textColor": "--text-normal",
+          "textColor": "#6272A4",
           "lineColor": "--color-base-30",
           "codeBlockLangTextColor": "--code-comment",
           "codeBlockLangBackgroundColor": "--code-background"
@@ -511,10 +502,7 @@
           "activeLineColor": "--color-base-30",
           "backgroundColor": "--code-background",
           "highlightColor": "--text-highlight-bg",
-          "alternateHighlightColors": {
-            "error": "#E65868",
-            "warn": "#3596EB"
-          },
+          "alternateHighlightColors": {},
           "languageBorderColors": {},
           "textColor": "#A30505",
           "bracketHighlightColorMatch": "#f33bff",
