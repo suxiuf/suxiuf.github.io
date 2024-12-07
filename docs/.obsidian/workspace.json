@@ -17,9 +17,7 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "13.How_WebSites_Work"
+              }
             }
           }
         ]
@@ -42,9 +40,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              }
             }
           },
           {
@@ -59,9 +55,7 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "搜索"
+              }
             }
           },
           {
@@ -69,9 +63,7 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "书签"
+              "state": {}
             }
           }
         ]
@@ -94,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,9 +94,7 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "反向链接"
+              }
             }
           },
           {
@@ -112,11 +103,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "出链"
+              }
             }
           },
           {
@@ -127,9 +117,7 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
+              }
             }
           },
           {
@@ -139,9 +127,7 @@
               "type": "outline",
               "state": {
                 "file": "notes/penetration/1.tryhackme/13.How_WebSites_Work.md"
-              },
-              "icon": "lucide-list",
-              "title": "13.How_WebSites_Work 的大纲"
+              }
             }
           },
           {
@@ -149,9 +135,7 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "源代码管理"
+              "state": {}
             }
           }
         ],
@@ -163,7 +147,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:打开Git源代码管理": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -171,20 +154,21 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "excel:创建 Excel 文件": false,
+      "obsidian-git:打开Git源代码管理": false,
       "vscode-editor:新建代码文件": false,
       "terminal:Open terminal": false,
       "i18n:I18N": false,
       "pkmer:Open Pkmer Market": false
     }
   },
-  "active": "64f66c86baf30039",
+  "active": "9d0a51c8af9d6734",
   "lastOpenFiles": [
+    "img/cat.md",
+    "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204072625.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204071237.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204063735.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204063605.png",
-    "img/cat.md",
-    "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
     "img",
     "notes/penetration/1.tryhackme/img/cat-1.jpg",
     "notes/penetration/1.tryhackme/img/cat-2.jpg",
@@ -200,7 +184,6 @@
     "notes/penetration/1.tryhackme/assets/12.network_mysql/file-20241201035551.png",
     "notes/penetration/1.tryhackme/assets/12.network_mysql/file-20241201035508.png",
     "notes/penetration/1.tryhackme/assets/12.network_mysql/file-20241201034538.png",
-    "notes/penetration/1.tryhackme/assets/12.network_mysql/file-20241201034356.png",
     "notes/penetration/1.tryhackme/assets/12.network_mysql",
     "notes/penetration/1.tryhackme/13. WebSites.md",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work",
