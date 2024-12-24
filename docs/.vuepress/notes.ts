@@ -17,10 +17,16 @@ const  GuideNote = defineNoteConfig({
     sidebar: 'auto',
   })
 
+  const   InvestigatingTheCyberBreach= defineNoteConfig({
+    dir: 'InvestigatingTheCyberBreach',
+    link: '/InvestigatingTheCyberBreach/',
+    sidebar: 'auto',
+  })
+
 export const notes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [penetration,Security_Engineer,GuideNote,]
+  notes: [penetration,Security_Engineer,GuideNote,InvestigatingTheCyberBreach,]
 })
 
 

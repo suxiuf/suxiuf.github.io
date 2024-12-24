@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "881a077705fb27ce",
+        "id": "dc1c4a75eef6e7db",
         "type": "tabs",
         "children": [
           {
-            "id": "eedc22eef9a6481c",
+            "id": "3c635a14e921d94c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Security_Engineer/网络入侵调查/node_001.md",
+                "file": "notes/InvestigatingTheCyberBreach/node_003.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "node_001"
+              "title": "node_003"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 441.5
+    "width": 200
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Security_Engineer/网络入侵调查/node_001.md"
+                "file": "notes/InvestigatingTheCyberBreach/node_003.md"
               },
               "icon": "lucide-list",
-              "title": "node_001 的大纲"
+              "title": "node_003 的大纲"
             }
           },
           {
@@ -157,11 +157,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 493.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,15 +182,36 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "2e954e7d43e2afbe",
+  "active": "3c635a14e921d94c",
   "lastOpenFiles": [
+    "notes/InvestigatingTheCyberBreach/node_002.md",
+    "notes/InvestigatingTheCyberBreach/node_003.md",
+    "notes/InvestigatingTheCyberBreach/assets/node_002/网络杀戮链条.png",
+    "notes/InvestigatingTheCyberBreach/assets/node_002",
+    "notes/InvestigatingTheCyberBreach/assets",
+    "未命名.canvas",
+    "Excalidraw/Drawing 2024-12-24 11.17.48.excalidraw.md",
+    "Excalidraw",
+    "notes/InvestigatingTheCyberBreach/node_001.md",
+    "notes/InvestigatingTheCyberBreach/README.md",
+    "notes/Security_Engineer/linux_system_hardening/README.md",
+    "notes/test/node_002.md",
+    "notes/test/node_001.md",
+    "notes/InvestigatingTheCyberBreach",
+    "notes/Security_Engineer/linux_system_hardening/1.Linux_Security.md",
+    "notes/Security_Engineer/InvestigatingTheCyberBreach/node_001.md",
+    "notes/test",
+    "notes/Security_Engineer/InvestigatingTheCyberBreach",
+    "notes/Security_Engineer/网络入侵调查/node_001.md",
+    "notes/Security_Engineer/Investigating/node_001.md",
+    "notes/Security_Engineer/Investigating",
+    "notes/Security_Engineer/网络入侵调查/node_002.md",
     "notes/work/年终工作总结 PPT.md",
     "notes/work/技战法-未备案资产网络安全事件患排查分析处置技战法_1.md",
     "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
     "notes/work/培训-安全加固",
     "notes/work/assets",
     "notes/work",
-    "notes/Security_Engineer/网络入侵调查/~$安全意识宣传-题库.docx",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241208190642.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241208185211.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241208184847.png",
@@ -200,37 +222,16 @@
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204071237.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204063735.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204063605.png",
-    "img",
-    "notes/penetration/1.tryhackme/img/cat-1.jpg",
-    "notes/penetration/1.tryhackme/img",
     "notes/penetration/1.tryhackme/Hash与加密.md",
     "notes/penetration/1.tryhackme/2.Linux_001.md",
     "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
     "notes/penetration/1.tryhackme/10.Network_NFS.md",
     "notes/penetration/1.tryhackme/11.Network_SMTP.md",
     "notes/penetration/1.tryhackme/12.Network_MySQL.md",
-    "notes/Security_Engineer/linux_system_hardening/1.Linux_Security.md",
-    "notes/penetration/1.tryhackme/assets/12.network_mysql",
     "notes/penetration/1.tryhackme/13. WebSites.md",
-    "notes/penetration/1.tryhackme/assets/13.how_websites_work",
-    "notes/penetration/1.tryhackme/assets/13.websites_work",
     "notes/penetration/未命名.md",
     "notes/penetration/1.tryhackme/未命名思维导图.md",
-    "未命名.canvas",
-    "notes/penetration/1.tryhackme/未命名思维导图_1.md",
-    "notes/penetration/1.tryhackme/9.Network_FTP.md",
-    "notes/penetration/1.tryhackme/7.Network_SMB.md",
-    "Linux_check.sh.ts",
     "notes/penetration/1.tryhackme/assets/10.network_nfs/NFS利用流程.canvas",
-    "notes/penetration/1.tryhackme/8.Network_Telnet.md",
-    "notes/penetration/1.tryhackme/6.Network_NMAP.md",
-    "notes/penetration/1.tryhackme/5.Network_Introductory.md",
-    "notes/penetration/1.tryhackme/4.Linux_003.md",
-    "notes/penetration/1.tryhackme/3.Linux_002.md",
-    "notes/penetration/1.tryhackme/1.introduce.md",
-    "notes/Security_Engineer/linux_system_hardening/7.Audit_And_Log_Config.md",
-    "notes/Security_Engineer/linux_system_hardening/8.Linux_Hardening_Script.md",
-    "notes/Security_Engineer/linux_system_hardening/6.Update_Policies.md",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "Pickle-Rick.canvas",
     "penetration/未命名.canvas"

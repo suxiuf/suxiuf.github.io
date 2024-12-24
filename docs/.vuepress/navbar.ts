@@ -11,6 +11,7 @@ export const navbar = defineNavbarConfig([
   { text: '安全工程师',
     items: [
       { text: 'Linux加固', link: '/notes/Security_Engineer/linux_system_hardening/README.md'},
+      { text: '网络入侵调查', link: '/notes/InvestigatingTheCyberBreach/node_001.md'},
     ],
 },
 { text: '杂记',

@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"cffc73443c56f2ac","x":-520,"y":-200,"width":100,"height":60,"type":"text","text":"侦查"},
+		{"id":"43f13d64acf2d8af","x":-380,"y":-200,"width":117,"height":60,"type":"text","text":"武器化"},
+		{"id":"1003dc050ab68a70","x":-60,"y":-200,"width":136,"height":60,"type":"text","text":"漏洞利用"},
+		{"id":"cb8d28c6b9bd3c63","x":-220,"y":-200,"width":126,"height":60,"type":"text","text":"传递"},
+		{"id":"aa3cadc57e6d868c","x":120,"y":-200,"width":110,"height":60,"type":"text","text":"安装"},
+		{"id":"301f498ac4cbaa0f","x":280,"y":-200,"width":140,"height":60,"type":"text","text":"命令控制"},
+		{"id":"e86a44baad6c9c30","x":460,"y":-200,"width":94,"height":60,"type":"text","text":"行动"}
+	],
+	"edges":[
+		{"id":"01f0d28b68440415","fromNode":"cffc73443c56f2ac","fromSide":"right","toNode":"43f13d64acf2d8af","toSide":"left"},
+		{"id":"1c533fa5c885a2fa","fromNode":"43f13d64acf2d8af","fromSide":"right","toNode":"cb8d28c6b9bd3c63","toSide":"left"},
+		{"id":"742f636c1fcbf1b6","fromNode":"cb8d28c6b9bd3c63","fromSide":"right","toNode":"1003dc050ab68a70","toSide":"left"},
+		{"id":"114cb01a53911386","fromNode":"1003dc050ab68a70","fromSide":"right","toNode":"aa3cadc57e6d868c","toSide":"left"},
+		{"id":"0c2ce41f3cb8ca0e","fromNode":"aa3cadc57e6d868c","fromSide":"right","toNode":"301f498ac4cbaa0f","toSide":"left"},
+		{"id":"92dcc14199985da8","fromNode":"301f498ac4cbaa0f","fromSide":"right","toNode":"e86a44baad6c9c30","toSide":"left"}
+	]
+}

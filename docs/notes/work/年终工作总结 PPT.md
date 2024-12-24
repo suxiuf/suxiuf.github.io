@@ -1,3 +1,8 @@
+---
+title: 年终工作总结 PPT
+createTime: 2024/12/24 09:54:14
+permalink: /notes/work/年终工作总结 PPT/
+---
 #### Slide 1: 标题页
 
 - **主题:** 接受失败，坦然面对
