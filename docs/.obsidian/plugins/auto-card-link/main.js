@@ -63,7 +63,7 @@ var ObsidianAutoCardLinkSettingTab = class extends import_obsidian.PluginSetting
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian.Setting(containerEl).setName("增强默认粘贴").setDesc("使用默认粘贴命令在编辑器中粘贴 URL 时，获取链接元数据").addToggle((val) => {
+    new import_obsidian.Setting(containerEl).setName("Enhance Default Paste").setDesc("Fetch the link metadata when pasting a url in the editor with the default paste command").addToggle((val) => {
       if (!this.plugin.settings)
         return;
       return val.setValue(this.plugin.settings.enhanceDefaultPaste).onChange((value) => __async(this, null, function* () {
@@ -73,7 +73,7 @@ var ObsidianAutoCardLinkSettingTab = class extends import_obsidian.PluginSetting
         yield this.plugin.saveSettings();
       }));
     });
-    new import_obsidian.Setting(containerEl).setName("在菜单项中添加命令").setDesc("是否在右键菜单项中添加命令").addToggle((val) => {
+    new import_obsidian.Setting(containerEl).setName("Add commands in menu item").setDesc("Whether to add commands in right click menu items").addToggle((val) => {
       if (!this.plugin.settings)
         return;
       return val.setValue(this.plugin.settings.showInMenuItem).onChange((value) => __async(this, null, function* () {
@@ -290,14 +290,14 @@ var CodeBlockGenerator = class {
       const text = this.editor.getValue();
       const start = text.indexOf(fetchingText);
       if (start < 0) {
-        console.log(`无法在当前编辑器中找到文本 "${fetchingText}" ，放弃处理；链接 ${url}`);
+        console.log(`Unable to find text "${fetchingText}" in current editor, bailing out; link ${url}`);
         return;
       }
       const end = start + fetchingText.length;
       const startPos = EditorExtensions.getEditorPositionFromIndex(text, start);
       const endPos = EditorExtensions.getEditorPositionFromIndex(text, end);
       if (!linkMetadata) {
-        new import_obsidian2.Notice("无法获取链接元数据");
+        new import_obsidian2.Notice("Couldn't fetch link metadata");
         this.editor.replaceRange(selectedText || url, startPos, endPos);
         return;
       }
@@ -330,7 +330,7 @@ var CodeBlockGenerator = class {
         }
       }))();
       if (!res || res.status != 200) {
-        console.log(`错误响应. 响应状态代码为 ${res == null ? void 0 : res.status}`);
+        console.log(`bad response. response status code was ${res == null ? void 0 : res.status}`);
         return;
       }
       const parser = new LinkMetadataParser(url, res.text);
@@ -376,7 +376,7 @@ var CodeBlockProcessor = class {
           el.appendChild(this.genErrorEl("internal links must be surrounded by quotes."));
           console.log(error);
         } else {
-          console.log("代码块：card link未知错误", 错误);
+          console.log("Code Block: cardlink unknown error", error);
         }
       }
     });
@@ -467,7 +467,7 @@ var CodeBlockProcessor = class {
     new import_obsidian3.ButtonComponent(containerEl).setClass("auto-card-link-copy-url").setClass("clickable-icon").setIcon("copy").setTooltip(`Copy URL
 ${data.url}`).onClick(() => {
       navigator.clipboard.writeText(data.url);
-      new import_obsidian3.Notice("URL 已复制到剪贴板");
+      new import_obsidian3.Notice("URL copied to your clipboard");
     });
     return containerEl;
   }
@@ -512,7 +512,7 @@ var ObsidianAutoCardLink = class extends import_obsidian4.Plugin {
       if (!((_a = this.settings) == null ? void 0 : _a.showInMenuItem))
         return;
       menu.addItem((item) => {
-        item.setTitle("粘贴 URL 并增强为 card link").setIcon("paste").onClick(() => __async(this, null, function* () {
+        item.setTitle("Paste URL and enhance to card link").setIcon("paste").onClick(() => __async(this, null, function* () {
           const editor = this.getEditor();
           if (!editor)
             return;
@@ -522,7 +522,7 @@ var ObsidianAutoCardLink = class extends import_obsidian4.Plugin {
       if (!navigator.onLine)
         return;
       menu.addItem((item) => {
-        item.setTitle("将选定的 URL 增强为 card link").setIcon("link").onClick(() => {
+        item.setTitle("Enhance selected URL to card link").setIcon("link").onClick(() => {
           const editor = this.getEditor();
           if (!editor)
             return;
@@ -541,7 +541,7 @@ var ObsidianAutoCardLink = class extends import_obsidian4.Plugin {
       }));
       this.addCommand({
         id: "auto-card-link-paste-and-enhance",
-        name: "粘贴 URL 并增强至 card link",
+        name: "Paste URL and enhance to card link",
         editorCallback: (editor) => __async(this, null, function* () {
           yield this.manualPasteAndEnhanceURL(editor);
         }),
@@ -549,7 +549,7 @@ var ObsidianAutoCardLink = class extends import_obsidian4.Plugin {
       });
       this.addCommand({
         id: "auto-card-link-enhance-selected-url",
-        name: "将选定的 URL 增强为 card link",
+        name: "Enhance selected URL to card link",
         editorCheckCallback: (checking, editor) => {
           if (!navigator.onLine)
             return false;
@@ -617,7 +617,7 @@ var ObsidianAutoCardLink = class extends import_obsidian4.Plugin {
     return regExpExecArray[2];
   }
   onunload() {
-    console.log("卸载 auto-card-link");
+    console.log("unloading auto-card-link");
   }
   loadSettings() {
     return __async(this, null, function* () {

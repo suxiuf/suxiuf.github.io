@@ -3,7 +3,7 @@
     "name": "Admonition",
     "version": "10.3.2",
     "minAppVersion": "1.1.0",
-    "description": "为 Obsidian.md 增强的提示信息",
+    "description": "Enhanced callouts for Obsidian.md",
     "author": "Jeremy Valentine",
     "authorUrl": "",
     "isDesktopOnly": false

@@ -3503,7 +3503,7 @@ var require_RenameDeleteHandler = __commonJS({
       }
       const oldAttachmentFiles = [];
       if (!await (0, import_AttachmentPath5.hasOwnAttachmentFolder)(app, oldPath)) {
-        const oldCache = await (0, import_MetadataCache2.getCacheSafe)(app, oldPath);
+        const oldCache = await (0, import_MetadataCache2.getCacheSafe)(app, newPath);
         if (!oldCache) {
           return;
         }
@@ -9108,3 +9108,5 @@ moment/moment.js:
   (*! license : MIT *)
   (*! momentjs.com *)
 */
+
+/* nosourcemap */
