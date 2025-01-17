@@ -18,6 +18,7 @@ export const navbar = defineNavbarConfig([
     items: [
       { text:'Vitepress', link: '/notes/GuideNote/vitepress.md' },
       { text:'Vuepress', link: '/notes/GuideNote/vuepress.md' },
+      { text:'ArchLinux',link: '/notes/GuideNote/ArchLinuxConf.md' },
   ],
 }
 ])

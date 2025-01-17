@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "notes/GuideNote/ArchLinuxConf.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "ArchLinuxConf"
             }
           },
           {
@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -156,10 +157,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/InvestigatingTheCyberBreach/node_003.md"
+                "file": "notes/GuideNote/ArchLinuxConf.md"
               },
               "icon": "lucide-list",
-              "title": "node_003 的大纲"
+              "title": "ArchLinuxConf 的大纲"
             }
           },
           {
@@ -168,17 +169,16 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "git-pull-request",
+              "title": "源代码管理"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 331.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,13 +194,21 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-git:打开Git源代码管理": false,
       "terminal:Open terminal": false,
-      "i18n:I18N": false
+      "i18n:I18N": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "21cc2df57396380f",
+  "active": "0e16466feeee7b8b",
   "lastOpenFiles": [
-    "notes/work/技战法-未备案资产网络安全事件患排查分析处置技战法_1.md",
+    "notes/GuideNote/assets/archlinuxconf/file-20250117182234.png",
+    "notes/GuideNote/assets/archlinuxconf/file-20250117181855.png",
+    "notes/GuideNote/assets/archlinuxconf/file-20250117181207.png",
+    "notes/GuideNote/assets/archlinuxconf/file-20250117181149.png",
+    "notes/GuideNote/assets/archlinuxconf",
+    "notes/GuideNote/Offensive-demo.md",
+    "notes/GuideNote/ArchLinuxConf.md",
     "README.md",
+    "notes/work/技战法-未备案资产网络安全事件患排查分析处置技战法_1.md",
     "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
     "notes/Security_Engineer/linux_system_hardening/1.Linux_Security.md",
     "notes/penetration/2.oscp/1.test.md",
@@ -229,7 +237,6 @@
     "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
     "notes/work/培训-安全加固",
     "notes/work/assets",
-    "notes/work",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241208190642.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241208185211.png",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241208184847.png",
@@ -237,15 +244,9 @@
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241208183528.png",
     "img/cat.md",
     "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204072625.png",
-    "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204071237.png",
-    "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204063735.png",
-    "notes/penetration/1.tryhackme/assets/13.how_websites_work/file-20241204063605.png",
     "notes/penetration/1.tryhackme/Hash与加密.md",
     "notes/penetration/1.tryhackme/2.Linux_001.md",
     "notes/penetration/1.tryhackme/10.Network_NFS.md",
-    "notes/penetration/1.tryhackme/11.Network_SMTP.md",
-    "notes/penetration/1.tryhackme/12.Network_MySQL.md",
-    "notes/penetration/1.tryhackme/13. WebSites.md",
     "notes/penetration/1.tryhackme/assets/10.network_nfs/NFS利用流程.canvas",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
     "Pickle-Rick.canvas",
