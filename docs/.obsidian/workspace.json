@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5,
-    "collapsed": true
+    "width": 324.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -198,7 +197,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "0e16466feeee7b8b",
+  "active": "2e954e7d43e2afbe",
   "lastOpenFiles": [
     "notes/GuideNote/assets/archlinuxconf/file-20250117182234.png",
     "notes/GuideNote/assets/archlinuxconf/file-20250117181855.png",
