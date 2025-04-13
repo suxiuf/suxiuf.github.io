@@ -14,11 +14,13 @@ export const navbar = defineNavbarConfig([
       { text: '网络入侵调查', link: '/notes/InvestigatingTheCyberBreach/node_001.md'},
     ],
 },
-{ text: '杂记',
+{ text: '随手记',
     items: [
-      { text:'Vitepress', link: '/notes/GuideNote/vitepress.md' },
-      { text:'Vuepress', link: '/notes/GuideNote/vuepress.md' },
-      { text:'ArchLinux',link: '/notes/GuideNote/ArchLinuxConf.md' },
+      { text:'Linux基础命令', link: '/notes/GuideNote/Linux_Daily/1.Linux_Commands.md' },
+      { text:'Windows日常',link: '/notes/GuideNote/Windows_Daily/1.windows_Commands.md' },
+      { text:'VueSite',link: '/notes/GuideNote/Vue_Site/1.vitepress.md' },
+      { text:'其他手记',link: '/notes/GuideNote/others/1.git.md' },
+      { text:'笔记软件',link: '/notes/GuideNote/Note_Taking_Software/1.obsidian_plugins.md' },
   ],
 }
 ])
