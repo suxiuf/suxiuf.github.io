@@ -39,8 +39,6 @@ hash 冲突是两个不同的输入给出相同的输出。hash function 旨在�
 
 **`MD5` 和 `SHA1` 已遭受攻击**，由于工程上的哈希碰撞而在技术上变得不安全。然而，目前还没有一种攻击能同时在这两种算法中产生碰撞，所以如果你使用 MD5 哈希值和 SHA1 哈希值进行比较，你会发现它们是不同的。MD5 碰撞示例可从 [https://www.mscs.dal.ca/~selinger/md5collision/](https://www.mscs.dal.ca/~selinger/md5collision/) 获取，SHA1 碰撞的详细信息可从 [https://shattered.io/](https://shattered.io/) 获取。由于这些原因，你不应该信任这两种算法来对密码或数据进行哈希处理。
 
-
-
 ## 回答以下问题
 
 ```ad-details
