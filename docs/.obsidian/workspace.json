@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b1044f44145c65f5",
+        "id": "b445124c0b739ef1",
         "type": "tabs",
         "children": [
           {
-            "id": "e3eed95e0281b2fd",
+            "id": "000d47a575ace042",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,10 +179,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "e3eed95e0281b2fd",
+  "active": "000d47a575ace042",
   "lastOpenFiles": [
-    "notes/penetration/1.tryhackme/Windows_基础-01.md",
     "notes/work/技战法-未备案资产网络安全事件患排查分析处置技战法_1.md",
+    "notes/InvestigatingTheCyberBreach/Linux_Emergency_troubleshooting.md",
+    "notes/InvestigatingTheCyberBreach/assets/node_002/网络杀戮链条.png",
+    "notes/penetration/1.tryhackme/Windows_基础-01.md",
     "notes/Rust_leaning/Day 1.md",
     "notes/work/年终工作总结 PPT.md",
     "notes/work/assets/奇安信waf割接故障记录/cc3e9b0cc6ad74da1448d74c07b0cb8.jpg",
@@ -195,7 +197,6 @@
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164948.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164402.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514163855.png",
-    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514163413.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02",
     "notes/penetration/1.tryhackme/assets/windows_基础-01",
     "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
@@ -219,7 +220,6 @@
     "notes/penetration/1.tryhackme/assets/search-skills",
     "notes/penetration/1.tryhackme/15.BurpSuite入门.md",
     "notes/GuideNote/Linux_Daily/2.ArchLinuxConf.md",
-    "notes/GuideNote/Linux_Daily/3.Linux_install_QEMU.md",
     "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf",
     "notes/GuideNote/Linux_Daily/assets",
     "notes/GuideNote/template/test.dm",
