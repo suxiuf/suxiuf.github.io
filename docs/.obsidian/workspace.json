@@ -4,59 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "deecef5bc4fc2898",
+        "id": "b1044f44145c65f5",
         "type": "tabs",
         "children": [
           {
-            "id": "9b1e61b249ffb1ba",
+            "id": "e3eed95e0281b2fd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/penetration/1.tryhackme/Windows_基础-01.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Windows_基础-01"
-            }
-          },
-          {
-            "id": "59b133cf6fbb8dea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/Rust_leaning/Day 1.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Day 1"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Rust_leaning/Day 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Day 1 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -219,20 +179,23 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "59b133cf6fbb8dea",
+  "active": "e3eed95e0281b2fd",
   "lastOpenFiles": [
+    "notes/penetration/1.tryhackme/Windows_基础-01.md",
+    "notes/work/技战法-未备案资产网络安全事件患排查分析处置技战法_1.md",
+    "notes/Rust_leaning/Day 1.md",
+    "notes/work/年终工作总结 PPT.md",
+    "notes/work/assets/奇安信waf割接故障记录/cc3e9b0cc6ad74da1448d74c07b0cb8.jpg",
     "notes/penetration/1.tryhackme/Windows_基础-02.md",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514174536.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514174516.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514173532.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514172709.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514172637.png",
-    "notes/penetration/1.tryhackme/Windows_基础-01.md",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164948.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164402.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514163855.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514163413.png",
-    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514162444.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02",
     "notes/penetration/1.tryhackme/assets/windows_基础-01",
     "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
@@ -257,8 +220,6 @@
     "notes/penetration/1.tryhackme/15.BurpSuite入门.md",
     "notes/GuideNote/Linux_Daily/2.ArchLinuxConf.md",
     "notes/GuideNote/Linux_Daily/3.Linux_install_QEMU.md",
-    "notes/GuideNote/Linux_Daily/1.Linux_Commands.md",
-    "notes/work/奇安信WAF割接故障记录.md",
     "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf",
     "notes/GuideNote/Linux_Daily/assets",
     "notes/GuideNote/template/test.dm",
