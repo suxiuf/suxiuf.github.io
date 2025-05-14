@@ -4,20 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "2ec1767d42cf3715",
+        "id": "deecef5bc4fc2898",
         "type": "tabs",
         "children": [
           {
-            "id": "c3de50989fec2f9d",
+            "id": "9b1e61b249ffb1ba",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/penetration/1.tryhackme/Windows_基础-01.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Windows_基础-01"
+            }
+          },
+          {
+            "id": "59b133cf6fbb8dea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/Rust_leaning/Day 1.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Day 1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 422.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -136,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/GuideNote/Vue_Site/1.vitepress.md",
+                "file": "notes/Rust_leaning/Day 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1.vitepress 的大纲"
+              "title": "Day 1 的大纲"
             }
           },
           {
@@ -160,8 +199,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5,
-    "collapsed": true
+    "width": 331.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,54 +219,53 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "c3de50989fec2f9d",
+  "active": "59b133cf6fbb8dea",
   "lastOpenFiles": [
+    "notes/penetration/1.tryhackme/Windows_基础-02.md",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514174536.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514174516.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514173532.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514172709.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514172637.png",
+    "notes/penetration/1.tryhackme/Windows_基础-01.md",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164948.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164402.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514163855.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514163413.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514162444.png",
+    "notes/penetration/1.tryhackme/assets/windows_基础-02",
+    "notes/penetration/1.tryhackme/assets/windows_基础-01",
+    "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
+    "notes/penetration/1.tryhackme/5.Network_Introductory.md",
+    "notes/penetration/1.tryhackme/3.Linux_002.md",
+    "notes/penetration/1.tryhackme/4.Linux_003.md",
+    "notes/penetration/1.tryhackme/1.introduce.md",
+    "notes/penetration/1.tryhackme/2.Linux_001.md",
+    "notes/penetration/1.tryhackme/12.Network_MySQL.md",
+    "notes/penetration/1.tryhackme/11.Network_SMTP.md",
+    "notes/penetration/1.tryhackme/10.Network_NFS.md",
+    "notes/penetration/1.tryhackme/9.Network_FTP.md",
+    "notes/penetration/1.tryhackme/8.Network_Telnet.md",
+    "notes/penetration/1.tryhackme/7.Network_SMB.md",
+    "notes/penetration/1.tryhackme/6.Network_NMAP.md",
+    "notes/penetration/1.tryhackme/14.HTTP_In_Detail.md",
+    "notes/penetration/1.tryhackme/Search Skills.md",
+    "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
     "notes/GuideNote/others/1.git.md",
     "notes/GuideNote/Linux_Daily/未命名.md",
-    "notes/penetration/1.tryhackme/Search Skills.md",
-    "notes/penetration/1.tryhackme/assets/search-skills/file-20250415222001.png",
-    "notes/penetration/1.tryhackme/assets/search-skills/file-20250415221936.png",
-    "notes/penetration/1.tryhackme/assets/search-skills/file-20250415221859.png",
-    "notes/penetration/1.tryhackme/assets/search-skills/file-20250415220413.png",
-    "notes/penetration/1.tryhackme/assets/search-skills/file-20250415220331.png",
-    "notes/penetration/1.tryhackme/assets/search-skills/file-20250415220145.png",
-    "notes/penetration/1.tryhackme/assets/search-skills/file-20250415220011.png",
     "notes/penetration/1.tryhackme/assets/search-skills",
     "notes/penetration/1.tryhackme/15.BurpSuite入门.md",
-    "notes/penetration/1.tryhackme/1.introduce.md",
     "notes/GuideNote/Linux_Daily/2.ArchLinuxConf.md",
     "notes/GuideNote/Linux_Daily/3.Linux_install_QEMU.md",
     "notes/GuideNote/Linux_Daily/1.Linux_Commands.md",
     "notes/work/奇安信WAF割接故障记录.md",
-    "notes/GuideNote/Vue_Site/1.vitepress.md",
-    "notes/InvestigatingTheCyberBreach/竞赛靶场-蓝队/考前准备-蓝队.md",
-    "notes/InvestigatingTheCyberBreach/竞赛靶场-蓝队/总结.md",
-    "notes/InvestigatingTheCyberBreach/竞赛靶场-蓝队/备忘清单.md",
-    "notes/GuideNote/Vue_Site/2.vuepress.md",
-    "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf/file-20250117182234.png",
-    "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf/file-20250117181855.png",
-    "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf/file-20250117181207.png",
     "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf",
     "notes/GuideNote/Linux_Daily/assets",
-    "notes/GuideNote/Note_Taking_Software/2.Dendron.md",
-    "notes/GuideNote/Note_Taking_Software/1.obsidian_plugins.md",
-    "notes/InvestigatingTheCyberBreach/node_001.md",
-    "notes/InvestigatingTheCyberBreach/Linux_Emergency_troubleshooting.md",
-    "notes/GuideNote/template/Offensive_security_damo.md",
     "notes/GuideNote/template/test.dm",
-    "notes/GuideNote/template/template.md",
     "notes/GuideNote/template",
-    "template/Offensive-demo.md",
-    "template/template.md",
     "template",
-    "notes/GuideNote/Windows_Daily/1.windows_Commands.md",
-    "notes/GuideNote/Note_Taking_Software/10.Dendron.md",
-    "notes/GuideNote/Note_Taking_Software/9.obsidian_plugins.md",
     "notes/GuideNote/Note_Taking_Software",
-    "notes/GuideNote/others/2.vscode.md",
     "notes/GuideNote/others",
-    "notes/GuideNote/Vue_Site",
-    "notes/GuideNote/Windows_Daily",
     "未命名.canvas",
     "notes/penetration/1.tryhackme/assets/10.network_nfs/NFS利用流程.canvas",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",

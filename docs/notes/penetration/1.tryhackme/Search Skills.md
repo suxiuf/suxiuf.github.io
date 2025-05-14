@@ -122,8 +122,9 @@ title: 拥有**lighttpd**服务器最多的国家/地区是哪个？
 使用shodan搜索引擎进行搜索，左侧会显示全球统计结果。
 ```
 
-collaes: true
-title : 哈希值为`2de70ca737c1f4602517c555ddd54165432cf231ffc0e21fb2e23b9dd14e7fb4`的文件被**BitDefenderFalx**标记为什么？
+```ad-details
+collapse: true
+title: 哈希值为`2de70ca737c1f4602517c555ddd54165432cf231ffc0e21fb2e23b9dd14e7fb4`的文件被**BitDefenderFalx**标记为什么？
 
 **答案**： `Android.Riskware.Agent.LHH`
 
@@ -136,3 +137,113 @@ BitDefenderFalx 是一个杀毒引擎，题中给出某个文件的hash值，这
 	![](assets/search-skills/file-20250415222001.png)
 
 ```
+## CVE
+
+我们可以将 Common Vulnerabilities and Exposures （CVE） 程序视为漏洞字典。它为软件和硬件产品中的漏洞和安全问题提供标准化标识符。每个漏洞都分配有一个采用标准化格式（如 `CVE-2024-29988`）的 CVE ID。此唯一标识符 （CVE ID） 可确保从安全研究人员到供应商和 IT 专业人员的每个人都引用相同的漏洞，在本例中为 [CVE-2024-29988](https://nvd.nist.gov/vuln/detail/CVE-2024-29988)。
+
+MITRE Corporation 维护 CVE 系统。有关更多信息和搜索现有 CVE，请访问 [CVE 计划](https://www.cve.org/) Web 站点。或者，访问[国家漏洞数据库](https://nvd.nist.gov/) （NVD） 网站。下面的屏幕截图显示了 CVE-2014-0160，也称为 Heartbleed。
+
+**当然中国也有自己的国家漏洞库：[CNNVD](https://www.cnnvd.org.cn/home/childHome)**
+
+## Exploit Database (漏洞利用数据库)
+
+作为红队，想要利用易受攻击的程序来验证系统的安全性时，我们可能需要找到一个有效的漏洞利用代码。
+
+一种资源是 [Exploit Database](https://www.exploit-db.com/)。漏洞利用数据库列出了来自不同作者的漏洞利用代码;其中一些漏洞利用代码已经过测试并标记为已验证。
+![](assets/search-skills/file-20250417163444.png)
+
+另一种是[GitHub](https://github.com/) 是一个基于 Web 的软件开发平台，包含许多与 CVE 相关的工具，以及概念验证 （PoC） 和漏洞利用代码。要演示此想法，请查看下面的 GitHub 上与 Heartbleed 漏洞相关的搜索结果的屏幕截图。
+
+### 回答问题
+
+```ad-details
+collapse: true
+title: CVE-2024-3094 是什么实用程序产生的？
+
+**答案：** `xz`
+
+可以在cve官网搜索：https://www.cve.org/
+
+![](assets/search-skills/file-20250417164117.png)
+
+```
+
+## Technical Documentation (技术文档)
+
+我们需要获得的另一项技能是查找官方文件。我们将介绍一些官方文档页面的示例。
+
+### Linux Manual Pages (Linux 手册页)
+
+在互联网普及前，如何通过命令获取 Linux 或类 Unix 系统的帮助？答案是查阅手册页（man pages）。这类系统为每个命令、系统调用、库函数及配置文件均内置了手册页，输入 `man [名称]` 即可访问对应文档。
+
+假设我们想检查命令 `ip` 的手册页。我们发出命令 `man ip`。下面的屏幕截图显示了我们收到的页面。您可能希望启动 AttackBox 并在终端上运行 `man ip`。按 `q` 退出。
+
+![](assets/search-skills/file-20250417191000.png)
+
+如果您更喜欢在 Web 浏览器中阅读 `ip` 的手册页，只需在您最喜欢的搜索引擎中输入 `man ip` 即可。[此页面](https://linux.die.net/man/8/ip)可能位于结果的顶部。
+
+**AttackBox** 是一个可从浏览器访问的 Linux 系统。单击 **Start AttackBox（启动 AttackBox**）按钮将在分屏中显示 AttackBox，从而可以方便地在同一浏览器窗口中阅读任务文本和应用说明。如果您隐藏了 AttackBox 窗口，您可以通过单击顶部的蓝色 Show Split View 按钮再次显示它。在此任务中，您可以启动 AttackBox 并使用它来尝试 Linux 命令，例如 `man`。
+
+###  Windows
+
+Microsoft 为其产品提供了官方[技术文档](https://learn.microsoft.com/)页面。下面的屏幕截图显示了命令 `ipconfig` 的搜索结果。
+![](assets/search-skills/file-20250417193119.png)
+
+
+### 产品文档
+
+每个流行的产品都应该有组织良好的文档。本文档提供了有关产品特性和功能的官方可靠信息来源。示例包括 [Snort 官方文档](https://www.snort.org/documents)、[Apache HTTP 服务器文档](https://httpd.apache.org/docs/)、[PHP 文档](https://www.php.net/manual/en/index.php)和 [Node.js 文档](https://nodejs.org/docs/latest/api/)。查看官方文档总是有益的，因为它是最新的并提供最完整的产品信息。
+
+### 回答问题
+
+```ad-details
+collapse: true
+title: Linux 命令 `cat` 代表什么？
+
+**答案：** `Concatenate`
+
+使用 `man cat` 查看，手册首页会出现：`cat - concatenate files and print on the standard output` 意思是： `连接文件并在标准输出上打印`
+```
+
+```ad-details
+collapse: true
+title: MS Windows 中，显示与“每个活动连接和侦听端口关联的可执行文件“的`netstat`参数是什么？
+**答案：** `-b`
+![](assets/search-skills/file-20250417201402.png)
+```
+
+
+## Social Media (社交媒体)
+
+对于红队来说，社交媒体的作用在于它可以让你与你感兴趣的公司和人建立联系。此外社交媒体为网络安全专业人士提供了丰富的信息，以供他们搜索信息。
+
+出于保护公司的角度，你应该确保员工不会在社交媒体上过度分享。例如，他们的社交媒体可能会泄漏他们秘密问题的答案，如：“你小时候上过哪所学校？”此类可能用于重置秘密的信息。
+
+此外，作为网络安全专业人士，您需要随时了解新的网络安全趋势、技术和产品。适当的渠道和社交媒体可以为增长您的技术专业知识提供合适的环境。
+
+另外除了社交媒体，新闻网站可以提供有价值的网络安全新闻。尝试不同，找到你喜欢的渠道。
+
+### 回答问题
+
+```ad-details
+collapse: true
+title: 您受雇评估特定公司的安全性。您会使用哪个流行的社交媒体网站来了解他们其中一位员工的技术背景？
+
+**答案：** `LinkedIn`
+
+LinkedIn： 中文名“领英”，LinkedIn是一个美国商业和就业导向的社交网络。上面有数以百万计的岗位和人员简历，题目中问“员工的**技术背景**” 所以可以尝试在`LinkedIn`中搜索。
+
+*当然如果在国内可以尝试从 Boss、智联或其他渠道搜索*
+```
+
+
+```ad-details
+collapse: true
+title: 继续前面的场景，你试图找到这个秘密问题的答案，“你小时候上了哪所学校？您会考虑查看哪个社交媒体网站以找到此类秘密问题的答案？
+
+**答案：** `Facebook`
+
+
+```
+
+
