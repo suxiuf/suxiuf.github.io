@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b445124c0b739ef1",
+        "id": "b7b1a1ce95d19013",
         "type": "tabs",
         "children": [
           {
-            "id": "000d47a575ace042",
+            "id": "8e8c293e62ff8f81",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -159,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 331.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,8 +180,13 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "000d47a575ace042",
+  "active": "8e8c293e62ff8f81",
   "lastOpenFiles": [
+    "notes/penetration/1.tryhackme/14.HTTP_In_Detail.md",
+    "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
+    "notes/penetration/1.tryhackme/15.BurpSuite入门.md",
+    "notes/penetration/1.tryhackme/assets/14.http_in_detail/file-20250514182540.png",
+    "notes/penetration/1.tryhackme/assets/14.http_in_detail",
     "notes/work/技战法-未备案资产网络安全事件患排查分析处置技战法_1.md",
     "notes/InvestigatingTheCyberBreach/Linux_Emergency_troubleshooting.md",
     "notes/InvestigatingTheCyberBreach/assets/node_002/网络杀戮链条.png",
@@ -196,7 +202,6 @@
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514172637.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164948.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164402.png",
-    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514163855.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02",
     "notes/penetration/1.tryhackme/assets/windows_基础-01",
     "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
@@ -212,21 +217,16 @@
     "notes/penetration/1.tryhackme/8.Network_Telnet.md",
     "notes/penetration/1.tryhackme/7.Network_SMB.md",
     "notes/penetration/1.tryhackme/6.Network_NMAP.md",
-    "notes/penetration/1.tryhackme/14.HTTP_In_Detail.md",
     "notes/penetration/1.tryhackme/Search Skills.md",
-    "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
     "notes/GuideNote/others/1.git.md",
     "notes/GuideNote/Linux_Daily/未命名.md",
     "notes/penetration/1.tryhackme/assets/search-skills",
-    "notes/penetration/1.tryhackme/15.BurpSuite入门.md",
-    "notes/GuideNote/Linux_Daily/2.ArchLinuxConf.md",
     "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf",
     "notes/GuideNote/Linux_Daily/assets",
     "notes/GuideNote/template/test.dm",
     "notes/GuideNote/template",
     "template",
     "notes/GuideNote/Note_Taking_Software",
-    "notes/GuideNote/others",
     "未命名.canvas",
     "notes/penetration/1.tryhackme/assets/10.network_nfs/NFS利用流程.canvas",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
