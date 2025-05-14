@@ -23,7 +23,7 @@ export default defineThemeConfig({
   navbar,
   notes,
   social: [
-    { icon: 'github', link: '/' },
+    { icon: 'github', link: 'https://github.com/suxiuf/suxiuf.github.io' },
   ],
 
 })
