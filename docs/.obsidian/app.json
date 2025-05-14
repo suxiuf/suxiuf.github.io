@@ -14,6 +14,6 @@
   "showLineNumber": false,
   "readableLineLength": true,
   "showInlineTitle": true,
-  "trashOption": "local",
+  "trashOption": "system",
   "strictLineBreaks": true
 }
