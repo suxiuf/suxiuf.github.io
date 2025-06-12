@@ -1,3 +1,8 @@
+---
+title: Windows-Install
+createTime: 2025/06/09 09:52:05
+permalink: /GuideNote/2lx1g0r2/
+---
 ## DNS刷新
 
 国内一些DNS厂商为了过度的安全，会屏蔽掉一些网站，因此偶尔需要更换DNS服务器，在手动修改后建议进行DNS缓存清除：

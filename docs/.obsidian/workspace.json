@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/GuideNote/Windows_Daily/Windows-Install.md",
+                "file": "notes/GuideNote/others/node.js 系列安装.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Windows-Install"
+              "title": "node.js 系列安装"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -151,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/GuideNote/Windows_Daily/Windows-Install.md",
+                "file": "notes/GuideNote/others/node.js 系列安装.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Windows-Install 的大纲"
+              "title": "node.js 系列安装 的大纲"
             }
           },
           {
@@ -205,10 +204,10 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0e16466feeee7b8b",
+  "active": "4d5c6607e4c3a375",
   "lastOpenFiles": [
-    "notes/GuideNote/Windows_Daily/1.windows_Commands.md",
     "notes/GuideNote/Windows_Daily/Windows-Install.md",
+    "notes/GuideNote/Windows_Daily/1.windows_Commands.md",
     "notes/GuideNote/others/node.js 系列安装.md",
     "notes/GuideNote/others/Install Node.js.md",
     "notes/GuideNote/Vue_Site/2.vuepress.md",
