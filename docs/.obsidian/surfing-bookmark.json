@@ -1,5 +1,18 @@
 {
-  "bookmarks": [],
+  "bookmarks": [
+    {
+      "id": "-1745649342",
+      "name": "Windows | Oh My Posh",
+      "url": "https://ohmyposh.dev/docs/installation/windows",
+      "description": "",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1749453435488,
+      "modified": 1749453435488
+    }
+  ],
   "categories": [
     {
       "value": "ROOT",

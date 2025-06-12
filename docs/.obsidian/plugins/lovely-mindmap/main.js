@@ -559,14 +559,14 @@ var Setting = class extends import_obsidian.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h3", { text: "\u{1F917} Lovely Mindmap Settings" });
+    containerEl.createEl("h3", { text: "\u{1F917} 可爱思维导图设置" });
     this.addAutoFocus();
     this.addCreateChildHotkey();
     this.addCreateBeforeSibHotKey();
     this.addCreateAfterSibHotKey();
   }
   addAutoFocus() {
-    new import_obsidian.Setting(this.containerEl).setName("Auto Focus").setDesc("auto focus node when create new node").addToggle(
+    new import_obsidian.Setting(this.containerEl).setName("自动聚焦").setDesc("创建新节点时自动聚焦节点").addToggle(
       (component) => component.setValue(this.main.setting.autoFocus).onChange(async (open) => {
         this.main.setting.autoFocus = open;
         await this.main.saveData(this.main.setting);
@@ -576,14 +576,14 @@ var Setting = class extends import_obsidian.PluginSettingTab {
   addCreateChildHotkey() {
     let _hotKey = this.main.setting.hotkeys.CreateChild;
     let errorText = "";
-    new import_obsidian.Setting(this.containerEl).setName("Create Child Node").setDesc(`Custom your hotkey to create a child node, default is Tab. 
-        You can use any letter, number, or modifier combined with 
-        a letter or number, e.g., \u300CC\u300Dor\u300Ccmd + C\u300Dto create a child node.
-        Use\u300C+\u300Dto separate modifiers and alphanumeric characters.`).addText((text) => text.setPlaceholder("Enter hotkey").setValue(_hotKey).onChange(async (value) => {
+    new import_obsidian.Setting(this.containerEl).setName("创建子节点").setDesc(`自定义热键以创建子节点，默认为 Tab。 
+        您可以使用任何字母、数字或修饰符与 
+        字母或数字, 例如, \u300CC\u300D 或 \u300Ccmd + C\u300D创建子节点。
+        使用\u300C+\u300D分隔修饰符和字母数字字符。`).addText((text) => text.setPlaceholder("输入热键").setValue(_hotKey).onChange(async (value) => {
       _hotKey = value;
       errorText = "";
     })).addButton(
-      (button) => button.setButtonText("Save").setCta().onClick(async () => {
+      (button) => button.setButtonText("保存").setCta().onClick(async () => {
         if (errorText) {
           new import_obsidian.Notice(errorText);
           return;
@@ -596,7 +596,7 @@ var Setting = class extends import_obsidian.PluginSettingTab {
           this.main.keymap.registerAll({
             CreateChild: () => this.main.keymap.register(modifier, key, this.main.node.createChildren)
           });
-          new import_obsidian.Notice("Save successfully!");
+          new import_obsidian.Notice("保存成功！");
         } catch (error) {
           new import_obsidian.Notice(error.message);
         }
@@ -606,11 +606,11 @@ var Setting = class extends import_obsidian.PluginSettingTab {
   addCreateBeforeSibHotKey() {
     let _hotKey = this.main.setting.hotkeys.CreateBeforeSib || "Shift+Enter";
     let errorText = "";
-    new import_obsidian.Setting(this.containerEl).setName("Create Sibling Node Before").setDesc(`Custom your hotkey to create a sibling node before the current node. Default is Shift+Enter. Same as 'Create Child Node'.`).addText((text) => text.setPlaceholder("Enter hotkey").setValue(_hotKey).onChange(async (value) => {
+    new import_obsidian.Setting(this.containerEl).setName("在当前节点前创建同级节点").setDesc(`自定义热键以在当前节点前创建同级节点。默认是 Shift+Enter。与'创建子节点'相同。`).addText((text) => text.setPlaceholder("输入热键").setValue(_hotKey).onChange(async (value) => {
       _hotKey = value;
       errorText = "";
     })).addButton(
-      (button) => button.setButtonText("Save").setCta().onClick(async () => {
+      (button) => button.setButtonText("保存").setCta().onClick(async () => {
         if (errorText) {
           new import_obsidian.Notice(errorText);
           return;
@@ -623,7 +623,7 @@ var Setting = class extends import_obsidian.PluginSettingTab {
           this.main.keymap.registerAll({
             CreateBeforeSib: () => this.main.keymap.register(modifier, key, this.main.node.createBeforeSibNode)
           });
-          new import_obsidian.Notice("Save successfully!");
+          new import_obsidian.Notice("保存成功！");
         } catch (error) {
           new import_obsidian.Notice(error.message);
         }
@@ -633,11 +633,11 @@ var Setting = class extends import_obsidian.PluginSettingTab {
   addCreateAfterSibHotKey() {
     let _hotKey = this.main.setting.hotkeys.CreateAfterSib || "Enter";
     let errorText = "";
-    new import_obsidian.Setting(this.containerEl).setName("Create Sibling Node After").setDesc(`Custom your hotkey to create a sibling node after the current node. Default is Enter. Same as 'Create Child Node'.`).addText((text) => text.setPlaceholder("Enter hotkey").setValue(_hotKey).onChange(async (value) => {
+    new import_obsidian.Setting(this.containerEl).setName("在当前节点后创建同级节点").setDesc(`自定义热键以在当前节点后创建同级节点。默认是 Enter。与'创建子节点'相同。`).addText((text) => text.setPlaceholder("输入热键").setValue(_hotKey).onChange(async (value) => {
       _hotKey = value;
       errorText = "";
     })).addButton(
-      (button) => button.setButtonText("Save").setCta().onClick(async () => {
+      (button) => button.setButtonText("保存").setCta().onClick(async () => {
         if (errorText) {
           new import_obsidian.Notice(errorText);
           return;
@@ -650,7 +650,7 @@ var Setting = class extends import_obsidian.PluginSettingTab {
           this.main.keymap.registerAll({
             CreateAfterSib: () => this.main.keymap.register(modifier, key, this.main.node.createAfterSibNode)
           });
-          new import_obsidian.Notice("Save successfully!");
+          new import_obsidian.Notice("保存成功！");
         } catch (error) {
           new import_obsidian.Notice(error.message);
         }
@@ -740,7 +740,7 @@ var LovelyMindmap = class extends import_obsidian2.Plugin {
     this.keymap.registerAll();
     this.addCommand({
       id: "blurNode",
-      name: "Blur node",
+      name: "模糊节点",
       hotkeys: [
         {
           modifiers: ["Mod"],

@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "adb0c611121042e8",
+        "id": "d4951ad4ad8c2315",
         "type": "tabs",
         "children": [
           {
-            "id": "17206de7fef15fa1",
+            "id": "4d5c6607e4c3a375",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/GuideNote/Windows_Daily/Windows-Install.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Windows-Install"
             }
           }
         ]
@@ -74,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 422.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "02f9133830bba9ba",
@@ -136,12 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "notes/GuideNote/Windows_Daily/Windows-Install.md",
                 "followCursor": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Windows-Install 的大纲"
             }
           },
           {
@@ -150,8 +166,18 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "源代码管理"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "3054acb05d7b2654",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
         ],
@@ -159,8 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5,
-    "collapsed": true
+    "width": 331.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,62 +196,63 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "excel:创建 Excel 文件": false,
-      "obsidian-git:打开Git源代码管理": false,
       "vscode-editor:新建代码文件": false,
       "terminal:Open terminal": false,
       "i18n:I18N": false,
-      "pkmer:Open Pkmer Market": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "17206de7fef15fa1",
+  "active": "0e16466feeee7b8b",
   "lastOpenFiles": [
+    "notes/GuideNote/Windows_Daily/1.windows_Commands.md",
+    "notes/GuideNote/Windows_Daily/Windows-Install.md",
+    "notes/GuideNote/others/node.js 系列安装.md",
+    "notes/GuideNote/others/Install Node.js.md",
+    "notes/GuideNote/Vue_Site/2.vuepress.md",
+    "notes/GuideNote/Vue_Site/1.vitepress.md",
+    "notes/GuideNote/template/template.md",
+    "notes/GuideNote/template/Offensive_security_damo.md",
+    "notes/GuideNote/others/2.vscode.md",
+    "notes/GuideNote/Note_Taking_Software/2.Dendron.md",
+    "notes/GuideNote/Note_Taking_Software/1.obsidian_plugins.md",
+    "notes/penetration/1.tryhackme/1.introduce.md",
+    "notes/GuideNote/Windows_Daily/assets/windows-install/file-20250610015629.png",
+    "notes/GuideNote/Windows_Daily/assets/windows-install/file-20250610015503.png",
+    "README.md",
+    "notes/GuideNote/Windows_Daily/assets/windows-install",
+    "notes/GuideNote/Windows_Daily/assets",
+    "notes/GuideNote/Windows_Daily/未命名",
+    "notes/penetration/1.tryhackme/Windows_基础-02.md",
+    "notes/penetration/1.tryhackme/Windows_基础-01.md",
+    "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
+    "notes/penetration/1.tryhackme/Search Skills.md",
+    "notes/penetration/1.tryhackme/Hash与加密.md",
     "notes/penetration/1.tryhackme/15.BurpSuite入门.md",
+    "notes/GuideNote/Linux_Daily/1.Linux_Commands.md",
+    "notes/GuideNote/Linux_Daily/3.Linux_install_QEMU.md",
+    "notes/GuideNote/Linux_Daily/2.ArchLinuxConf.md",
+    "notes/InvestigatingTheCyberBreach/node_002.md",
+    "notes/InvestigatingTheCyberBreach/node_001.md",
+    "notes/InvestigatingTheCyberBreach/Linux_Emergency_troubleshooting.md",
     "notes/penetration/1.tryhackme/14.HTTP_In_Detail.md",
-    "notes/penetration/1.tryhackme/13.How_WebSites_Work.md",
     "notes/penetration/1.tryhackme/assets/14.http_in_detail/file-20250514182540.png",
     "notes/penetration/1.tryhackme/assets/14.http_in_detail",
-    "notes/work/技战法-未备案资产网络安全事件患排查分析处置技战法_1.md",
-    "notes/InvestigatingTheCyberBreach/Linux_Emergency_troubleshooting.md",
     "notes/InvestigatingTheCyberBreach/assets/node_002/网络杀戮链条.png",
-    "notes/penetration/1.tryhackme/Windows_基础-01.md",
-    "notes/Rust_leaning/Day 1.md",
-    "notes/work/年终工作总结 PPT.md",
     "notes/work/assets/奇安信waf割接故障记录/cc3e9b0cc6ad74da1448d74c07b0cb8.jpg",
-    "notes/penetration/1.tryhackme/Windows_基础-02.md",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514174536.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514174516.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514173532.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514172709.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514172637.png",
-    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164948.png",
-    "notes/penetration/1.tryhackme/assets/windows_基础-02/file-20250514164402.png",
     "notes/penetration/1.tryhackme/assets/windows_基础-02",
     "notes/penetration/1.tryhackme/assets/windows_基础-01",
-    "notes/penetration/1.tryhackme/Web-Pickle-Rick.md",
-    "notes/penetration/1.tryhackme/5.Network_Introductory.md",
-    "notes/penetration/1.tryhackme/3.Linux_002.md",
-    "notes/penetration/1.tryhackme/4.Linux_003.md",
-    "notes/penetration/1.tryhackme/1.introduce.md",
-    "notes/penetration/1.tryhackme/2.Linux_001.md",
-    "notes/penetration/1.tryhackme/12.Network_MySQL.md",
-    "notes/penetration/1.tryhackme/11.Network_SMTP.md",
-    "notes/penetration/1.tryhackme/10.Network_NFS.md",
-    "notes/penetration/1.tryhackme/9.Network_FTP.md",
-    "notes/penetration/1.tryhackme/8.Network_Telnet.md",
-    "notes/penetration/1.tryhackme/7.Network_SMB.md",
-    "notes/penetration/1.tryhackme/6.Network_NMAP.md",
-    "notes/penetration/1.tryhackme/Search Skills.md",
-    "notes/GuideNote/others/1.git.md",
-    "notes/GuideNote/Linux_Daily/未命名.md",
     "notes/penetration/1.tryhackme/assets/search-skills",
     "notes/GuideNote/Linux_Daily/assets/2.archlinuxconf",
     "notes/GuideNote/Linux_Daily/assets",
     "notes/GuideNote/template/test.dm",
-    "notes/GuideNote/template",
-    "template",
-    "notes/GuideNote/Note_Taking_Software",
     "未命名.canvas",
     "notes/penetration/1.tryhackme/assets/10.network_nfs/NFS利用流程.canvas",
     "penetration/tryhackme/assets/web-pickle-rick/Rickle-Rick.canvas",
