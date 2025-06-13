@@ -164,8 +164,6 @@ System32 文件夹包含对操作系统至关重要的重要文件。
 
 **注意**：Windows 基础知识系列中介绍的许多工具都位于 System32 文件夹中。 
 
-
-
 ```ad-details
 collapse: true
 title:  Windows 文件夹的系统变量是什么？

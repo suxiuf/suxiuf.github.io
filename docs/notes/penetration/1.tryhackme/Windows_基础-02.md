@@ -260,10 +260,178 @@ title: 共享的隐藏文件夹的名称是什么？
 
 ## 系统信息
 
+`msinfo32` 是一个系统信息工具，可以收集并显示计算机的信息（图形化综合视图），可以使用该工具诊断计算机问题。显示信息简介：
+
+-  系统摘要（`System Summary`）
+	-  硬件资源（`Hardware Resources`）
+	-  组件（`COmponents`）
+	-  软件环境（`Software Environment`）
+
+
+### 系统摘要（`System Summary`）
+
+显示计算机的一般技术规格，例如处理器品牌型号。
+![](assets/windows_基础-02/system-summary.png)
+
+### 硬件资源（`Hardware Resources`）
+
+硬件资源中显示的信息不适用于普通计算机用户。如果您想了解有关此部分的更多信息，请参阅Microsoft官方[页面](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/hardware-resources#:~:text=Hardware%20resources%20are%20the%20assignable,of%20bus%2Drelative%20memory%20addresses.)。
+![](assets/windows_基础-02/hardware-resources.png)
+
+### 组件（`COmponents`）
+在“组件”下，可以查看有关计算机上安装的硬件设备的特定信息。有些部分不显示任何信息，但有些部分显示，如显示和输入。
+###  软件环境（`Software Environment`）
+您可以看到内置于操作系统中的软件和你已安装的软件的信息。其他详细信息也可以在本节中看到，例如环境变量和网络连接。
+ 
+![](assets/windows_基础-02/software-env.png)
+
+请回顾[Windows_基础-01](Windows_基础-01.md)课程中“Windows\System32 文件夹”任务部分，对​**​环境变量​**​`%WINDIR%` 的简要介绍。根据微软官方定义：
+> “环境变量存储了与操作系统环境相关的信息，包括系统路径、处理器数量、临时文件夹位置等关键参数。这些数据被操作系统和其他程序调用，例如 `%WINDIR%` 变量记录了 Windows 安装目录路径，程序可通过查询该值定位系统文件。”
+
+点击 ​**​Environment Variables​**​（环境变量）即可查看虚拟机中配置的变量值。
+
+```ad-tip
+title:补充说明
+​**​环境变量的核心作用​**​
+
+- ​**​系统路径管理​**​：如 `%PATH%` 定义了可执行文件的搜索路径
+- ​**​关键目录定位​**​：`%WINDIR%` 指向系统根目录（如 `C:\Windows`），`%TEMP%` 指定临时文件存储位置
+- ​**​安全与隐私关联​**​
+    - 环境变量虽为系统功能，但需注意其与隐私敏感功能（如 Windows 11 的 ​**​Recall AI​**​）的潜在关联。Recall 通过持续截屏记录用户操作，类似环境变量可能被用于存储此类功能的配置路径
+- ​**​查看方法​**
+    - ​**​图形界面​**​：右键“此电脑” → 属性 → 高级系统设置 → 环境变量
+- ​**​命令行​**​：输入 `set` 查看所有变量，或 `echo %变量名%`（如 `echo %WINDIR%`）
+```
+
+### msinf32的搜索功能
+
+在这个程序的最底部，有一个搜索栏。请尝试一下。选择组件并搜索IP地址。
+![](assets/windows_基础-02/msinfo32-search.png)
+
+### 回答以下问题
+
+```ad-details
+collapse: true
+title: 打开系统信息的命令是什么？（答案是.exe 文件的名称，而不是完整路径）
+
+**答案：** `msinfo.exe`
+```
+
+```ad-details
+collapse: true
+title: ​"System Name"下列出了哪些内容​？
+
+**答案：** `THM-WINFUN2`
+
+解析：打开网站的实验室虚拟机，命令行执行`msinfo32`,查看`System Summary`,找到`System Name`.
+```
+
+```ad-details
+collapse: true
+title: ​在`Environment Variables`下，`ComSpec`的值是什么？
+
+**答案：** `%SystemRoot%\system32\cmd.exe`
+
+解析：打开网站的实验室虚拟机，命令行执行`msinfo32`,查看`Environment Variables`,找到`ComSpec`.
+```
+
 ## 资源监视器
 
+**Resource Monitor**  (`resmon`)
 
-## 命令提示符
+1. **​资源分类监控​**​
+	- ​**​CPU​**​：显示每个进程的CPU占用率及多核负载分布
+    - ​**​内存​**​：实时监测物理内存使用量与缓存分配
+	- **​磁盘​**​：标识高I/O进程及文件访问详情（如`KB/秒`和队列长度）
+	- **​网络​**​：按进程分解流量并显示TCP/UDP连接状态
+2. ​**​高级功能​**​
+    - ​**​进程过滤​**​：勾选特定进程后，所有选项卡仅显示该进程关联的资源数据    
+    - ​**​冲突解决​**​：可帮助识别死锁进程和文件锁定冲突，通过`Associated Handles`和`Associated Modules`分析资源占用冲突，使用户能尝试解决冲突而非直接终止应用，避免数据丢失。
+    - **进程操作**：通过界面直接启动、停止、暂停或恢复服务，以及强制关闭无响应的应用程序
+3. **​技术实现​**​
+	- 基于Windows事件跟踪（ETW）机制采集数据
+    - 支持通过命令行`resmon.exe`或任务管理器快捷入口启动
+如需进一步操作（如分析死锁进程），可参考Windows Sysinternals工具集的`Process Explorer`进行深度诊断.
+### 回答以下问题
+
+```ad-details
+collapse: true
+title:打开资源监视器的命令是什么？(答案是`.exe`文件的名称，而不是完整路径）
+
+**答案：** `resmon.exe`
+```
+## 命令提示符 `cmd.exe`
+
+命令提示符（`cmd`），用户与计算机交互的入口（在图形界面之前，是唯一的）。
+
+- `hostname`: 输出计算机名
+- `whoami`: 输出已登陆的用户名
+- `ipconfig`:显示计算机的网络地址设置
+- `cls`: 清屏
+- `netstat` : 显示协议统计信息和当前TCP/IP网络连接。
+	- **netstat**命令可以单独运行，也可以带参数运行，如`-a`、`-b`、`-e`等。
+- `net` ：用于管理网络资源。此命令支持子命令。
+
+**"每个命令均配有帮助手册，用于说明正确执行该命令所需的语法规范，以及可扩展其功能的附加参数。​**​在Windows系统中，可通过 ​**​`/?`​**​ 参数快速调取命令的帮助手册。例如，查看 `ipconfig` 命令的详细用法，只需输入：`ipconfig /?`
+
+![](assets/windows_基础-02/ipconfig-help.png)
+
+
+ 对于`net`命令，显示帮助手册`/?`将不起作用。在这种情况下，您需要使用不同的语法，即`net help`如果您希望查看`net user`的帮助信息，则命令为`net help user`。
+
+```ad-info
+title: 子命令
+
+- ​**​用户管理​**​：`net user`（增删用户）、`net localgroup`（用户组权限）
+- **​资源共享​**​：`net share`（共享文件夹）、`net use`（映射网络驱动器）
+- ​**​服务控制​**​：`net start/stop`（启停服务）
+
+**典型参数​**​（以 `net user` 为例）
+- `/add`：创建用户
+- `/delete`：删除用户
+- `/times:M-F,8AM-5PM`：限制登录时段	
+- 
+**​常用子命令帮助查询​**​：
+
+| 子命令          | 功能描述              | 示例命令                  |
+| ------------ | ----------------- | --------------------- |
+| `localgroup` | 管理本地用户组权限         | `net help localgroup` |
+| `use`        | 连接/断开网络共享资源       | `net help use`        |
+| `session`    | 查看或终止远程会话         | `net help session`    |
+| `config`     | 显示或修改服务配置（如服务器超时） | `net help config`     |
+|              |                   |                       |
+
+​**​注​**​：部分子命令（如 `net config server`）支持直接修改参数（如 `/autodisconnect:10` 设置会话超时）。
+```
+
+### 完整的CMD命令列表
+
+请参阅以下[链接](https://ss64.com/nt/)，查看可以在命令提示符下执行的命令的完整列表。
+​
+### 回答下面的问题
+
+```ad-details
+collapse: true
+title: 在系统配置（`System Configuration`）中，Internet协议配置(Internet Protocol Configuration)的完整命令是什么？
+
+**答案：** `msinfo.exe`
+
+**解析：** 
+系统配置的相关问题，要在本章节找[系统配置](#系统配置) 中查找，可知需执行命令`msconfig`,之后在`Tools`中查找 `Internet Protocol Configuration`.
+
+![](assets/windows_基础-02/file-20250613224716.png)
+
+```
+
+```ad-details
+collapse: true
+title: 对于ipconfig命令，如何显示详细信息？
+
+**答案：** `ipconfig /all`
+
+```
+
+
 
 ## 注册表编辑器
 
